@@ -1,0 +1,472 @@
+name: Premium Game GDD Workflow
+description: Specialized workflow for creating GDDs for premium games with upfront purchase models
+icon: 💎
+category: business-model
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for premium game development and sales"
+    target_output: "Premium game GDD with high-value content and sustainable business model"
+    estimated_duration: "5-8 weeks depending on complexity"
+    team_size: "10-14 specialists with premium game expertise"
+    
+  # 付费游戏特殊考虑
+  premium_considerations:
+    value_proposition:
+      - "Complete, polished experience at launch"
+      - "High production values and quality standards"
+      - "Substantial content and replay value"
+      - "No pay-to-win or predatory monetization"
+      - "Long-term support and content updates"
+    
+    player_expectations:
+      - "Immediate access to full game content"
+      - "Professional quality and polish"
+      - "Fair and balanced gameplay"
+      - "Respect for player time and investment"
+      - "Ongoing support and improvements"
+    
+    market_challenges:
+      - "Justifying upfront cost in F2P-dominated market"
+      - "Competing with free alternatives"
+      - "Meeting high quality expectations"
+      - "Sustaining long-term revenue"
+      - "Building word-of-mouth and reviews"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：付费游戏市场研究
+    - phase: "premium_market_research"
+      name: "Premium Game Market Research"
+      duration: "1-2 weeks"
+      description: "Research premium game market and establish value proposition strategy"
+      
+      participants:
+        primary:
+          - market-analyst
+          - monetization-designer
+          - game-systems-architect
+        supporting:
+          - western-game-designer
+          - pc-console-specialist
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Premium game market analysis"
+          
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1 week"
+          deliverable: "Premium pricing strategy"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Premium value proposition"
+      
+      deliverables:
+        - "Premium Game Market Analysis"
+        - "Competitive Pricing and Positioning Strategy"
+        - "Value Proposition and Differentiation"
+        - "Target Audience and Demographics"
+        - "Platform Strategy for Premium Sales"
+      
+      quality_gates:
+        - "Premium market opportunity validated"
+        - "Pricing strategy is competitive and justified"
+        - "Value proposition is compelling"
+        - "Target audience willing to pay premium price"
+
+    # 第二阶段：高价值内容设计
+    - phase: "high_value_content_design"
+      name: "High-Value Content Design"
+      duration: "2-3 weeks"
+      description: "Design substantial, high-quality content that justifies premium pricing"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - game-world-designer
+          - game-narrative-designer
+          - mechanics-specialist
+        supporting:
+          - player-experience-designer
+          - game-art-director
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "2 weeks"
+          deliverable: "Premium mechanics specification"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "2-3 weeks"
+          deliverable: "Comprehensive world design"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "2 weeks"
+          deliverable: "Rich narrative content"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Substantial progression systems"
+      
+      deliverables:
+        - "Comprehensive Core Mechanics"
+        - "Rich World Design and Lore"
+        - "Deep Narrative and Character Development"
+        - "Substantial Progression Systems"
+        - "High Replay Value Features"
+      
+      quality_gates:
+        - "Content volume justifies premium price"
+        - "Quality standards meet premium expectations"
+        - "Replay value extends game longevity"
+        - "All systems are polished and complete"
+
+    # 第三阶段：高品质制作标准
+    - phase: "high_quality_production"
+      name: "High-Quality Production Standards"
+      duration: "2-3 weeks"
+      description: "Establish premium production values and quality standards"
+      
+      participants:
+        primary:
+          - game-art-director
+          - audio-designer
+          - technical-designer
+          - ui-ux-designer
+        supporting:
+          - accessibility-specialist
+          - game-narrative-designer
+      
+      tasks:
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "2 weeks"
+          deliverable: "Premium art direction"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "2 weeks"
+          deliverable: "High-quality audio design"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "2 weeks"
+          deliverable: "Premium technical architecture"
+          
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Polished UI/UX design"
+      
+      deliverables:
+        - "Premium Art Direction and Visual Standards"
+        - "High-Quality Audio Design Specification"
+        - "Robust Technical Architecture"
+        - "Polished UI/UX Design"
+        - "Comprehensive Quality Assurance Plan"
+      
+      quality_gates:
+        - "Visual quality meets AAA standards"
+        - "Audio design enhances premium experience"
+        - "Technical architecture is robust and scalable"
+        - "UI/UX is polished and intuitive"
+
+    # 第四阶段：完整体验设计
+    - phase: "complete_experience_design"
+      name: "Complete Experience Design"
+      duration: "1-2 weeks"
+      description: "Design complete, self-contained gaming experience"
+      
+      participants:
+        primary:
+          - player-experience-designer
+          - game-systems-architect
+          - accessibility-specialist
+        supporting:
+          - game-narrative-designer
+          - ui-ux-designer
+      
+      tasks:
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1-2 weeks"
+          deliverable: "Complete experience design"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Integrated experience systems"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Premium accessibility standards"
+      
+      deliverables:
+        - "Complete Player Experience Design"
+        - "Integrated Tutorial and Onboarding"
+        - "Comprehensive Accessibility Features"
+        - "Difficulty Options and Customization"
+        - "Achievement and Completion Systems"
+      
+      quality_gates:
+        - "Experience feels complete and satisfying"
+        - "Tutorial effectively teaches all systems"
+        - "Accessibility exceeds industry standards"
+        - "Difficulty options serve diverse players"
+
+    # 第五阶段：可持续商业模式
+    - phase: "sustainable_business_model"
+      name: "Sustainable Business Model Design"
+      duration: "1-2 weeks"
+      description: "Design sustainable business model for premium games"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - liveops-designer
+          - market-analyst
+        supporting:
+          - game-design-critic
+          - western-game-designer
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1-2 weeks"
+          deliverable: "Premium business model"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Post-launch content strategy"
+          
+        - task: "market-viability-assessment"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Long-term viability analysis"
+      
+      deliverables:
+        - "Premium Pricing and Sales Strategy"
+        - "Post-Launch Content and DLC Plan"
+        - "Community Support and Engagement"
+        - "Long-Term Revenue Sustainability"
+        - "Ethical Monetization Guidelines"
+      
+      quality_gates:
+        - "Pricing strategy is competitive and justified"
+        - "Post-launch content adds genuine value"
+        - "Business model is sustainable long-term"
+        - "Monetization respects player investment"
+
+    # 第六阶段：市场营销与发布策略
+    - phase: "marketing_launch_strategy"
+      name: "Marketing & Launch Strategy"
+      duration: "1-2 weeks"
+      description: "Develop marketing and launch strategy for premium games"
+      
+      participants:
+        primary:
+          - market-analyst
+          - liveops-designer
+          - game-design-critic
+        supporting:
+          - monetization-designer
+          - western-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Marketing strategy"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Launch and community plan"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Market readiness assessment"
+      
+      deliverables:
+        - "Comprehensive Marketing Strategy"
+        - "Launch Timeline and Milestones"
+        - "Review and Press Strategy"
+        - "Community Building and Engagement"
+        - "Word-of-Mouth and Viral Marketing"
+      
+      quality_gates:
+        - "Marketing strategy effectively communicates value"
+        - "Launch plan maximizes initial impact"
+        - "Review strategy targets key influencers"
+        - "Community building supports long-term success"
+
+    # 第七阶段：付费游戏质量保证
+    - phase: "premium_quality_assurance"
+      name: "Premium Game Quality Assurance"
+      duration: "1-2 weeks"
+      description: "Comprehensive quality review for premium game standards"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - game-design-critic
+          - playtesting-simulator
+          - gdd-validator
+        supporting:
+          - accessibility-specialist
+          - monetization-designer
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Premium GDD review"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Premium quality critique"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1-2 weeks"
+          deliverable: "Premium experience testing"
+          
+        - task: "final-game-design-polish"
+          owner: "gdd-validator"
+          duration: "1 week"
+          deliverable: "Final premium GDD"
+      
+      deliverables:
+        - "Premium Game GDD Review Report"
+        - "Quality Standards Verification"
+        - "Value Proposition Validation"
+        - "Market Readiness Assessment"
+        - "Launch Readiness Certification"
+      
+      quality_gates:
+        - "All premium quality standards met"
+        - "Value proposition is compelling and justified"
+        - "Experience quality meets player expectations"
+        - "Game is ready for premium market launch"
+
+  # 付费游戏特殊流程
+  premium_specific_processes:
+    quality_assurance:
+      - "Rigorous testing and bug fixing"
+      - "Performance optimization across platforms"
+      - "Accessibility compliance and testing"
+      - "User experience polish and refinement"
+    
+    value_validation:
+      - "Content volume and quality assessment"
+      - "Replay value and longevity analysis"
+      - "Competitive value comparison"
+      - "Player satisfaction and expectation alignment"
+    
+    launch_preparation:
+      - "Review embargo and press strategy"
+      - "Influencer and content creator outreach"
+      - "Demo and preview content creation"
+      - "Community building and pre-launch engagement"
+    
+    post_launch_support:
+      - "Bug fixes and performance improvements"
+      - "Free content updates and patches"
+      - "Community feedback integration"
+      - "Long-term support and maintenance"
+
+  # 付费游戏成功指标
+  premium_success_metrics:
+    sales_metrics:
+      - "Units sold and revenue generated"
+      - "Conversion rate from awareness to purchase"
+      - "Regional sales performance"
+      - "Platform-specific sales data"
+    
+    quality_metrics:
+      - "Review scores and critic ratings"
+      - "User satisfaction and recommendation rates"
+      - "Technical performance and stability"
+      - "Accessibility and inclusivity scores"
+    
+    engagement_metrics:
+      - "Completion rates and playtime"
+      - "Achievement unlock rates"
+      - "Community engagement and discussion"
+      - "Long-term player retention"
+    
+    business_metrics:
+      - "Return on investment (ROI)"
+      - "Cost per acquisition (CPA)"
+      - "Lifetime value of customers"
+      - "Word-of-mouth and organic growth"
+
+  # 付费游戏风险管理
+  premium_risk_management:
+    market_risks:
+      - risk: "Price resistance in F2P-dominated market"
+        mitigation: "Strong value proposition and demo availability"
+        
+      - risk: "Competition from free alternatives"
+        mitigation: "Unique features and superior quality"
+        
+      - risk: "Poor initial reviews affecting sales"
+        mitigation: "Extensive quality assurance and early feedback"
+    
+    quality_risks:
+      - risk: "Launch bugs and technical issues"
+        mitigation: "Comprehensive testing and day-one patches"
+        
+      - risk: "Content not meeting player expectations"
+        mitigation: "Clear marketing and realistic expectations"
+        
+      - risk: "Accessibility barriers limiting audience"
+        mitigation: "Comprehensive accessibility features"
+    
+    business_risks:
+      - risk: "Insufficient sales to recoup development costs"
+        mitigation: "Conservative budgeting and market validation"
+        
+      - risk: "Platform policy changes affecting sales"
+        mitigation: "Multi-platform strategy and relationships"
+        
+      - risk: "Piracy affecting legitimate sales"
+        mitigation: "Value-added services and community features"
+
+# 使用指南
+usage_notes: |
+  这个付费游戏工作流程专门用于：
+  1. 创建高价值、高质量的付费游戏GDD
+  2. 建立可持续的付费商业模式和定价策略
+  3. 确保游戏质量和内容量符合付费期望
+  4. 实施有效的营销和发布策略
+  5. 建立长期的社区支持和内容更新计划
+
+# BMAD集成
+bmad_integration:
+  premium_handoff_requirements:
+    - "高质量的技术架构和性能优化"
+    - "全面的质量保证和测试框架"
+    - "完整的内容管理和交付系统"
+    - "社区支持和反馈收集工具"
+    - "长期维护和更新支持系统"
+  
+  business_optimization:
+    - "销售数据分析和报告系统"
+    - "用户反馈收集和分析工具"
+    - "内容更新和补丁发布系统"
+    - "社区管理和客户支持工具"

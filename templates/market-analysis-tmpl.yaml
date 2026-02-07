@@ -1,0 +1,292 @@
+name: Market Analysis Template
+description: Comprehensive template for analyzing game markets and competitive landscape
+icon: 📊
+category: market-research
+version: "1.0"
+
+template:
+  # 市场概述
+  market_overview:
+    target_market_definition:
+      primary_market:
+        geographic_scope: "[Global, Regional, Country-specific]"
+        market_size: "[Total addressable market size]"
+        growth_rate: "[Annual growth rate]"
+        market_maturity: "[Emerging, Growing, Mature, Declining]"
+      
+      market_segments:
+        - segment: "[Casual, Hardcore, Mid-core, etc.]"
+          size: "[Segment size and percentage]"
+          growth_trend: "[Growing, Stable, Declining]"
+          key_characteristics: "[What defines this segment]"
+          monetization_preferences: "[How this segment spends money]"
+    
+    platform_analysis:
+      - platform: "[Mobile, PC, Console, Web, VR/AR]"
+        market_share: "[Platform's share of target market]"
+        revenue_potential: "[Revenue opportunity on platform]"
+        user_demographics: "[Age, gender, spending patterns]"
+        distribution_channels: "[App stores, Steam, etc.]"
+        platform_trends: "[Growth trends and future outlook]"
+
+  # 竞争分析
+  competitive_analysis:
+    direct_competitors:
+      - game_title: "[Competitor game name]"
+        developer_publisher: "[Who made/published it]"
+        release_date: "[When it launched]"
+        platform_availability: "[Which platforms]"
+        business_model: "[F2P, Premium, Subscription]"
+        estimated_revenue: "[Revenue estimates if available]"
+        user_base_size: "[DAU/MAU estimates]"
+        key_features: "[What makes it successful]"
+        strengths: "[What they do well]"
+        weaknesses: "[Areas where they struggle]"
+        market_position: "[Market leader, challenger, niche]"
+    
+    indirect_competitors:
+      - game_title: "[Game in adjacent category]"
+        why_competitor: "[Why this competes for same audience]"
+        market_overlap: "[How much audience overlap]"
+        competitive_threat: "[High/Medium/Low threat level]"
+        differentiation_opportunity: "[How to differentiate]"
+    
+    competitive_landscape_trends:
+      emerging_trends:
+        - trend: "[Gameplay trend, Monetization trend, etc.]"
+          adoption_rate: "[How quickly it's being adopted]"
+          success_examples: "[Games doing this well]"
+          opportunity_assessment: "[Opportunity for our game]"
+          implementation_difficulty: "[Easy/Medium/Hard to implement]"
+      
+      declining_trends:
+        - trend: "[Trend that's losing popularity]"
+          decline_rate: "[How quickly it's declining]"
+          reasons_for_decline: "[Why it's becoming less popular]"
+          risk_assessment: "[Risk if we're using this trend]"
+          transition_strategy: "[How to move away from this]"
+
+  # 目标受众分析
+  target_audience_analysis:
+    primary_audience:
+      demographics:
+        age_range: "[Primary age range]"
+        gender_distribution: "[Gender breakdown]"
+        income_level: "[Disposable income characteristics]"
+        geographic_distribution: "[Where they're located]"
+        device_preferences: "[Preferred gaming devices]"
+      
+      psychographics:
+        gaming_motivations: "[Why they play games]"
+        preferred_genres: "[Favorite game types]"
+        session_patterns: "[When and how long they play]"
+        social_gaming_preferences: "[Solo vs multiplayer preferences]"
+        spending_behavior: "[How much and on what they spend]"
+      
+      pain_points:
+        - pain_point: "[Current frustration with existing games]"
+          severity: "[How much this bothers them]"
+          frequency: "[How often they encounter this]"
+          opportunity: "[How our game could address this]"
+    
+    secondary_audiences:
+      - audience_segment: "[Secondary audience description]"
+        size_estimate: "[Size of this segment]"
+        acquisition_difficulty: "[Easy/Medium/Hard to acquire]"
+        monetization_potential: "[Revenue potential]"
+        engagement_strategy: "[How to engage this audience]"
+    
+    user_personas:
+      - persona_name: "[Persona name]"
+        demographic_profile: "[Age, gender, location, etc.]"
+        gaming_background: "[Gaming experience and preferences]"
+        lifestyle_context: "[When and where they game]"
+        motivations: "[What drives their gaming choices]"
+        frustrations: "[What annoys them about current games]"
+        ideal_experience: "[What would make them happy]"
+        monetization_likelihood: "[Spending probability and patterns]"
+
+  # 市场机会分析
+  market_opportunity:
+    market_gaps:
+      - gap_description: "[Unmet need in the market]"
+        evidence: "[Why we believe this gap exists]"
+        target_audience: "[Who would benefit from filling this gap]"
+        competitive_advantage: "[Why we're positioned to fill it]"
+        revenue_potential: "[Estimated revenue opportunity]"
+        implementation_complexity: "[How hard it would be to address]"
+    
+    emerging_opportunities:
+      - opportunity: "[New market opportunity]"
+        market_drivers: "[What's creating this opportunity]"
+        timing_considerations: "[When to enter this market]"
+        resource_requirements: "[What we'd need to pursue this]"
+        success_probability: "[Likelihood of success]"
+        competitive_response: "[How competitors might react]"
+    
+    blue_ocean_potential:
+      uncontested_market_space: "[Areas with little competition]"
+      value_innovation_opportunities: "[Ways to create new value]"
+      differentiation_strategies: "[How to stand out]"
+      barrier_creation: "[How to prevent easy copying]"
+
+  # 货币化分析
+  monetization_analysis:
+    business_model_comparison:
+      - model: "[F2P, Premium, Subscription, etc.]"
+        market_acceptance: "[How well this model works in target market]"
+        revenue_potential: "[Estimated revenue potential]"
+        user_acquisition_impact: "[Effect on user acquisition]"
+        development_requirements: "[What this model requires]"
+        competitive_landscape: "[How competitors use this model]"
+    
+    pricing_analysis:
+      price_sensitivity:
+        - price_point: "[Specific price point]"
+          market_acceptance: "[How market responds to this price]"
+          competitive_comparison: "[How this compares to competitors]"
+          value_perception: "[Whether users see value at this price]"
+          conversion_impact: "[Effect on conversion rates]"
+      
+      regional_pricing:
+        - region: "[Geographic region]"
+          purchasing_power: "[Local purchasing power]"
+          competitive_pricing: "[What competitors charge locally]"
+          platform_requirements: "[Platform-specific pricing rules]"
+          recommended_pricing: "[Suggested pricing strategy]"
+    
+    monetization_features:
+      - feature: "[Battle pass, Cosmetics, etc.]"
+        market_acceptance: "[How well this works in target market]"
+        implementation_examples: "[Successful implementations]"
+        revenue_potential: "[Estimated revenue contribution]"
+        development_complexity: "[How hard to implement]"
+        player_sentiment: "[How players feel about this feature]"
+
+  # 分发与营销分析
+  distribution_marketing:
+    distribution_channels:
+      - channel: "[App Store, Steam, etc.]"
+        market_share: "[Channel's share of target market]"
+        discoverability: "[How easy it is to be found]"
+        revenue_share: "[Platform's revenue cut]"
+        marketing_support: "[Platform marketing opportunities]"
+        certification_requirements: "[What's needed to publish]"
+        audience_fit: "[How well channel audience matches target]"
+    
+    marketing_channels:
+      - channel: "[Social media, Influencers, etc.]"
+        effectiveness: "[How well this channel works for games]"
+        cost_efficiency: "[Cost per acquisition through this channel]"
+        audience_overlap: "[How much audience matches target]"
+        content_requirements: "[What content is needed]"
+        measurement_capabilities: "[How to track performance]"
+    
+    user_acquisition:
+      acquisition_strategies:
+        - strategy: "[Organic, Paid, Viral, etc.]"
+          cost_per_install: "[Estimated CPI]"
+          user_quality: "[Quality of users acquired]"
+          scalability: "[How scalable this strategy is]"
+          competitive_intensity: "[How competitive this channel is]"
+      
+      retention_benchmarks:
+        - timeframe: "[Day 1, Day 7, Day 30, etc.]"
+          industry_benchmark: "[Industry average retention]"
+          top_performer_benchmark: "[Best-in-class retention]"
+          target_retention: "[Our retention goal]"
+          strategies_for_improvement: "[How to improve retention]"
+
+  # 技术与平台趋势
+  technology_trends:
+    emerging_technologies:
+      - technology: "[AR/VR, AI, Blockchain, etc.]"
+        adoption_rate: "[How quickly it's being adopted]"
+        market_impact: "[Effect on gaming market]"
+        implementation_complexity: "[How hard to implement]"
+        competitive_advantage: "[Advantage of early adoption]"
+        risk_assessment: "[Risks of adoption or non-adoption]"
+    
+    platform_evolution:
+      - platform: "[Mobile, PC, Console, etc.]"
+        current_trends: "[Current developments on platform]"
+        future_predictions: "[Where platform is heading]"
+        opportunity_implications: "[What this means for opportunities]"
+        threat_implications: "[What this means for threats]"
+    
+    development_tools:
+      tool_landscape: "[Available development tools and engines]"
+      cost_considerations: "[Licensing and development costs]"
+      capability_comparison: "[What each tool enables]"
+      market_adoption: "[Which tools are most popular]"
+
+  # 风险评估
+  market_risks:
+    market_risks:
+      - risk: "[Market saturation, Economic downturn, etc.]"
+        probability: "[High/Medium/Low]"
+        impact: "[Potential business impact]"
+        early_warning_signs: "[Indicators to watch for]"
+        mitigation_strategies: "[How to reduce risk]"
+        contingency_plans: "[What to do if risk materializes]"
+    
+    competitive_risks:
+      - risk: "[New competitor entry, Price war, etc.]"
+        probability: "[High/Medium/Low]"
+        impact: "[Potential business impact]"
+        competitive_response: "[How competitors might react]"
+        defensive_strategies: "[How to protect market position]"
+        offensive_strategies: "[How to gain advantage]"
+    
+    regulatory_risks:
+      - risk: "[Regulation changes, Platform policy changes]"
+        affected_regions: "[Which markets are affected]"
+        compliance_requirements: "[What would be required]"
+        implementation_cost: "[Cost of compliance]"
+        business_impact: "[Effect on business model]"
+        monitoring_strategy: "[How to stay informed]"
+
+  # 成功指标与基准
+  success_metrics:
+    market_performance_kpis:
+      - kpi: "[Market share, Revenue, User base, etc.]"
+        current_benchmark: "[Industry benchmark]"
+        target_performance: "[Our goal]"
+        measurement_method: "[How to measure]"
+        reporting_frequency: "[How often to track]"
+    
+    competitive_benchmarks:
+      - metric: "[Downloads, Revenue, Ratings, etc.]"
+        top_competitor_performance: "[Best competitor performance]"
+        industry_average: "[Average performance]"
+        our_target: "[Our performance goal]"
+        competitive_advantage_threshold: "[When we're winning]"
+    
+    market_validation_criteria:
+      - criterion: "[User feedback, Retention, Monetization, etc.]"
+        success_threshold: "[What constitutes success]"
+        measurement_timeline: "[When to measure]"
+        decision_implications: "[What to do based on results]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于进行全面的游戏市场分析：
+  1. 深入了解目标市场的规模和特征
+  2. 分析竞争对手的优势和劣势
+  3. 识别市场机会和威胁
+  4. 制定基于数据的市场策略
+  5. 建立市场表现的衡量标准
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD市场分析代理提供详细的分析框架
+    - 确保市场洞察转化为可执行的设计决策
+    - 提供竞争对手分析的结构化方法
+    - 支持数据驱动的产品决策流程
+  
+  handoff_requirements:
+    - 详细的市场研究报告
+    - 竞争对手分析和基准测试
+    - 目标受众画像和需求分析
+    - 市场机会和风险评估

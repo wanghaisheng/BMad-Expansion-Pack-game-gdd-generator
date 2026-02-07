@@ -1,0 +1,117 @@
+---
+template:
+  id: game-art-brief-tmpl
+  name: Game Art Direction Brief
+  version: 1.0
+  description: Structured form capturing creative and technical details for game art direction
+  output:
+    format: markdown
+    filename: "{{game_title}}-art-brief.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: game_metadata
+    title: Game Metadata
+    instruction: |
+      Define game information:
+      - Game title and subtitle
+      - Developer/studio name
+      - Genre and subgenre
+      - Target platform(s)
+      - Target audience demographics
+      - Release timeline
+    elicit: true
+
+  - id: technical_specs
+    title: Technical Specifications
+    instruction: |
+      Specify technical requirements:
+      - Target resolution(s) and aspect ratios
+      - Performance targets (framerate, memory)
+      - Platform-specific constraints
+      - Art pipeline and tools
+      - File format requirements
+      - Optimization considerations
+    elicit: true
+
+  - id: creative_direction
+    title: Creative Direction
+    instruction: |
+      Define visual style:
+      - Art style keywords (3-5 words)
+      - Primary visual themes
+      - Color palette and mood
+      - Lighting approach
+      - Reference games and media
+      - Visual elements to avoid
+    elicit: true
+
+  - id: character_art
+    title: Character Art Direction
+    instruction: |
+      Specify character visual design:
+      - Character design philosophy
+      - Proportions and anatomy style
+      - Clothing and costume approach
+      - Animation considerations
+      - Facial expression range
+      - Customization requirements (if any)
+    elicit: true
+
+  - id: environment_art
+    title: Environment Art Direction
+    instruction: |
+      Design world visual style:
+      - Environmental themes and biomes
+      - Architecture and prop style
+      - Texture and material approach
+      - Atmospheric effects
+      - Level of detail strategy
+    elicit: true
+
+  - id: ui_art
+    title: UI/UX Art Direction
+    instruction: |
+      Plan interface visual design:
+      - UI style and theme integration
+      - Icon design philosophy
+      - Typography and readability
+      - Color coding systems
+      - Accessibility considerations
+      - Platform-specific adaptations
+    elicit: true
+
+  - id: marketing_assets
+    title: Marketing Art Assets
+    instruction: |
+      Specify promotional art needs:
+      - Key art and poster designs
+      - Logo and branding elements
+      - Screenshot composition guidelines
+      - Trailer and video assets
+      - Social media adaptations
+      - Store page requirements
+    elicit: true
+
+  - id: asset_pipeline_naming
+    title: Asset Pipeline & Naming
+    instruction: |
+      Define production-ready asset conventions:
+      - Naming format and prefixes by asset type
+      - Variant/version rules (e.g., _01, v001, LOD0)
+      - Texture channel suffixes (_D/_N/_R/_AO/_M or _RMA)
+      - Directory structure (functional layers + type subfolders)
+      - Format categories aligned to: 3d_model/image/image_sequence/sprite_sheet/video/audio/shader/material/font/prefab/level/fx_particle/ui_element/other
+    elicit: true
+
+  - id: asset_list_minimum
+    title: Asset List (Minimum Deliverable)
+    instruction: |
+      Produce a minimum viable asset list covering:
+      - Characters, environments/backgrounds, props, UI, FX, audio
+      For each entry include: ID, Category, Format, Name, Description, Quantity, Variant, Spec, Resolution, Polycount, LOD, Platform, Usage, Priority, Dependencies, Owner, StartDate, EndDate, Source, SourceLocator, FilePath, Status, Tags
+      Also specify metadata requirements for validation (LOD/Platform/Usage/Author/Version/Dependencies) and media profile constraints for target platforms.
+    elicit: true

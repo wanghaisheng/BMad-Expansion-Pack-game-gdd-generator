@@ -1,0 +1,216 @@
+---
+template:
+  id: gdd-master-template
+  name: GDD Master Template
+  version: 2.0
+  description: Streamlined GDD template focused on essential game design documentation
+  purpose: Generate comprehensive yet focused Game Design Documents
+  output:
+    format: modular_markdown
+    structure: separate_files
+    naming_convention: "{{game_title}}_{{section_id}}.md"
+    index_file: "{{game_title}}_GDD_Index.md"
+
+# GDD Generation Configuration
+generation:
+  mode: modular_generation
+  output_strategy: separate_files_per_section
+  validation: individual_section_validation
+  integration: cross_reference_linking
+  
+# Core GDD Structure (Always Required)
+core_sections:
+  - id: game_overview
+    title: "Game Overview"
+    priority: critical
+    agent: "game-systems-architect"
+    command: "create-brief"
+    content:
+      - game_concept: "One-sentence game pitch and expanded description"
+      - target_audience: "Primary and secondary player demographics"
+      - platform_strategy: "Target platforms and technical approach"
+      - unique_selling_points: "Key differentiators and market positioning"
+    
+  - id: core_gameplay
+    title: "Core Gameplay Design"
+    priority: critical
+    agent: "mechanics-specialist"
+    command: "design-mechanics"
+    content:
+      - core_loop: "30-60 second gameplay loop with timing"
+      - primary_mechanics: "Essential gameplay mechanics and interactions"
+      - progression_system: "Player advancement and unlock structure"
+      - victory_conditions: "Win/lose states and player objectives"
+    
+  - id: player_experience
+    title: "Player Experience Design"
+    priority: critical
+    agent: "player-experience-designer"
+    command: "design-onboarding"
+    content:
+      - player_journey: "From first launch to mastery"
+      - onboarding_flow: "Tutorial and learning progression"
+      - engagement_hooks: "Retention and motivation systems"
+      - accessibility_features: "Inclusive design considerations"
+
+# Specialized Sections (Context-Dependent)
+specialized_sections:
+  - id: narrative_design
+    title: "Narrative & Story Design"
+    condition: "has_story_elements"
+    agent: "game-narrative-designer"
+    command: "design-story-structure"
+    content:
+      - story_structure: "Main narrative arc and pacing"
+      - character_design: "Key characters and relationships"
+      - world_building: "Setting, lore, and environmental storytelling"
+      - dialogue_systems: "Conversation mechanics and branching"
+    
+  - id: visual_audio_design
+    title: "Visual & Audio Design"
+    condition: "requires_art_direction"
+    agents:
+      - agent: "game-art-director"
+        command: "create-art-direction"
+      - agent: "audio-designer"
+        command: "design-audio-systems"
+    content:
+      - art_direction: "Visual style, color palette, aesthetic goals"
+      - ui_ux_design: "Interface design and user experience flow"
+      - audio_design: "Music, sound effects, and audio implementation"
+    
+  - id: technical_specifications
+    title: "Technical Requirements"
+    condition: "always"
+    agent: "technical-designer"
+    command: "create-technical-spec"
+    content:
+      - performance_targets: "Frame rate, memory, loading time requirements"
+      - platform_requirements: "Minimum specs and platform-specific features"
+      - technical_architecture: "High-level system design and dependencies"
+    
+  - id: business_strategy
+    title: "Business Model & Market Strategy"
+    condition: "commercial_project"
+    agents:
+      - agent: "market-analyst"
+        command: "market-research"
+      - agent: "monetization-designer"
+        command: "monetization-strategy"
+    content:
+      - market_analysis: "Target market, competition, and opportunities"
+      - monetization_model: "Revenue streams and pricing strategy"
+      - launch_strategy: "Go-to-market plan and success metrics"
+
+# Quality Assurance Sections (Always Required)
+qa_sections:
+  - id: implementation_roadmap
+    title: "Development Implementation Plan"
+    priority: critical
+    agent: "game-systems-architect"
+    command: "create-game-loop"
+    content:
+      - development_phases: "Pre-production, production, polish phases"
+      - milestone_breakdown: "Key deliverables and timeline estimates"
+      - resource_requirements: "Team size, skills, and external dependencies"
+      - risk_assessment: "Technical, market, and resource risks with mitigation"
+    
+  - id: bmad_compatibility
+    title: "BMAD Integration Specifications"
+    priority: critical
+    agent: "gdd-validator"
+    command: "validate-gdd"
+    content:
+      - agent_handoff_requirements: "Data formats for downstream agents"
+      - implementation_priorities: "Feature development order and dependencies"
+      - quality_gates: "Validation checkpoints and success criteria"
+      - technical_constraints: "BMAD-specific requirements and limitations"
+
+# Template Generation Rules
+generation_rules:
+  section_selection:
+    - "Always include all core_sections"
+    - "Include specialized_sections based on conditions"
+    - "Always include all qa_sections"
+    - "Allow agent-specific customization within sections"
+  
+  content_depth:
+    - "Provide enough detail for implementation without overwhelming"
+    - "Focus on actionable specifications rather than theoretical concepts"
+    - "Include specific examples and concrete requirements"
+    - "Maintain consistency across all sections"
+  
+  validation_criteria:
+    - "Each section must be complete and self-contained"
+    - "All sections must reference and support each other"
+    - "Technical specifications must be realistic and achievable"
+    - "Business strategy must align with technical and design decisions"
+
+# Agent Coordination Instructions
+agent_workflow:
+  execution_order:
+    1. "game-systems-architect creates game overview and foundation"
+    2. "market-analyst provides market context and constraints"
+    3. "mechanics-specialist designs core gameplay systems"
+    4. "player-experience-designer creates player journey"
+    5. "Specialized agents work in parallel on their domains"
+    6. "technical-designer integrates all requirements into technical spec"
+    7. "gdd-validator ensures completeness and BMAD compatibility"
+  
+  data_handoffs:
+    - "Each agent receives outputs from previous agents"
+    - "Specialized agents receive core design as foundation"
+    - "Technical designer receives all design specifications"
+    - "Validator receives complete GDD for final review"
+  
+  quality_gates:
+    - "Core sections must pass validation before specialized sections"
+    - "All design sections must be complete before technical specification"
+    - "Technical specification must be validated before final assembly"
+    - "Final GDD must pass BMAD compatibility check"
+
+# Output Specifications
+output_format:
+  file_structure:
+    index_file: "{{game_title}}_GDD_Index.md"
+    section_files:
+      - "{{game_title}}_Game_Overview.md"
+      - "{{game_title}}_Core_Gameplay.md"
+      - "{{game_title}}_Player_Experience.md"
+      - "{{game_title}}_Narrative_Design.md" (conditional)
+      - "{{game_title}}_Visual_Audio_Design.md" (conditional)
+      - "{{game_title}}_Technical_Specifications.md"
+      - "{{game_title}}_Business_Strategy.md" (conditional)
+      - "{{game_title}}_Implementation_Roadmap.md"
+      - "{{game_title}}_BMAD_Integration.md"
+  
+  cross_referencing:
+    - "Each file includes references to related sections"
+    - "Index file provides navigation and overview"
+    - "Consistent terminology and definitions across files"
+    - "Clear dependencies and integration points documented"
+  
+  individual_validation:
+    - "Each file validated independently for completeness"
+    - "Section-specific quality criteria and checklists"
+    - "Agent-specific output validation and feedback"
+    - "Modular improvement and iteration capability"
+
+# Success Metrics
+success_criteria:
+  completeness:
+    - "All required sections present and detailed"
+    - "No missing dependencies or undefined references"
+    - "Clear implementation guidance for all features"
+  
+  quality:
+    - "Consistent vision across all sections"
+    - "Realistic and achievable specifications"
+    - "Clear, actionable requirements"
+    - "Professional presentation quality"
+  
+  bmad_compatibility:
+    - "Proper format for downstream agent consumption"
+    - "Clear technical specifications and constraints"
+    - "Defined handoff points and data formats"
+    - "Validation checkpoints and success criteria"

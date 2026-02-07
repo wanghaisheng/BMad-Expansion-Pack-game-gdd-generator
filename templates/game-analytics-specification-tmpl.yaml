@@ -1,0 +1,282 @@
+name: Game Analytics Specification Template
+description: Comprehensive template for planning game analytics, metrics, and data collection
+icon: 📈
+category: analytics
+version: "1.0"
+
+template:
+  # 分析概述
+  analytics_overview:
+    analytics_strategy:
+      primary_objectives: "[Player behavior understanding, Business optimization, etc.]"
+      data_philosophy: "[Privacy-first, Comprehensive tracking, Minimal collection]"
+      compliance_requirements: "[GDPR, CCPA, Regional privacy laws]"
+      retention_policy: "[How long to keep data]"
+    
+    key_stakeholders:
+      - stakeholder: "[Product team, Marketing, Development, etc.]"
+        data_needs: "[What data they need]"
+        reporting_frequency: "[Daily, Weekly, Monthly]"
+        decision_impact: "[How they use the data]"
+
+  # 核心指标定义
+  core_metrics:
+    business_metrics:
+      - metric_name: "[Revenue, ARPU, LTV, etc.]"
+        definition: "[Exact definition of the metric]"
+        calculation_method: "[How to calculate this metric]"
+        data_sources: "[Where the data comes from]"
+        reporting_frequency: "[How often to report]"
+        target_values: "[Success targets for this metric]"
+        segmentation_dimensions: "[How to break down this metric]"
+    
+    engagement_metrics:
+      - metric_name: "[DAU, MAU, Session length, etc.]"
+        definition: "[Exact definition of the metric]"
+        calculation_method: "[How to calculate this metric]"
+        data_sources: "[Where the data comes from]"
+        reporting_frequency: "[How often to report]"
+        target_values: "[Success targets for this metric]"
+        cohort_analysis: "[How to analyze by user cohorts]"
+    
+    retention_metrics:
+      - metric_name: "[Day 1, Day 7, Day 30 retention, etc.]"
+        definition: "[Exact definition of the metric]"
+        calculation_method: "[How to calculate this metric]"
+        benchmark_comparison: "[Industry benchmarks]"
+        improvement_strategies: "[How to improve this metric]"
+        segmentation_analysis: "[How different segments perform]"
+    
+    gameplay_metrics:
+      - metric_name: "[Level completion, Feature usage, etc.]"
+        definition: "[Exact definition of the metric]"
+        game_design_relevance: "[How this relates to game design]"
+        optimization_opportunities: "[How to use this for optimization]"
+        a_b_testing_applications: "[How to test improvements]"
+
+  # 数据收集规范
+  data_collection:
+    event_tracking:
+      player_lifecycle_events:
+        - event_name: "[First launch, Tutorial completion, etc.]"
+          trigger_condition: "[When this event fires]"
+          data_parameters: "[What data to collect with this event]"
+          privacy_classification: "[Personal, Anonymous, Aggregated]"
+          retention_period: "[How long to keep this data]"
+      
+      gameplay_events:
+        - event_name: "[Level start, Item purchase, etc.]"
+          trigger_condition: "[When this event fires]"
+          data_parameters: "[What data to collect with this event]"
+          frequency_expectations: "[How often this event occurs]"
+          performance_impact: "[Impact on game performance]"
+      
+      monetization_events:
+        - event_name: "[Purchase attempt, Purchase completion, etc.]"
+          trigger_condition: "[When this event fires]"
+          data_parameters: "[What data to collect with this event]"
+          compliance_requirements: "[Special privacy considerations]"
+          fraud_detection: "[How to detect fraudulent activity]"
+    
+    session_tracking:
+      session_definition: "[How to define a game session]"
+      session_data_points:
+        - data_point: "[Session duration, Actions per session, etc.]"
+          collection_method: "[How to collect this data]"
+          accuracy_requirements: "[Required accuracy level]"
+          real_time_vs_batch: "[When to process this data]"
+    
+    user_properties:
+      - property_name: "[Player level, Spending tier, etc.]"
+        data_type: "[String, Number, Boolean, etc.]"
+        update_frequency: "[How often this property changes]"
+        segmentation_use: "[How to use for player segmentation]"
+        privacy_implications: "[Privacy considerations for this property]"
+
+  # 数据架构
+  data_architecture:
+    data_pipeline:
+      collection_layer:
+        client_side_tracking: "[What to track on client]"
+        server_side_tracking: "[What to track on server]"
+        data_validation: "[How to validate data quality]"
+        error_handling: "[How to handle tracking errors]"
+      
+      processing_layer:
+        real_time_processing: "[What needs real-time processing]"
+        batch_processing: "[What can be processed in batches]"
+        data_enrichment: "[How to enrich raw data]"
+        quality_assurance: "[Data quality checks]"
+      
+      storage_layer:
+        raw_data_storage: "[Where to store raw event data]"
+        processed_data_storage: "[Where to store processed data]"
+        data_retention_policy: "[How long to keep different data types]"
+        backup_strategy: "[Data backup and recovery]"
+    
+    data_integration:
+      - integration_point: "[CRM, Marketing tools, etc.]"
+        data_flow_direction: "[Inbound, Outbound, Bidirectional]"
+        data_format: "[JSON, CSV, API, etc.]"
+        sync_frequency: "[Real-time, Hourly, Daily]"
+        data_mapping: "[How data maps between systems]"
+
+  # 分析工具与平台
+  analytics_tools:
+    primary_analytics_platform:
+      platform_choice: "[Google Analytics, Firebase, Custom, etc.]"
+      platform_capabilities: "[What this platform provides]"
+      integration_requirements: "[How to integrate with game]"
+      cost_considerations: "[Pricing model and costs]"
+      scalability_limits: "[Platform limitations]"
+    
+    specialized_tools:
+      - tool_category: "[Attribution, Cohort analysis, A/B testing, etc.]"
+        tool_choice: "[Specific tool or platform]"
+        use_cases: "[What this tool is used for]"
+        integration_method: "[How it integrates with main platform]"
+        data_requirements: "[What data this tool needs]"
+    
+    custom_analytics:
+      custom_dashboard_requirements: "[What custom dashboards are needed]"
+      reporting_automation: "[What reports should be automated]"
+      alert_systems: "[What alerts and notifications are needed]"
+      data_export_capabilities: "[What data export options are needed]"
+
+  # 隐私与合规
+  privacy_compliance:
+    data_privacy_framework:
+      consent_management:
+        consent_collection: "[How to collect user consent]"
+        consent_granularity: "[Different levels of consent]"
+        consent_withdrawal: "[How users can withdraw consent]"
+        consent_documentation: "[How to document consent]"
+      
+      data_minimization:
+        necessary_data_only: "[Only collect data that's necessary]"
+        data_anonymization: "[How to anonymize personal data]"
+        data_pseudonymization: "[How to pseudonymize data]"
+        data_aggregation: "[How to aggregate data for privacy]"
+    
+    regional_compliance:
+      - region: "[EU, California, etc.]"
+        applicable_laws: "[GDPR, CCPA, etc.]"
+        specific_requirements: "[Region-specific requirements]"
+        compliance_measures: "[How to ensure compliance]"
+        audit_procedures: "[How to audit compliance]"
+    
+    data_security:
+      encryption_requirements: "[Data encryption standards]"
+      access_controls: "[Who can access what data]"
+      audit_logging: "[How to log data access]"
+      incident_response: "[How to respond to data breaches]"
+
+  # 报告与洞察
+  reporting_insights:
+    standard_reports:
+      - report_name: "[Daily KPI report, Weekly retention report, etc.]"
+        report_frequency: "[How often to generate]"
+        target_audience: "[Who receives this report]"
+        key_metrics: "[What metrics are included]"
+        delivery_method: "[Email, Dashboard, etc.]"
+        action_triggers: "[When this report triggers action]"
+    
+    ad_hoc_analysis:
+      analysis_capabilities: "[What ad-hoc analysis can be performed]"
+      self_service_tools: "[Tools for non-analysts to explore data]"
+      data_visualization: "[How to visualize data effectively]"
+      insight_sharing: "[How to share insights across teams]"
+    
+    predictive_analytics:
+      - prediction_type: "[Churn prediction, LTV prediction, etc.]"
+        model_approach: "[Machine learning, Statistical, etc.]"
+        data_requirements: "[What data is needed for prediction]"
+        accuracy_targets: "[Required prediction accuracy]"
+        business_application: "[How predictions are used]"
+
+  # A/B测试框架
+  ab_testing:
+    testing_infrastructure:
+      experiment_platform: "[Platform for running A/B tests]"
+      randomization_method: "[How to randomly assign users]"
+      sample_size_calculation: "[How to determine sample sizes]"
+      statistical_significance: "[Required confidence levels]"
+    
+    testing_procedures:
+      - test_category: "[Monetization, Onboarding, Features, etc.]"
+        testing_methodology: "[How to design tests in this category]"
+        success_metrics: "[What metrics define success]"
+        test_duration: "[How long to run tests]"
+        rollout_strategy: "[How to roll out winning variants]"
+    
+    testing_governance:
+      experiment_approval: "[Who approves experiments]"
+      conflict_resolution: "[How to handle conflicting tests]"
+      results_documentation: "[How to document test results]"
+      learning_sharing: "[How to share learnings across teams]"
+
+  # 性能监控
+  performance_monitoring:
+    system_performance:
+      - metric: "[Response time, Error rate, etc.]"
+        monitoring_method: "[How to monitor this metric]"
+        alert_thresholds: "[When to trigger alerts]"
+        escalation_procedures: "[Who to notify and when]"
+        resolution_procedures: "[How to resolve issues]"
+    
+    data_quality_monitoring:
+      data_completeness: "[How to monitor data completeness]"
+      data_accuracy: "[How to validate data accuracy]"
+      data_freshness: "[How to ensure data is current]"
+      anomaly_detection: "[How to detect data anomalies]"
+    
+    business_performance:
+      real_time_kpis: "[Which KPIs need real-time monitoring]"
+      performance_benchmarks: "[What constitutes good performance]"
+      trend_analysis: "[How to identify performance trends]"
+      competitive_benchmarking: "[How to compare against competitors]"
+
+  # 团队与流程
+  team_processes:
+    analytics_team_structure:
+      - role: "[Data analyst, Data scientist, etc.]"
+        responsibilities: "[What this role is responsible for]"
+        required_skills: "[Skills needed for this role]"
+        tools_access: "[What tools this role needs access to]"
+        reporting_structure: "[Who this role reports to]"
+    
+    data_governance:
+      data_ownership: "[Who owns different types of data]"
+      data_quality_standards: "[Standards for data quality]"
+      change_management: "[How to manage changes to analytics]"
+      documentation_standards: "[How to document analytics processes]"
+    
+    cross_functional_collaboration:
+      - department: "[Product, Marketing, Development, etc.]"
+        collaboration_frequency: "[How often to collaborate]"
+        shared_metrics: "[Metrics both teams care about]"
+        communication_methods: "[How teams communicate about data]"
+        decision_making_process: "[How data informs decisions]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建全面的游戏分析规格：
+  1. 定义清晰的分析目标和关键指标
+  2. 建立符合隐私法规的数据收集框架
+  3. 设计可扩展的数据架构和处理流程
+  4. 实施有效的报告和洞察系统
+  5. 建立数据驱动的决策文化
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD分析代理提供详细的数据收集指南
+    - 确保分析系统与游戏架构集成
+    - 提供隐私合规和数据安全标准
+    - 支持数据驱动的游戏优化流程
+  
+  handoff_requirements:
+    - 详细的分析技术规格和实现指南
+    - 数据收集和处理流程文档
+    - 隐私合规和安全要求
+    - 报告和仪表板规格

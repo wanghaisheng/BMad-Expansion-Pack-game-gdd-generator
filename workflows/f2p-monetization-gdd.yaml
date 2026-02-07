@@ -1,0 +1,94 @@
+---
+# workflows/f2p-monetization-gdd.yaml
+name: f2p-monetization-gdd
+title: Free-to-Play Monetization-Focused GDD Workflow
+description: |
+  Specialized workflow for creating GDDs with strong focus on F2P monetization,
+  balancing player experience with sustainable revenue generation.
+
+triggers:
+  - command: /f2p-gdd
+  - intent: "design a free-to-play game"
+
+inputs:
+  - game_concept
+  - target_audience
+  - monetization_goals
+
+agents:
+  - game-systems-architect
+  - monetization-designer
+  - player-experience-designer
+  - liveops-designer
+  - market-analyst
+  - ui-ux-designer
+  - gdd-reviewer
+
+steps:
+  - id: market_analysis
+    title: Analyze F2P market and competition
+    agent: market-analyst
+    outputs: f2p_market_analysis
+
+  - id: core_loop_design
+    title: Design monetization-integrated core loop
+    agent: game-systems-architect
+    inputs: f2p_market_analysis
+    outputs: monetized_core_loop
+
+  - id: monetization_strategy
+    title: Create comprehensive monetization strategy
+    agent: monetization-designer
+    inputs:
+      - f2p_market_analysis
+      - monetized_core_loop
+    outputs: monetization_strategy
+
+  - id: player_journey
+    title: Design F2P player experience journey
+    agent: player-experience-designer
+    inputs:
+      - monetized_core_loop
+      - monetization_strategy
+    outputs: f2p_player_journey
+
+  - id: liveops_framework
+    title: Design live operations framework
+    agent: liveops-designer
+    inputs:
+      - monetization_strategy
+      - f2p_player_journey
+    outputs: liveops_framework
+
+  - id: monetization_ui
+    title: Design monetization-focused UI systems
+    agent: ui-ux-designer
+    inputs:
+      - monetization_strategy
+      - f2p_player_journey
+    outputs: monetization_ui_design
+
+  - id: balance_validation
+    title: Validate game-monetization balance
+    agent: player-experience-designer
+    inputs:
+      - monetized_core_loop
+      - monetization_strategy
+      - f2p_player_journey
+    outputs: balance_validation
+
+  - id: final_f2p_gdd
+    title: Compile comprehensive F2P GDD
+    agent: gdd-reviewer
+    inputs:
+      - f2p_market_analysis
+      - monetized_core_loop
+      - monetization_strategy
+      - f2p_player_journey
+      - liveops_framework
+      - monetization_ui_design
+      - balance_validation
+    outputs: f2p_gdd
+
+outputs:
+  - f2p_gdd

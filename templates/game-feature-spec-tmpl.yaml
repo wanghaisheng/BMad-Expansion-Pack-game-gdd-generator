@@ -1,0 +1,81 @@
+---
+template:
+  id: game-feature-spec-tmpl
+  name: Game Feature Specification
+  version: 1.0
+  description: Guided structure for documenting a complete game feature
+  output:
+    format: markdown
+    filename: "feature-{{feature_name}}.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: feature_header
+    title: Feature Header
+    instruction: |
+      Define feature metadata:
+      - Feature name
+      - Feature category (gameplay, UI, system, etc.)
+      - Priority level (core, important, nice-to-have)
+      - Development phase target
+      - Complexity estimate
+    elicit: true
+
+  - id: feature_overview
+    title: Feature Overview
+    instruction: |
+      Create compelling feature description (1-2 paragraphs):
+      - Player-facing functionality
+      - Core value proposition
+      - Connection to game pillars
+      - Integration with existing systems
+      - Player experience goals
+    elicit: true
+
+  - id: detailed_mechanics
+    title: Detailed Mechanics
+    instruction: |
+      Develop the feature mechanics:
+      - Step-by-step player interactions
+      - System responses and feedback
+      - Edge cases and error handling
+      - Integration points with other features
+      - Performance considerations
+      - Balancing parameters
+    elicit: true
+
+  - id: implementation_requirements
+    title: Implementation Requirements
+    instruction: |
+      Define technical implementation needs:
+      - Asset requirements (art, audio, data)
+      - Code architecture considerations
+      - Platform-specific adaptations
+      - Testing and validation approach
+      - Dependencies on other systems
+    elicit: true
+
+  - id: user_experience
+    title: User Experience Design
+    instruction: |
+      Design player interaction flow:
+      - UI/UX requirements
+      - Tutorial or onboarding needs
+      - Accessibility considerations
+      - Feedback and communication to player
+      - Error prevention and recovery
+    elicit: true
+
+  - id: validation_criteria
+    title: Validation Criteria
+    instruction: |
+      Define success metrics and testing:
+      - Functional requirements checklist
+      - Performance benchmarks
+      - Player experience validation
+      - Quality assurance approach
+      - Acceptance criteria
+    elicit: true

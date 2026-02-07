@@ -1,0 +1,410 @@
+name: Casual Puzzle Game GDD Workflow
+description: Specialized workflow for creating GDDs for casual puzzle games with broad appeal
+icon: 🧩
+category: genre-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for casual puzzle game development"
+    target_output: "Casual puzzle game GDD with accessible mechanics and engaging progression"
+    estimated_duration: "3-5 weeks depending on complexity"
+    team_size: "6-8 specialists with casual game expertise"
+    
+  # 休闲益智游戏特殊考虑
+  casual_puzzle_considerations:
+    core_principles:
+      - "Easy to learn, difficult to master"
+      - "Immediate satisfaction and clear feedback"
+      - "Accessible to all ages and skill levels"
+      - "Short session gameplay with natural stopping points"
+      - "Satisfying progression and achievement systems"
+    
+    player_expectations:
+      - "Intuitive controls and clear rules"
+      - "Fair and solvable puzzles"
+      - "Gradual difficulty progression"
+      - "Rewarding progression systems"
+      - "Social sharing and competition features"
+    
+    design_challenges:
+      - "Balancing accessibility with depth"
+      - "Maintaining engagement over time"
+      - "Creating satisfying difficulty curves"
+      - "Preventing player frustration"
+      - "Designing for diverse skill levels"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：休闲游戏市场研究
+    - phase: "casual_market_research"
+      name: "Casual Puzzle Market Research"
+      duration: "1 week"
+      description: "Research casual puzzle game market and establish positioning"
+      
+      participants:
+        primary:
+          - market-analyst
+          - casual-puzzle-specialist
+          - monetization-designer
+        supporting:
+          - mobile-game-specialist
+          - western-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "3-4 days"
+          deliverable: "Casual puzzle market analysis"
+          
+        - task: "design-casual-puzzle-flow"
+          owner: "casual-puzzle-specialist"
+          duration: "3-4 days"
+          deliverable: "Genre positioning strategy"
+          
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "2-3 days"
+          deliverable: "Casual monetization framework"
+      
+      deliverables:
+        - "Casual Puzzle Market Analysis"
+        - "Target Audience Demographics"
+        - "Competitive Landscape Analysis"
+        - "Platform Strategy (Mobile-first approach)"
+        - "Monetization Model Framework"
+      
+      quality_gates:
+        - "Market opportunity validated for casual audience"
+        - "Target demographics clearly defined"
+        - "Competitive differentiation established"
+        - "Monetization model appropriate for casual players"
+
+    # 第二阶段：核心益智机制设计
+    - phase: "core_puzzle_mechanics"
+      name: "Core Puzzle Mechanics Design"
+      duration: "1-2 weeks"
+      description: "Design the fundamental puzzle mechanics and core gameplay loop"
+      
+      participants:
+        primary:
+          - casual-puzzle-specialist
+          - mechanics-specialist
+          - game-systems-architect
+        supporting:
+          - player-experience-designer
+          - ui-ux-designer
+      
+      tasks:
+        - task: "design-casual-puzzle-flow"
+          owner: "casual-puzzle-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Core puzzle mechanics specification"
+          
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1 week"
+          deliverable: "Detailed mechanics implementation"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "3-5 days"
+          deliverable: "Puzzle game concept refinement"
+      
+      deliverables:
+        - "Core Puzzle Mechanics Specification"
+        - "Game Rules and Constraints"
+        - "Input and Control Systems"
+        - "Feedback and Juice Systems"
+        - "Core Game Loop Definition"
+      
+      quality_gates:
+        - "Mechanics are immediately understandable"
+        - "Core loop is satisfying and engaging"
+        - "Controls are intuitive and responsive"
+        - "Feedback systems provide clear information"
+
+    # 第三阶段：难度与进度设计
+    - phase: "difficulty_progression_design"
+      name: "Difficulty & Progression Design"
+      duration: "1-2 weeks"
+      description: "Create balanced difficulty curves and engaging progression systems"
+      
+      participants:
+        primary:
+          - casual-puzzle-specialist
+          - player-experience-designer
+          - playtesting-simulator
+        supporting:
+          - mechanics-specialist
+          - monetization-designer
+      
+      tasks:
+        - task: "design-casual-puzzle-flow"
+          owner: "casual-puzzle-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Difficulty progression system"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Player progression framework"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "Difficulty curve validation"
+      
+      deliverables:
+        - "Difficulty Progression System"
+        - "Level Design Framework"
+        - "Player Progression and Rewards"
+        - "Hint and Help Systems"
+        - "Accessibility and Assist Features"
+      
+      quality_gates:
+        - "Difficulty curve is smooth and appropriate"
+        - "Progression provides consistent motivation"
+        - "Help systems prevent frustration"
+        - "Accessibility features support diverse players"
+
+    # 第四阶段：用户体验与界面设计
+    - phase: "ux_interface_design"
+      name: "User Experience & Interface Design"
+      duration: "1-2 weeks"
+      description: "Create intuitive and appealing user interface for casual players"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - casual-puzzle-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - mobile-game-specialist
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Casual game UI specification"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Casual game accessibility plan"
+          
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "1 week"
+          deliverable: "Casual art direction guide"
+      
+      deliverables:
+        - "Casual Game UI/UX Specification"
+        - "Visual Design and Art Direction"
+        - "Accessibility Implementation Plan"
+        - "Onboarding and Tutorial Design"
+        - "Settings and Customization Options"
+      
+      quality_gates:
+        - "UI is clean, clear, and intuitive"
+        - "Visual design appeals to broad audience"
+        - "Accessibility features are comprehensive"
+        - "Onboarding is smooth and engaging"
+
+    # 第五阶段：社交与货币化功能
+    - phase: "social_monetization_features"
+      name: "Social & Monetization Features"
+      duration: "1-2 weeks"
+      description: "Design social features and monetization systems for casual audience"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - liveops-designer
+          - casual-puzzle-specialist
+        supporting:
+          - multiplayer-specialist
+          - market-analyst
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1-2 weeks"
+          deliverable: "Casual monetization strategy"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Casual live operations plan"
+          
+        - task: "design-casual-puzzle-flow"
+          owner: "casual-puzzle-specialist"
+          duration: "1 week"
+          deliverable: "Social features specification"
+      
+      deliverables:
+        - "Casual Monetization Strategy"
+        - "Social Features and Sharing Systems"
+        - "Live Events and Content Updates"
+        - "Achievement and Collection Systems"
+        - "Community and Competition Features"
+      
+      quality_gates:
+        - "Monetization feels fair and optional"
+        - "Social features enhance rather than distract"
+        - "Live content supports long-term engagement"
+        - "Achievement systems provide motivation"
+
+    # 第六阶段：休闲游戏质量保证
+    - phase: "casual_quality_assurance"
+      name: "Casual Game Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review focusing on casual game requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - casual-puzzle-specialist
+          - playtesting-simulator
+        supporting:
+          - accessibility-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "3-5 days"
+          deliverable: "Casual GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "Casual game playtesting results"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "3-5 days"
+          deliverable: "Casual game design critique"
+      
+      deliverables:
+        - "Casual Game GDD Review Report"
+        - "Accessibility and Usability Assessment"
+        - "Difficulty Balance Validation"
+        - "Monetization Ethics Review"
+        - "Launch Strategy for Casual Market"
+      
+      quality_gates:
+        - "All casual game requirements met"
+        - "Accessibility standards exceeded"
+        - "Difficulty balance is appropriate"
+        - "Monetization is ethical and fair"
+
+  # 休闲益智游戏特殊流程
+  casual_puzzle_specific_processes:
+    difficulty_balancing:
+      - "Gradual complexity introduction"
+      - "Multiple difficulty paths and options"
+      - "Dynamic difficulty adjustment"
+      - "Comprehensive hint and help systems"
+    
+    accessibility_focus:
+      - "Colorblind-friendly design"
+      - "Motor accessibility options"
+      - "Cognitive accessibility features"
+      - "Multi-generational appeal"
+    
+    engagement_optimization:
+      - "Daily challenges and events"
+      - "Streak and combo systems"
+      - "Collection and completion mechanics"
+      - "Social sharing and competition"
+    
+    monetization_ethics:
+      - "Fair free-to-play progression"
+      - "Optional, not mandatory purchases"
+      - "Transparent pricing and value"
+      - "Respect for player time and money"
+
+  # 休闲益智游戏成功指标
+  casual_puzzle_success_metrics:
+    engagement_metrics:
+      - "Daily Active Users (DAU)"
+      - "Session frequency and length"
+      - "Level completion rates"
+      - "Return rate after first day/week"
+    
+    accessibility_metrics:
+      - "Age demographic distribution"
+      - "Accessibility feature usage"
+      - "Tutorial completion rates"
+      - "Help system effectiveness"
+    
+    monetization_metrics:
+      - "Conversion rate to paying user"
+      - "Average revenue per user (ARPU)"
+      - "Purchase frequency and patterns"
+      - "Ad engagement and revenue"
+    
+    satisfaction_metrics:
+      - "App store ratings and reviews"
+      - "Player satisfaction surveys"
+      - "Social sharing frequency"
+      - "Word-of-mouth recommendations"
+
+  # 休闲益智游戏风险管理
+  casual_puzzle_risk_management:
+    design_risks:
+      - risk: "Difficulty spikes causing player churn"
+        mitigation: "Smooth difficulty curves and extensive testing"
+        
+      - risk: "Lack of long-term engagement"
+        mitigation: "Robust progression and live content systems"
+        
+      - risk: "Accessibility barriers excluding players"
+        mitigation: "Comprehensive accessibility features and testing"
+    
+    market_risks:
+      - risk: "High competition in casual market"
+        mitigation: "Strong differentiation and polished execution"
+        
+      - risk: "Changing platform policies"
+        mitigation: "Multi-platform strategy and policy compliance"
+        
+      - risk: "Seasonal engagement fluctuations"
+        mitigation: "Seasonal content and event planning"
+    
+    monetization_risks:
+      - risk: "Player backlash against monetization"
+        mitigation: "Ethical monetization and player-first approach"
+        
+      - risk: "Ad blocker impact on revenue"
+        mitigation: "Diversified monetization strategies"
+        
+      - risk: "Regulatory changes affecting monetization"
+        mitigation: "Compliance monitoring and adaptable systems"
+
+# 使用指南
+usage_notes: |
+  这个休闲益智游戏工作流程专门用于：
+  1. 创建广泛吸引力的休闲益智游戏GDD
+  2. 确保游戏对所有年龄和技能水平都可访问
+  3. 建立公平和可持续的货币化模式
+  4. 优化短会话游戏体验和长期参与度
+  5. 实现高用户满意度和正面口碑
+
+# BMAD集成
+bmad_integration:
+  casual_handoff_requirements:
+    - "简洁高效的游戏架构和性能优化"
+    - "直观的触摸控制和响应式UI实现"
+    - "渐进式难度系统和动态调整"
+    - "全面的可访问性功能实现"
+    - "社交分享和病毒式传播机制"
+  
+  genre_optimization:
+    - "快速加载和即时游戏体验"
+    - "离线游戏能力和数据同步"
+    - "多平台进度同步和云保存"
+    - "A/B测试框架和数据分析集成"

@@ -1,0 +1,90 @@
+---
+template:
+  id: game-world-guide-tmpl
+  name: Game World Design Guide
+  version: 1.0
+  description: Structured document for game environments, lore, systems, and level design
+  output:
+    format: markdown
+    filename: "{{world_name}}-world-guide.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: overview
+    title: World Overview
+    instruction: |
+      Create comprehensive world overview including:
+      - World name and setting type (fantasy, sci-fi, modern, etc.)
+      - Overall tone and atmosphere
+      - Art style and visual theme
+      - Gameplay integration with world
+
+  - id: level_geography
+    title: Level Geography & Layout
+    instruction: |
+      Define the playable world structure:
+      - World map and level progression
+      - Key gameplay areas and hubs
+      - Environmental variety and biomes
+      - Traversal methods and connectivity
+      - Hidden areas and secrets
+    elicit: true
+
+  - id: factions_npcs
+    title: Factions & NPCs
+    instruction: |
+      Detail groups and characters:
+      - Faction name and role in gameplay
+      - Key NPCs and their functions
+      - Relationship to player character
+      - Quests and interactions available
+      - Conflicts that drive gameplay
+    repeatable: true
+    elicit: true
+
+  - id: game_systems
+    title: World Systems & Mechanics
+    instruction: |
+      Define world-integrated gameplay systems:
+      - Magic/technology mechanics
+      - Environmental interactions
+      - Resource systems tied to world
+      - Day/night or weather systems
+      - World state changes based on player actions
+    elicit: true
+
+  - id: lore_timeline
+    title: Lore & Timeline
+    instruction: |
+      Create background story that supports gameplay:
+      - Key historical events affecting current state
+      - Mysteries for players to uncover
+      - Environmental storytelling opportunities
+      - Backstory that explains game mechanics
+      - Recent events that set up the game's conflict
+    elicit: true
+
+  - id: economy_progression
+    title: Economy & Progression Systems
+    instruction: |
+      Define resource and advancement systems:
+      - Currency and valuable resources
+      - Shops, vendors, and trading
+      - Upgrade materials and crafting
+      - Territory control or base building
+      - Economic gameplay loops
+    elicit: true
+
+  - id: environmental_storytelling
+    title: Environmental Storytelling
+    instruction: |
+      Detail how the world tells its story:
+      - Visual narrative elements
+      - Audio cues and ambient storytelling
+      - Interactive lore objects
+      - Environmental puzzles
+      - Atmospheric details that enhance immersion
+    elicit: true

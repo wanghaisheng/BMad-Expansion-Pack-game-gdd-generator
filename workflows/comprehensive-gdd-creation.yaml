@@ -1,0 +1,367 @@
+name: Comprehensive GDD Creation Workflow
+description: Complete workflow for creating a comprehensive Game Design Document from concept to final specification
+icon: 📋
+category: core
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a complete, professional Game Design Document that serves as the definitive specification for game development"
+    target_output: "Comprehensive GDD ready for BMAD development workflow handoff"
+    estimated_duration: "4-8 weeks depending on game complexity"
+    team_size: "8-12 specialists from different domains"
+    
+  # 阶段定义
+  phases:
+    # 第一阶段：概念与研究
+    - phase: "concept_research"
+      name: "Concept Development & Market Research"
+      duration: "1-2 weeks"
+      description: "Establish game concept, conduct market research, and define target audience"
+      
+      agent_sequence:
+        - agent: "game-systems-architect"
+          command: "create-brief"
+          input: "User requirements and initial game concept"
+          output: "Game concept brief with core mechanics outline"
+          duration: "30 minutes"
+          
+        - agent: "market-analyst"
+          command: "market-research"
+          input: "Game concept brief"
+          output: "Market analysis and competitive positioning"
+          duration: "45 minutes"
+          
+        - agent: "player-experience-designer"
+          command: "create-player-profile"
+          input: "Game concept and market analysis"
+          output: "Target player profiles and experience requirements"
+          duration: "30 minutes"
+      
+      deliverables:
+        - "Game Concept Brief"
+        - "Market Analysis Report"
+        - "Target Audience Definition"
+        - "Competitive Analysis"
+      
+      quality_gates:
+        - "Concept clarity and uniqueness validated"
+        - "Market opportunity confirmed"
+        - "Target audience clearly defined"
+        - "Competitive differentiation established"
+
+    # 第二阶段：核心设计
+    - phase: "core_design"
+      name: "Core Game Design"
+      duration: "2-3 weeks"
+      description: "Design core gameplay mechanics, systems, and player experience"
+      
+      agent_sequence:
+        - agent: "game-systems-architect"
+          command: "create-game-loop"
+          input: "Game concept brief and player profiles"
+          output: "Core gameplay loops and system architecture"
+          duration: "60 minutes"
+          
+        - agent: "mechanics-specialist"
+          command: "design-mechanics"
+          input: "Core gameplay loops"
+          output: "Detailed mechanics specifications and balance framework"
+          duration: "90 minutes"
+          
+        - agent: "player-experience-designer"
+          command: "design-onboarding"
+          input: "Core mechanics and player profiles"
+          output: "Player journey and onboarding design"
+          duration: "45 minutes"
+      
+      deliverables:
+        - "Core Mechanics Specification"
+        - "Game World Design"
+        - "Player Progression System"
+        - "Game Systems Architecture"
+      
+      quality_gates:
+        - "Core loop is engaging and sustainable"
+        - "Mechanics support intended player experience"
+        - "Systems are coherent and balanced"
+        - "Technical feasibility confirmed"
+
+    # 第三阶段：专业领域设计
+    - phase: "specialized_design"
+      name: "Specialized Domain Design"
+      duration: "2-3 weeks"
+      description: "Develop specialized aspects including narrative, art, audio, and UI/UX"
+      
+      parallel_agents:
+        - agent: "game-narrative-designer"
+          command: "design-story-structure"
+          input: "Game concept and mechanics"
+          output: "Narrative design and story structure"
+          duration: "90 minutes"
+          
+        - agent: "ui-ux-designer"
+          command: "ux-flow-design"
+          input: "Player experience design and mechanics"
+          output: "UI/UX specifications and user flows"
+          duration: "75 minutes"
+          
+        - agent: "game-art-director"
+          command: "create-art-direction"
+          input: "Game concept and narrative design"
+          output: "Art direction guide and visual style"
+          duration: "60 minutes"
+          
+        - agent: "audio-designer"
+          command: "design-audio-systems"
+          input: "Game concept and art direction"
+          output: "Audio design specifications"
+          duration: "45 minutes"
+          
+        - agent: "monetization-designer"
+          command: "monetization-strategy"
+          input: "Market analysis and player profiles"
+          output: "Business model and monetization strategy"
+          duration: "60 minutes"
+      
+      deliverables:
+        - "Narrative Design Document"
+        - "Dialog System Specification"
+        - "Art Direction Guide"
+        - "Audio Design Specification"
+        - "UI/UX Design Specification"
+        - "Accessibility Plan"
+      
+      quality_gates:
+        - "Narrative supports gameplay objectives"
+        - "Art direction is cohesive and appealing"
+        - "Audio enhances player experience"
+        - "UI/UX is intuitive and accessible"
+        - "Accessibility standards met"
+
+    # 第四阶段：技术与平台规格
+    - phase: "technical_platform"
+      name: "Technical & Platform Specification"
+      duration: "1-2 weeks"
+      description: "Define technical architecture and platform-specific requirements"
+      
+      agent_sequence:
+        - agent: "technical-designer"
+          command: "create-technical-spec"
+          input: "Complete game design specifications"
+          output: "Technical architecture and requirements"
+          duration: "60 minutes"
+          
+        - agent: "mobile-game-specialist"
+          command: "platform-optimization"
+          input: "Technical specifications and game design"
+          output: "Platform-specific requirements and optimizations"
+          duration: "45 minutes"
+          
+        - agent: "accessibility-specialist"
+          command: "accessibility-audit"
+          input: "Complete game design and UI specifications"
+          output: "Accessibility guidelines and requirements"
+          duration: "30 minutes"
+      
+      deliverables:
+        - "Technical Architecture Document"
+        - "Platform Specifications"
+        - "Performance Requirements"
+        - "Technical Risk Assessment"
+      
+      quality_gates:
+        - "Technical architecture is scalable"
+        - "Platform requirements are realistic"
+        - "Performance targets are achievable"
+        - "Technical risks are identified and mitigated"
+
+    # 第五阶段：商业化与运营
+    - phase: "monetization_operations"
+      name: "Monetization & Live Operations"
+      duration: "1-2 weeks"
+      description: "Design monetization systems and live operations strategy"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - liveops-designer
+          - market-analyst
+        supporting:
+          - player-experience-designer
+          - accessibility-specialist
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1 week"
+          deliverable: "Monetization strategy document"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Live operations plan"
+          
+        - task: "market-viability-assessment"
+          owner: "market-analyst"
+          duration: "3-5 days"
+          deliverable: "Business viability analysis"
+      
+      deliverables:
+        - "Monetization Strategy"
+        - "Live Operations Plan"
+        - "Business Model Specification"
+        - "Revenue Projections"
+      
+      quality_gates:
+        - "Monetization is fair and sustainable"
+        - "Live ops plan supports long-term engagement"
+        - "Business model is viable"
+        - "Revenue projections are realistic"
+
+    # 第六阶段：质量保证与验证
+    - phase: "quality_validation"
+      name: "Quality Assurance & Validation"
+      duration: "1-2 weeks"
+      description: "Review, validate, and polish the complete GDD"
+      
+      agent_sequence:
+        - agent: "gdd-reviewer"
+          command: "review-gdd"
+          input: "Complete GDD draft from all previous phases"
+          output: "Comprehensive quality review and recommendations"
+          duration: "45 minutes"
+          
+        - agent: "gdd-validator"
+          command: "validate-gdd"
+          input: "Reviewed GDD with quality recommendations"
+          output: "Final validation report and BMAD compatibility check"
+          duration: "30 minutes"
+          
+        - agent: "game-systems-architect"
+          command: "create-gdd"
+          input: "All validated design components"
+          output: "Final comprehensive GDD document"
+          duration: "30 minutes"
+      
+      deliverables:
+        - "Design Review Report"
+        - "Quality Assurance Checklist"
+        - "Playtesting Simulation Results"
+        - "Final Comprehensive GDD"
+      
+      quality_gates:
+        - "All design elements are coherent"
+        - "Quality standards are met"
+        - "BMAD compatibility confirmed"
+        - "GDD is ready for development handoff"
+
+  # 协作模式
+  collaboration_patterns:
+    cross_phase_collaboration:
+      - "Market insights inform all design decisions"
+      - "Technical constraints guide feature scope"
+      - "Cultural considerations influence all content"
+      - "Accessibility requirements integrated throughout"
+    
+    review_cycles:
+      - "Weekly cross-team reviews during each phase"
+      - "Milestone reviews at end of each phase"
+      - "Continuous feedback integration"
+      - "Stakeholder reviews at key decision points"
+    
+    knowledge_sharing:
+      - "Shared design documentation repository"
+      - "Regular design sync meetings"
+      - "Cross-training on specialized domains"
+      - "Best practices documentation"
+
+  # 质量标准
+  quality_standards:
+    documentation_quality:
+      - "Clear, unambiguous specifications"
+      - "Consistent terminology and formatting"
+      - "Comprehensive coverage of all game aspects"
+      - "Actionable implementation guidance"
+    
+    design_coherence:
+      - "All systems support core game vision"
+      - "Mechanics reinforce intended player experience"
+      - "Art, audio, and narrative are aligned"
+      - "Technical architecture supports design goals"
+    
+    bmad_compatibility:
+      - "GDD format compatible with BMAD workflows"
+      - "Technical specifications match BMAD capabilities"
+      - "Handoff requirements clearly defined"
+      - "Implementation priorities established"
+
+  # 风险管理
+  risk_management:
+    common_risks:
+      - risk: "Scope creep during design phase"
+        mitigation: "Regular scope reviews and stakeholder alignment"
+        
+      - risk: "Technical feasibility issues"
+        mitigation: "Early technical validation and constraint setting"
+        
+      - risk: "Market assumptions prove incorrect"
+        mitigation: "Continuous market validation and pivot readiness"
+        
+      - risk: "Team coordination challenges"
+        mitigation: "Clear communication protocols and regular syncs"
+    
+    quality_risks:
+      - risk: "Inconsistent design vision"
+        mitigation: "Strong creative leadership and regular alignment"
+        
+      - risk: "Missing accessibility requirements"
+        mitigation: "Accessibility specialist involvement throughout"
+        
+      - risk: "Cultural insensitivity"
+        mitigation: "Cultural expert review and validation"
+
+  # 成功指标
+  success_metrics:
+    process_metrics:
+      - "On-time delivery of phase milestones"
+      - "Quality gate pass rates"
+      - "Stakeholder satisfaction scores"
+      - "Team collaboration effectiveness"
+    
+    output_quality:
+      - "GDD completeness and clarity"
+      - "Design coherence and consistency"
+      - "Technical feasibility validation"
+      - "BMAD compatibility confirmation"
+    
+    business_alignment:
+      - "Market opportunity validation"
+      - "Revenue model viability"
+      - "Competitive differentiation strength"
+      - "Target audience appeal"
+
+# 使用指南
+usage_notes: |
+  这个工作流程用于创建完整的专业级GDD：
+  1. 严格按照阶段顺序执行，确保每个质量门槛都通过
+  2. 鼓励跨团队协作和持续反馈
+  3. 定期进行市场和技术可行性验证
+  4. 确保最终GDD与BMAD工作流程完全兼容
+  5. 重视可访问性和文化敏感性
+
+# BMAD集成
+bmad_integration:
+  handoff_requirements:
+    - "完整的技术架构规格"
+    - "详细的功能实现指南"
+    - "平台特定的开发要求"
+    - "质量保证和测试标准"
+    - "项目里程碑和交付计划"
+  
+  compatibility_checklist:
+    - "GDD格式符合BMAD标准"
+    - "技术规格与BMAD能力匹配"
+    - "实现优先级明确定义"
+    - "风险缓解策略已制定"

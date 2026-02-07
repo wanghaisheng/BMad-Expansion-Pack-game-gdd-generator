@@ -1,0 +1,323 @@
+name: Modular GDD Generation Workflow
+description: Generate comprehensive GDD as separate, evaluable markdown files for targeted improvement
+icon: 📑
+category: core
+version: "2.0"
+
+workflow:
+  overview:
+    purpose: "Generate modular GDD with independent sections for individual evaluation and improvement"
+    target_output: "Set of interconnected markdown files forming complete GDD"
+    estimated_duration: "4-6 hours total, with individual section evaluation capability"
+    key_advantage: "Each section can be independently evaluated, improved, and re-generated"
+    
+  modular_approach:
+    philosophy: "Each GDD section is a standalone document that can be evaluated and improved independently"
+    benefits:
+      - "Targeted agent improvement based on section-specific feedback"
+      - "Parallel development and review of different sections"
+      - "Granular quality control and iteration"
+      - "Clear agent responsibility and accountability"
+      - "Easier maintenance and updates of specific aspects"
+    
+  execution_sequence:
+    # Phase 1: Foundation Generation
+    - phase: "foundation"
+      name: "Generate Foundation Documents"
+      duration: "60-90 minutes"
+      output_files: 
+        - "{{game_title}}_Game_Overview.md"
+        - "{{game_title}}_Agent_Workflow.md"
+        - "{{game_title}}_Glossary.md"
+      
+      tasks:
+        - task: "generate-gdd-foundation"
+          agent: "game-systems-architect"
+          command: "create-brief"
+          duration: "45 minutes"
+          output: "{{game_title}}_Game_Overview.md"
+          evaluation_criteria:
+            - "Game concept clarity and differentiation"
+            - "Target audience specificity and validation"
+            - "Platform strategy realism and rationale"
+            - "Market positioning defensibility"
+          
+        - task: "validate-foundation"
+          agent: "market-analyst"
+          command: "market-research"
+          duration: "30 minutes"
+          output: "Foundation validation report"
+          evaluation_criteria:
+            - "Market opportunity validation"
+            - "Competitive analysis accuracy"
+            - "Audience research depth"
+            - "Business viability assessment"
+    
+    # Phase 2: Core Design Generation
+    - phase: "core_design"
+      name: "Generate Core Design Documents"
+      duration: "120-150 minutes"
+      output_files:
+        - "{{game_title}}_Core_Gameplay.md"
+        - "{{game_title}}_Player_Experience.md"
+        - "{{game_title}}_Mechanics_Matrix.md"
+      
+      tasks:
+        - task: "generate-core-gameplay-section"
+          agent: "mechanics-specialist"
+          command: "design-mechanics"
+          duration: "90 minutes"
+          output: "{{game_title}}_Core_Gameplay.md"
+          dependencies: ["{{game_title}}_Game_Overview.md"]
+          evaluation_criteria:
+            - "Core loop engagement and sustainability"
+            - "Mechanics coherence and pillar alignment"
+            - "Progression system balance and motivation"
+            - "Implementation specification completeness"
+          
+        - task: "generate-player-experience-section"
+          agent: "player-experience-designer"
+          command: "design-onboarding"
+          duration: "60 minutes"
+          output: "{{game_title}}_Player_Experience.md"
+          dependencies: ["{{game_title}}_Game_Overview.md", "{{game_title}}_Core_Gameplay.md"]
+          evaluation_criteria:
+            - "Player journey completeness and logic"
+            - "Onboarding effectiveness and engagement"
+            - "Retention strategy alignment with audience"
+            - "Accessibility consideration comprehensiveness"
+    
+    # Phase 3: Specialized Content Generation (Parallel)
+    - phase: "specialized_content"
+      name: "Generate Specialized Content Documents"
+      duration: "90-120 minutes"
+      parallel_execution: true
+      output_files:
+        - "{{game_title}}_Narrative_Design.md" (conditional)
+        - "{{game_title}}_Visual_Audio_Design.md" (conditional)
+        - "{{game_title}}_Business_Strategy.md" (conditional)
+      
+      parallel_tasks:
+        - task: "generate-narrative-section"
+          agent: "game-narrative-designer"
+          command: "design-story-structure"
+          duration: "90 minutes"
+          condition: "has_narrative_elements"
+          output: "{{game_title}}_Narrative_Design.md"
+          dependencies: ["{{game_title}}_Game_Overview.md", "{{game_title}}_Core_Gameplay.md"]
+          evaluation_criteria:
+            - "Story integration with gameplay mechanics"
+            - "Character development depth and relevance"
+            - "World building consistency and richness"
+            - "Narrative pacing and player agency balance"
+          
+        - task: "generate-visual-audio-section"
+          agents: ["game-art-director", "audio-designer"]
+          commands: ["create-art-direction", "design-audio-systems"]
+          duration: "75 minutes"
+          condition: "requires_art_direction"
+          output: "{{game_title}}_Visual_Audio_Design.md"
+          dependencies: ["{{game_title}}_Game_Overview.md", "{{game_title}}_Narrative_Design.md"]
+          evaluation_criteria:
+            - "Visual style coherence and market appeal"
+            - "UI/UX design usability and accessibility"
+            - "Audio design atmosphere and functionality"
+            - "Art direction technical feasibility"
+          
+        - task: "generate-business-strategy-section"
+          agents: ["market-analyst", "monetization-designer"]
+          commands: ["market-research", "monetization-strategy"]
+          duration: "60 minutes"
+          condition: "commercial_project"
+          output: "{{game_title}}_Business_Strategy.md"
+          dependencies: ["{{game_title}}_Game_Overview.md", "{{game_title}}_Player_Experience.md"]
+          evaluation_criteria:
+            - "Market analysis depth and accuracy"
+            - "Monetization strategy ethical alignment"
+            - "Revenue projections realism"
+            - "Launch strategy comprehensiveness"
+    
+    # Phase 4: Implementation Planning
+    - phase: "implementation"
+      name: "Generate Implementation Documents"
+      duration: "90-120 minutes"
+      output_files:
+        - "{{game_title}}_Technical_Specifications.md"
+        - "{{game_title}}_Implementation_Roadmap.md"
+        - "{{game_title}}_BMAD_Integration.md"
+      
+      tasks:
+        - task: "generate-technical-specification"
+          agent: "technical-designer"
+          command: "create-technical-spec"
+          duration: "90 minutes"
+          output: "{{game_title}}_Technical_Specifications.md"
+          dependencies: ["All design documents"]
+          evaluation_criteria:
+            - "Technical architecture realism and scalability"
+            - "Performance targets achievability"
+            - "Platform requirements accuracy"
+            - "Implementation guidance completeness"
+            - "Asset metadata and media profiles are automation-ready"
+
+    # Phase 4.5: Appendices & Asset Index
+    - phase: "appendices_assets"
+      name: "Generate Appendices and Asset Index"
+      duration: "45-60 minutes"
+      output_files:
+        - "{{game_title}}_Appendices.md"
+        - "{{game_title}}_Asset_List.md"
+      tasks:
+        - task: "generate-appendices"
+          agent: "technical-designer"
+          command: "compile-appendices"
+          duration: "45 minutes"
+          output: "{{game_title}}_Appendices.md"
+          dependencies: ["{{game_title}}_Technical_Specifications.md", "{{game_title}}_Visual_Audio_Design.md"]
+          evaluation_criteria:
+            - "Asset list coverage across categories"
+            - "Naming rules and directory structure defined"
+            - "Metadata schema and validation gates specified"
+            - "Media profiles and format validation specified"
+          
+        - task: "generate-implementation-roadmap"
+          agent: "game-systems-architect"
+          command: "create-game-loop"
+          duration: "45 minutes"
+          output: "{{game_title}}_Implementation_Roadmap.md"
+          dependencies: ["{{game_title}}_Technical_Specifications.md"]
+          evaluation_criteria:
+            - "Development phase logic and sequencing"
+            - "Resource requirement realism"
+            - "Risk assessment comprehensiveness"
+            - "Milestone definition clarity"
+    
+    # Phase 5: Quality Assurance and Index Generation
+    - phase: "quality_assurance"
+      name: "Validate and Generate Index"
+      duration: "45-60 minutes"
+      output_files:
+        - "{{game_title}}_GDD_Index.md"
+        - "{{game_title}}_Quality_Report.md"
+        - "{{game_title}}_Status_Dashboard.md"
+      
+      tasks:
+        - task: "validate-and-finalize-gdd"
+          agent: "gdd-validator"
+          command: "validate-gdd"
+          duration: "30 minutes"
+          output: "Individual section validation reports"
+          dependencies: ["All section documents"]
+          evaluation_criteria:
+            - "Section completeness and consistency"
+            - "Cross-reference accuracy and coherence"
+            - "BMAD compatibility confirmation"
+            - "Quality standard compliance"
+          
+        - task: "generate-gdd-index"
+          agent: "gdd-validator"
+          command: "create-gdd-index"
+          duration: "30 minutes"
+          output: "{{game_title}}_GDD_Index.md"
+          dependencies: ["All validated sections"]
+          evaluation_criteria:
+            - "Navigation effectiveness and completeness"
+            - "Quality metrics accuracy"
+            - "Cross-reference mapping correctness"
+            - "Stakeholder usability"
+
+  evaluation_framework:
+    section_evaluation:
+      process: "Each section evaluated independently against specific criteria"
+      feedback_loop: "Section-specific feedback enables targeted agent improvement"
+      re_generation: "Individual sections can be re-generated without affecting others"
+      
+    evaluation_criteria:
+      content_quality:
+        - "Completeness: All required information present"
+        - "Clarity: Information is clear and actionable"
+        - "Consistency: Aligns with other sections and overall vision"
+        - "Feasibility: Requirements are realistic and achievable"
+      
+      agent_performance:
+        - "Task Completion: Agent successfully completed assigned task"
+        - "Output Quality: Generated content meets quality standards"
+        - "Integration: Output integrates well with other sections"
+        - "Specification Adherence: Follows task requirements and format"
+      
+      bmad_compatibility:
+        - "Format Compliance: Proper markdown structure and formatting"
+        - "Integration Readiness: Compatible with BMAD development workflow"
+        - "Data Format: Structured data in appropriate formats"
+        - "Quality Gates: Validation checkpoints properly defined"
+    
+    improvement_process:
+      identification: "Identify specific sections needing improvement"
+      analysis: "Analyze why section doesn't meet criteria"
+      agent_adjustment: "Modify agent task, checklist, or template"
+      re_generation: "Re-run specific section generation"
+      validation: "Validate improvement against criteria"
+
+  file_management:
+    naming_convention: "{{game_title}}_{{Section_Name}}.md"
+    organization:
+      core_documents:
+        - "{{game_title}}_GDD_Index.md" (Master navigation)
+        - "{{game_title}}_Game_Overview.md" (Foundation)
+        - "{{game_title}}_Core_Gameplay.md" (Core design)
+        - "{{game_title}}_Player_Experience.md" (UX design)
+      
+      specialized_documents:
+        - "{{game_title}}_Narrative_Design.md" (Story and characters)
+        - "{{game_title}}_Visual_Audio_Design.md" (Art and audio)
+        - "{{game_title}}_Business_Strategy.md" (Market and monetization)
+      
+      implementation_documents:
+        - "{{game_title}}_Technical_Specifications.md" (Technical requirements)
+        - "{{game_title}}_Implementation_Roadmap.md" (Development plan)
+        - "{{game_title}}_BMAD_Integration.md" (Integration specifications)
+      
+      supporting_documents:
+        - "{{game_title}}_Quality_Report.md" (Quality metrics)
+        - "{{game_title}}_Status_Dashboard.md" (Progress tracking)
+        - "{{game_title}}_Cross_References.md" (Relationship mapping)
+    
+    version_control:
+      individual_versioning: "Each section maintains its own version number"
+      dependency_tracking: "Changes tracked across dependent sections"
+      rollback_capability: "Individual sections can be rolled back independently"
+
+  success_metrics:
+    workflow_success:
+      - "All required sections generated successfully"
+      - "Each section meets individual quality criteria"
+      - "Cross-references and dependencies properly established"
+      - "BMAD compatibility confirmed for all sections"
+    
+    evaluation_success:
+      - "Clear identification of section strengths and weaknesses"
+      - "Actionable feedback for agent and task improvement"
+      - "Successful targeted re-generation of improved sections"
+      - "Overall GDD quality improvement through iteration"
+    
+    usability_success:
+      - "Stakeholders can easily navigate and understand GDD"
+      - "Development teams have clear, actionable specifications"
+      - "Individual sections provide sufficient detail for implementation"
+      - "Modular structure supports ongoing maintenance and updates"
+
+usage_instructions: |
+  This modular workflow generates GDD as separate files for targeted evaluation:
+  
+  1. **Execute Phases Sequentially**: Run each phase in order, ensuring dependencies are met
+  2. **Evaluate Each Section**: Use section-specific criteria to assess quality
+  3. **Identify Improvements**: Focus on specific sections that need enhancement
+  4. **Iterate Selectively**: Re-generate only sections that need improvement
+  5. **Maintain Integration**: Ensure changes don't break cross-references
+  
+  Key advantages:
+  - Independent section evaluation and improvement
+  - Targeted agent training and optimization
+  - Parallel review and development capability
+  - Granular quality control and iteration
+  - Clear responsibility and accountability tracking

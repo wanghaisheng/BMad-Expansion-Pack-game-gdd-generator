@@ -1,0 +1,232 @@
+name: Technical Architecture Template
+description: Comprehensive technical specification template for game development architecture
+icon: 🏗️
+category: technical
+version: "1.0"
+
+template:
+  # 技术架构概述
+  technical_overview:
+    engine_selection:
+      primary_engine: "[Unity/Unreal/Godot/Custom/etc.]"
+      version: "[Engine version]"
+      rationale: "[Why this engine was chosen]"
+      licensing_considerations: "[Commercial/Free/Enterprise licensing]"
+    
+    target_platforms:
+      primary_platforms: []  # [PC, Mobile, Console, Web, VR/AR]
+      platform_specific_requirements:
+        pc:
+          minimum_specs: "[CPU, RAM, GPU, Storage]"
+          recommended_specs: "[CPU, RAM, GPU, Storage]"
+          operating_systems: "[Windows, macOS, Linux]"
+        mobile:
+          ios_requirements: "[iOS version, device compatibility]"
+          android_requirements: "[Android version, API level]"
+          performance_targets: "[FPS, battery life, thermal]"
+        console:
+          target_consoles: "[PlayStation, Xbox, Nintendo Switch]"
+          certification_requirements: "[Platform-specific requirements]"
+        web:
+          browser_support: "[Chrome, Firefox, Safari, Edge]"
+          webgl_requirements: "[WebGL version, features]"
+          performance_constraints: "[Loading time, file size]"
+        vr_ar:
+          headset_support: "[Oculus, HTC Vive, HoloLens, etc.]"
+          tracking_requirements: "[6DOF, hand tracking, eye tracking]"
+          performance_requirements: "[90fps, latency, comfort]"
+
+  # 系统架构
+  system_architecture:
+    core_systems:
+      game_loop:
+        update_frequency: "[60fps, 30fps, variable]"
+        threading_model: "[Single-threaded, Multi-threaded]"
+        frame_timing: "[Fixed timestep, variable timestep]"
+      
+      rendering_pipeline:
+        renderer_type: "[Forward, Deferred, Hybrid]"
+        lighting_model: "[PBR, Blinn-Phong, Custom]"
+        post_processing: "[HDR, Bloom, SSAO, etc.]"
+        optimization_techniques: "[LOD, Culling, Batching]"
+      
+      physics_system:
+        physics_engine: "[Built-in, Havok, Bullet, Custom]"
+        collision_detection: "[Discrete, Continuous, Hybrid]"
+        performance_considerations: "[Fixed timestep, spatial partitioning]"
+      
+      audio_system:
+        audio_engine: "[FMOD, Wwise, Built-in]"
+        spatial_audio: "[3D positioning, reverb, occlusion]"
+        streaming_strategy: "[Memory vs streaming trade-offs]"
+      
+      input_system:
+        supported_inputs: "[Keyboard, Mouse, Gamepad, Touch, Motion]"
+        input_mapping: "[Customizable, Platform-specific]"
+        accessibility_support: "[Alternative inputs, remapping]"
+
+  # 数据架构
+  data_architecture:
+    save_system:
+      save_format: "[Binary, JSON, XML, Custom]"
+      save_location: "[Local, Cloud, Hybrid]"
+      versioning_strategy: "[Migration, Backward compatibility]"
+      security_measures: "[Encryption, Validation, Anti-cheat]"
+    
+    asset_pipeline:
+      asset_formats: "[Textures, Models, Audio, Animations]"
+      compression_strategy: "[Quality vs size trade-offs]"
+      streaming_system: "[Level-based, Distance-based, Predictive]"
+      localization_assets: "[Text, Audio, Images]"
+      naming_rules: "[Prefix table, folder structure, variant/version rules]"
+      metadata_schema: "[Asset metadata fields for LOD/Platform/Usage/Author/Version/Dependencies]"
+      media_profiles: "[Video/audio/image_sequence/sprite_sheet profiles per platform tier]"
+      validation_gates: "[CI checks for naming/metadata/media compliance and reporting]"
+    
+    configuration_system:
+      settings_storage: "[Registry, Config files, PlayerPrefs]"
+      runtime_modification: "[Hot-reloading, Dynamic settings]"
+      platform_overrides: "[Platform-specific configurations]"
+
+  # 网络架构 (如适用)
+  network_architecture:
+    multiplayer_model:
+      architecture_type: "[Client-Server, P2P, Hybrid]"
+      server_technology: "[Dedicated, Listen server, Cloud]"
+      synchronization: "[Authoritative, Predictive, Rollback]"
+    
+    networking_protocol:
+      transport_layer: "[TCP, UDP, WebRTC, Custom]"
+      message_serialization: "[Binary, JSON, Protocol Buffers]"
+      security_measures: "[Encryption, Authentication, Anti-cheat]"
+    
+    scalability_considerations:
+      concurrent_players: "[Maximum supported players]"
+      server_scaling: "[Horizontal, Vertical, Auto-scaling]"
+      regional_deployment: "[CDN, Regional servers]"
+
+  # 性能与优化
+  performance_optimization:
+    target_performance:
+      frame_rate: "[60fps, 30fps, Variable]"
+      loading_times: "[Initial load, Level transitions]"
+      memory_usage: "[RAM budget, VRAM budget]"
+      battery_life: "[Mobile-specific targets]"
+    
+    optimization_strategies:
+      rendering_optimizations: "[LOD, Culling, Batching, Atlasing]"
+      memory_optimizations: "[Object pooling, Streaming, Compression]"
+      cpu_optimizations: "[Profiling, Multithreading, Caching]"
+      platform_specific: "[Platform-specific optimizations]"
+    
+    profiling_strategy:
+      profiling_tools: "[Built-in profilers, Third-party tools]"
+      performance_metrics: "[Key metrics to monitor]"
+      testing_methodology: "[Performance testing approach]"
+
+  # 开发工具与流程
+  development_tools:
+    version_control:
+      vcs_system: "[Git, Perforce, SVN]"
+      branching_strategy: "[Git Flow, Feature branches]"
+      asset_management: "[LFS, Binary handling]"
+    
+    build_pipeline:
+      build_automation: "[CI/CD, Build servers]"
+      testing_integration: "[Unit tests, Integration tests]"
+      deployment_strategy: "[Staging, Production deployment]"
+    
+    debugging_tools:
+      debugging_features: "[Console commands, Debug UI]"
+      logging_system: "[Log levels, Remote logging]"
+      crash_reporting: "[Crash dumps, Analytics]"
+
+  # 安全与合规
+  security_compliance:
+    data_protection:
+      privacy_compliance: "[GDPR, COPPA, Regional requirements]"
+      data_encryption: "[At rest, In transit]"
+      user_data_handling: "[Collection, Storage, Deletion]"
+    
+    anti_cheat:
+      cheat_prevention: "[Client validation, Server authority]"
+      detection_methods: "[Statistical analysis, Behavioral]"
+      response_strategy: "[Warnings, Bans, Mitigation]"
+    
+    platform_compliance:
+      certification_requirements: "[Platform-specific requirements]"
+      content_rating: "[ESRB, PEGI, Regional ratings]"
+      accessibility_compliance: "[ADA, Platform guidelines]"
+
+  # 维护与支持
+  maintenance_strategy:
+    update_system:
+      patch_delivery: "[Full updates, Incremental patches]"
+      rollback_capability: "[Version rollback, Hotfixes]"
+      testing_strategy: "[QA process, Beta testing]"
+    
+    monitoring_analytics:
+      performance_monitoring: "[Real-time metrics, Alerts]"
+      user_analytics: "[Behavior tracking, Crash reporting]"
+      business_metrics: "[KPIs, Revenue tracking]"
+    
+    support_infrastructure:
+      customer_support: "[Help desk, Community forums]"
+      documentation: "[Technical docs, User guides]"
+      community_tools: "[Modding support, User-generated content]"
+
+  # 风险评估
+  risk_assessment:
+    technical_risks:
+      - risk: "[Technical risk description]"
+        impact: "[High/Medium/Low]"
+        probability: "[High/Medium/Low]"
+        mitigation: "[Mitigation strategy]"
+    
+    platform_risks:
+      - risk: "[Platform-specific risk]"
+        impact: "[High/Medium/Low]"
+        probability: "[High/Medium/Low]"
+        mitigation: "[Mitigation strategy]"
+    
+    scalability_risks:
+      - risk: "[Scalability concern]"
+        impact: "[High/Medium/Low]"
+        probability: "[High/Medium/Low]"
+        mitigation: "[Mitigation strategy]"
+
+  # 技术债务管理
+  technical_debt:
+    current_debt:
+      - area: "[System/Component]"
+        description: "[Technical debt description]"
+        priority: "[High/Medium/Low]"
+        estimated_effort: "[Time estimate]"
+    
+    prevention_strategy:
+      code_review: "[Review process, Standards]"
+      refactoring_schedule: "[Regular refactoring cycles]"
+      documentation_maintenance: "[Keeping docs current]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建详细的技术架构文档，确保：
+  1. 所有技术决策都有明确的理由
+  2. 性能目标是可测量和可达成的
+  3. 风险评估是全面和现实的
+  4. 维护策略是可持续的
+  5. 与BMAD工作流程兼容
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 确保技术选择与BMAD代理能力匹配
+    - 提供足够的技术细节供实现代理使用
+    - 包含平台特定的实现指导
+    - 考虑BMAD工作流程的技术约束
+  
+  handoff_requirements:
+    - 详细的技术规格说明
+    - 性能基准和测试标准
+    - 平台特定的实现指南
+    - 风险缓解策略

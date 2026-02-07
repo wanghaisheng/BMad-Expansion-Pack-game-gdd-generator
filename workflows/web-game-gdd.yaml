@@ -1,0 +1,409 @@
+name: Web Game GDD Workflow
+description: Specialized workflow for creating GDDs optimized for web-based gaming platforms
+icon: 🌐
+category: platform-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for web-based gaming platforms"
+    target_output: "Web-optimized GDD ready for browser-based game development"
+    estimated_duration: "3-5 weeks depending on complexity"
+    team_size: "6-8 specialists with web gaming expertise"
+    
+  # Web端特殊考虑
+  web_considerations:
+    platform_advantages:
+      - "Instant accessibility without downloads"
+      - "Cross-platform compatibility"
+      - "Easy sharing and viral distribution"
+      - "Rapid iteration and deployment"
+      - "Integration with web services and social media"
+    
+    platform_constraints:
+      - "Browser performance limitations"
+      - "Network latency and bandwidth considerations"
+      - "Limited local storage capabilities"
+      - "Security restrictions and sandboxing"
+      - "Variable browser compatibility"
+    
+    user_behavior_patterns:
+      - "Casual, drop-in gameplay sessions"
+      - "Social sharing and viral mechanics"
+      - "Multi-tab browsing and interruptions"
+      - "Expectation of free-to-play content"
+      - "Quick loading and immediate engagement"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：Web游戏市场研究
+    - phase: "web_market_research"
+      name: "Web Gaming Market Research & Strategy"
+      duration: "1 week"
+      description: "Research web gaming market and establish distribution strategy"
+      
+      participants:
+        primary:
+          - market-analyst
+          - web-game-specialist
+          - monetization-designer
+        supporting:
+          - liveops-designer
+          - casual-puzzle-specialist
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "3-4 days"
+          deliverable: "Web gaming market analysis"
+          
+        - task: "optimize-web-performance"
+          owner: "web-game-specialist"
+          duration: "2-3 days"
+          deliverable: "Web optimization strategy"
+          
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "2-3 days"
+          deliverable: "Web monetization framework"
+      
+      deliverables:
+        - "Web Gaming Market Analysis"
+        - "Browser Compatibility Strategy"
+        - "Web Monetization Model"
+        - "Distribution Channel Strategy"
+        - "Viral and Social Sharing Plan"
+      
+      quality_gates:
+        - "Web market opportunity validated"
+        - "Browser compatibility requirements defined"
+        - "Monetization model suits web audience"
+        - "Distribution strategy established"
+
+    # 第二阶段：Web优化核心设计
+    - phase: "web_optimized_core_design"
+      name: "Web-Optimized Core Design"
+      duration: "1-2 weeks"
+      description: "Design core gameplay optimized for web platform constraints"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - mechanics-specialist
+          - web-game-specialist
+          - casual-puzzle-specialist
+        supporting:
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1 week"
+          deliverable: "Web-optimized core mechanics"
+          
+        - task: "design-casual-puzzle-flow"
+          owner: "casual-puzzle-specialist"
+          duration: "1 week"
+          deliverable: "Casual gameplay flow design"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "3-4 days"
+          deliverable: "Web game concept refinement"
+      
+      deliverables:
+        - "Web-Optimized Core Mechanics"
+        - "Casual Gameplay Flow Design"
+        - "Quick-Start Game Loop"
+        - "Progressive Loading Strategy"
+        - "Interruption-Resilient Design"
+      
+      quality_gates:
+        - "Mechanics work well in browser environment"
+        - "Gameplay is immediately engaging"
+        - "Loading times are minimized"
+        - "Game handles interruptions gracefully"
+
+    # 第三阶段：Web UI/UX与可访问性
+    - phase: "web_ui_accessibility"
+      name: "Web UI/UX & Accessibility Design"
+      duration: "1-2 weeks"
+      description: "Create web-optimized user interface with strong accessibility focus"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - web-game-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - localization-specialist
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Web UI/UX specification"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Web accessibility implementation"
+          
+        - task: "optimize-web-performance"
+          owner: "web-game-specialist"
+          duration: "3-5 days"
+          deliverable: "Web performance optimization plan"
+      
+      deliverables:
+        - "Web UI/UX Specification"
+        - "Responsive Design Guidelines"
+        - "Web Accessibility Implementation"
+        - "Keyboard and Mouse Interaction Design"
+        - "Progressive Enhancement Strategy"
+      
+      quality_gates:
+        - "UI works across all major browsers"
+        - "Design is responsive and adaptive"
+        - "Accessibility standards are met"
+        - "Performance is optimized for web"
+
+    # 第四阶段：Web技术架构
+    - phase: "web_technical_architecture"
+      name: "Web Technical Architecture"
+      duration: "1 week"
+      description: "Define technical architecture optimized for web deployment"
+      
+      participants:
+        primary:
+          - technical-designer
+          - web-game-specialist
+        supporting:
+          - game-systems-architect
+          - audio-designer
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Web technical architecture"
+          
+        - task: "optimize-web-performance"
+          owner: "web-game-specialist"
+          duration: "1 week"
+          deliverable: "Web deployment strategy"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "3-5 days"
+          deliverable: "Web audio specification"
+      
+      deliverables:
+        - "Web Technical Architecture"
+        - "Browser Compatibility Matrix"
+        - "Asset Loading and Caching Strategy"
+        - "Web Audio Implementation Plan"
+        - "Security and Privacy Considerations"
+      
+      quality_gates:
+        - "Architecture supports target browsers"
+        - "Loading strategy minimizes wait times"
+        - "Security requirements are addressed"
+        - "Performance targets are realistic"
+
+    # 第五阶段：社交与病毒式传播
+    - phase: "social_viral_features"
+      name: "Social & Viral Features"
+      duration: "1-2 weeks"
+      description: "Design social features and viral mechanics for web distribution"
+      
+      participants:
+        primary:
+          - liveops-designer
+          - multiplayer-specialist
+          - web-game-specialist
+        supporting:
+          - game-narrative-designer
+          - monetization-designer
+      
+      tasks:
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Web live operations plan"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Web social features"
+          
+        - task: "optimize-web-performance"
+          owner: "web-game-specialist"
+          duration: "3-5 days"
+          deliverable: "Viral mechanics implementation"
+      
+      deliverables:
+        - "Social Features Specification"
+        - "Viral Mechanics Design"
+        - "Web Live Operations Plan"
+        - "Community Integration Strategy"
+        - "Social Media Sharing Framework"
+      
+      quality_gates:
+        - "Social features encourage sharing"
+        - "Viral mechanics are integrated naturally"
+        - "Community features support engagement"
+        - "Social media integration is seamless"
+
+    # 第六阶段：Web质量保证
+    - phase: "web_quality_assurance"
+      name: "Web Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review for web-specific requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - web-game-specialist
+          - playtesting-simulator
+        supporting:
+          - accessibility-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "3-5 days"
+          deliverable: "Web GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "3-5 days"
+          deliverable: "Web playtesting simulation"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "2-3 days"
+          deliverable: "Web design critique"
+      
+      deliverables:
+        - "Web GDD Review Report"
+        - "Browser Compatibility Test Plan"
+        - "Performance Benchmark Results"
+        - "Accessibility Compliance Report"
+        - "Launch Readiness Assessment"
+      
+      quality_gates:
+        - "All web requirements are met"
+        - "Browser compatibility is confirmed"
+        - "Performance benchmarks are achieved"
+        - "Accessibility compliance is verified"
+
+  # Web端特殊流程
+  web_specific_processes:
+    browser_optimization:
+      - "Progressive loading and asset streaming"
+      - "WebGL and Canvas optimization"
+      - "Memory management for long sessions"
+      - "Network connectivity handling"
+    
+    distribution_strategy:
+      - "Web portal partnerships (Kongregate, Newgrounds, etc.)"
+      - "Social media platform integration"
+      - "SEO optimization for discoverability"
+      - "Embedding and iframe compatibility"
+    
+    monetization_implementation:
+      - "Web-based advertising integration"
+      - "Microtransaction payment processing"
+      - "Subscription model implementation"
+      - "Sponsored content and partnerships"
+    
+    analytics_tracking:
+      - "Web analytics integration (Google Analytics, etc.)"
+      - "Player behavior tracking"
+      - "Performance monitoring"
+      - "A/B testing framework"
+
+  # Web端成功指标
+  web_success_metrics:
+    engagement_metrics:
+      - "Unique visitors and return rate"
+      - "Session duration and page views"
+      - "Bounce rate and engagement depth"
+      - "Social sharing and viral coefficient"
+    
+    technical_metrics:
+      - "Page load time and performance"
+      - "Browser compatibility coverage"
+      - "Error rates and stability"
+      - "Mobile responsiveness scores"
+    
+    monetization_metrics:
+      - "Ad revenue and click-through rates"
+      - "Conversion rate to premium features"
+      - "Average revenue per user"
+      - "Lifetime value of players"
+    
+    distribution_metrics:
+      - "Organic vs referral traffic"
+      - "Search engine ranking position"
+      - "Social media reach and engagement"
+      - "Partner portal performance"
+
+  # Web端风险管理
+  web_risk_management:
+    technical_risks:
+      - risk: "Browser compatibility issues"
+        mitigation: "Comprehensive cross-browser testing"
+        
+      - risk: "Performance degradation on older devices"
+        mitigation: "Progressive enhancement and fallbacks"
+        
+      - risk: "Network connectivity problems"
+        mitigation: "Offline capabilities and graceful degradation"
+    
+    business_risks:
+      - risk: "Ad blocker impact on revenue"
+        mitigation: "Diversified monetization strategies"
+        
+      - risk: "Platform policy changes"
+        mitigation: "Multi-platform distribution strategy"
+        
+      - risk: "High competition in casual web gaming"
+        mitigation: "Strong differentiation and viral features"
+    
+    security_risks:
+      - risk: "Client-side cheating and manipulation"
+        mitigation: "Server-side validation and anti-cheat measures"
+        
+      - risk: "Data privacy and GDPR compliance"
+        mitigation: "Privacy-by-design and compliance framework"
+        
+      - risk: "Cross-site scripting and security vulnerabilities"
+        mitigation: "Security best practices and regular audits"
+
+# 使用指南
+usage_notes: |
+  这个Web游戏工作流程专门用于：
+  1. 创建针对浏览器平台优化的GDD
+  2. 确保跨浏览器兼容性和性能
+  3. 实施有效的病毒式传播机制
+  4. 建立适合Web平台的货币化模式
+  5. 优化用户获取和留存策略
+
+# BMAD集成
+bmad_integration:
+  web_handoff_requirements:
+    - "Web技术栈和框架选择指南"
+    - "浏览器兼容性和性能优化策略"
+    - "渐进式加载和资产管理系统"
+    - "Web安全和隐私保护实现"
+    - "社交分享和病毒式传播功能"
+  
+  platform_optimization:
+    - "WebGL和Canvas渲染优化"
+    - "Web Audio API实现指南"
+    - "响应式设计和移动端适配"
+    - "Web分析和用户行为跟踪"

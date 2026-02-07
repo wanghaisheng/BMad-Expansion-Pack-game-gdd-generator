@@ -1,0 +1,457 @@
+name: Accessibility-Focused GDD Workflow
+description: Specialized workflow for creating GDDs with accessibility as a primary design consideration
+icon: ♿
+category: specialized
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD with accessibility integrated throughout the design process"
+    target_output: "Fully accessible game design with comprehensive inclusion features"
+    estimated_duration: "5-9 weeks with extended accessibility validation"
+    team_size: "10-14 specialists including accessibility experts"
+    
+  # 可访问性设计原则
+  accessibility_principles:
+    core_principles:
+      - "Universal design from the ground up"
+      - "Multiple ways to access all content"
+      - "Customizable experience for different needs"
+      - "Clear communication and feedback"
+      - "Inclusive representation and content"
+    
+    target_disabilities:
+      - "Visual impairments (blindness, low vision, color blindness)"
+      - "Hearing impairments (deafness, hard of hearing)"
+      - "Motor impairments (limited mobility, one-handed play)"
+      - "Cognitive impairments (dyslexia, ADHD, autism)"
+      - "Multiple disabilities and intersectional needs"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：包容性概念开发
+    - phase: "inclusive_concept"
+      name: "Inclusive Concept Development"
+      duration: "1-2 weeks"
+      description: "Develop game concept with accessibility considerations from the start"
+      
+      participants:
+        primary:
+          - accessibility-specialist
+          - game-systems-architect
+          - player-experience-designer
+          - market-analyst
+        supporting:
+          - ui-ux-designer
+          - game-narrative-designer
+      
+      tasks:
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "2-3 days"
+          deliverable: "Accessibility-informed game concept"
+          accessibility_focus: "Ensure core concept is inherently accessible"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Comprehensive accessibility strategy"
+          
+        - task: "expand-game-concept"
+          owner: "player-experience-designer"
+          duration: "3-5 days"
+          deliverable: "Inclusive player experience design"
+          accessibility_focus: "Multiple pathways to enjoyment"
+          
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Accessibility market analysis"
+          accessibility_focus: "Disabled gaming community research"
+      
+      deliverables:
+        - "Inclusive Game Concept"
+        - "Accessibility Strategy Document"
+        - "Inclusive Player Experience Design"
+        - "Accessibility Market Analysis"
+      
+      quality_gates:
+        - "Core concept supports multiple play styles"
+        - "Accessibility strategy is comprehensive"
+        - "Market opportunity includes disabled players"
+        - "Design principles prioritize inclusion"
+
+    # 第二阶段：通用设计机制
+    - phase: "universal_mechanics"
+      name: "Universal Design Mechanics"
+      duration: "2-3 weeks"
+      description: "Design core mechanics that work for players with diverse abilities"
+      
+      participants:
+        primary:
+          - mechanics-specialist
+          - accessibility-specialist
+          - ui-ux-designer
+          - technical-designer
+        supporting:
+          - game-systems-architect
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Universal design mechanics"
+          accessibility_focus: "Multiple input methods and difficulty options"
+          
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Accessible interface design"
+          accessibility_focus: "Screen reader compatibility and customization"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Accessibility technical requirements"
+          accessibility_focus: "Platform accessibility APIs integration"
+          
+        - task: "workshop-game-mechanics"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Accessibility-validated mechanics"
+          accessibility_focus: "Testing with disability simulation"
+      
+      deliverables:
+        - "Universal Design Mechanics Specification"
+        - "Accessible Interface Design"
+        - "Accessibility Technical Requirements"
+        - "Disability Impact Assessment"
+      
+      quality_gates:
+        - "Mechanics work with assistive technologies"
+        - "Multiple difficulty and assistance options available"
+        - "Interface meets accessibility standards"
+        - "Technical implementation supports accessibility"
+
+    # 第三阶段：包容性内容创作
+    - phase: "inclusive_content"
+      name: "Inclusive Content Creation"
+      duration: "2-3 weeks"
+      description: "Create narrative, visual, and audio content with inclusive representation"
+      
+      participants:
+        primary:
+          - game-narrative-designer
+          - game-dialog-designer
+          - game-art-director
+          - audio-designer
+          - accessibility-specialist
+        supporting:
+          - localization-specialist
+          - cultural-sensitivity-specialist
+      
+      tasks:
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1-2 weeks"
+          deliverable: "Inclusive narrative design"
+          accessibility_focus: "Diverse character representation and accessible storytelling"
+          
+        - task: "design-npc-conversations"
+          owner: "game-dialog-designer"
+          duration: "1 week"
+          deliverable: "Accessible dialogue system"
+          accessibility_focus: "Multiple communication methods and clear language"
+          
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "1 week"
+          deliverable: "Inclusive art direction"
+          accessibility_focus: "High contrast options and diverse representation"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "1 week"
+          deliverable: "Accessible audio design"
+          accessibility_focus: "Visual sound indicators and spatial audio"
+          
+        - task: "create-cultural-adaptation"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Accessibility cultural considerations"
+          accessibility_focus: "Cross-cultural accessibility needs"
+      
+      deliverables:
+        - "Inclusive Narrative Design"
+        - "Accessible Dialogue System"
+        - "Inclusive Art Direction Guide"
+        - "Accessible Audio Design"
+        - "Cultural Accessibility Guidelines"
+      
+      quality_gates:
+        - "Content represents diverse abilities and identities"
+        - "Multiple ways to access narrative content"
+        - "Visual design supports various visual needs"
+        - "Audio design includes visual alternatives"
+        - "Cultural accessibility needs addressed"
+
+    # 第四阶段：平台可访问性优化
+    - phase: "platform_accessibility"
+      name: "Platform Accessibility Optimization"
+      duration: "1-2 weeks"
+      description: "Optimize accessibility features for specific platforms and devices"
+      
+      participants:
+        primary:
+          - accessibility-specialist
+          - mobile-game-specialist
+          - pc-console-specialist
+          - web-game-specialist
+          - vr-ar-specialist
+        supporting:
+          - technical-designer
+      
+      tasks:
+        - task: "optimize-mobile-experience"
+          owner: "mobile-game-specialist"
+          duration: "1 week"
+          deliverable: "Mobile accessibility optimization"
+          accessibility_focus: "Touch accessibility and mobile assistive tech"
+          
+        - task: "design-pc-console-features"
+          owner: "pc-console-specialist"
+          duration: "1 week"
+          deliverable: "PC/Console accessibility features"
+          accessibility_focus: "Keyboard navigation and controller adaptations"
+          
+        - task: "optimize-web-performance"
+          owner: "web-game-specialist"
+          duration: "3-5 days"
+          deliverable: "Web accessibility compliance"
+          accessibility_focus: "WCAG compliance and browser compatibility"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "1 week"
+          deliverable: "VR/AR accessibility features"
+          accessibility_focus: "Comfort settings and alternative interaction methods"
+      
+      deliverables:
+        - "Mobile Accessibility Optimization"
+        - "PC/Console Accessibility Features"
+        - "Web Accessibility Compliance"
+        - "VR/AR Accessibility Design"
+      
+      quality_gates:
+        - "Platform-specific accessibility features implemented"
+        - "Assistive technology compatibility confirmed"
+        - "Accessibility standards compliance verified"
+        - "Cross-platform accessibility consistency maintained"
+
+    # 第五阶段：用户测试与验证
+    - phase: "accessibility_testing"
+      name: "Accessibility User Testing & Validation"
+      duration: "2-3 weeks"
+      description: "Extensive testing with disabled users and accessibility validation"
+      
+      participants:
+        primary:
+          - accessibility-specialist
+          - playtesting-simulator
+          - game-design-critic
+          - player-experience-designer
+        supporting:
+          - ui-ux-designer
+          - technical-designer
+      
+      tasks:
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1-2 weeks"
+          deliverable: "Accessibility playtesting results"
+          accessibility_focus: "Testing with disabled users and assistive technologies"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Accessibility design critique"
+          accessibility_focus: "Professional accessibility review"
+          
+        - task: "incorporate-playtesting-feedback"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Accessibility improvements implementation"
+          accessibility_focus: "User feedback integration"
+          
+        - task: "provide-playtesting-feedback"
+          owner: "player-experience-designer"
+          duration: "3-5 days"
+          deliverable: "Inclusive experience validation"
+          accessibility_focus: "Holistic accessibility experience review"
+      
+      deliverables:
+        - "Accessibility Testing Report"
+        - "Professional Accessibility Audit"
+        - "User Feedback Integration Plan"
+        - "Accessibility Compliance Certification"
+      
+      quality_gates:
+        - "Disabled users can fully enjoy the game"
+        - "Assistive technologies work seamlessly"
+        - "Accessibility standards are exceeded"
+        - "Inclusive design goals are achieved"
+
+    # 第六阶段：最终验证与文档
+    - phase: "final_validation"
+      name: "Final Accessibility Validation & Documentation"
+      duration: "1 week"
+      description: "Final validation and comprehensive accessibility documentation"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - gdd-validator
+          - accessibility-specialist
+        supporting:
+          - game-systems-architect
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "3-5 days"
+          deliverable: "Accessibility-focused design review"
+          accessibility_focus: "Comprehensive accessibility validation"
+          
+        - task: "final-game-design-polish"
+          owner: "gdd-validator"
+          duration: "3-5 days"
+          deliverable: "Accessibility-complete GDD"
+          accessibility_focus: "Final accessibility documentation and validation"
+      
+      deliverables:
+        - "Accessibility-Complete GDD"
+        - "Accessibility Implementation Guide"
+        - "Accessibility Testing Procedures"
+        - "Inclusive Design Best Practices"
+      
+      quality_gates:
+        - "All accessibility requirements documented"
+        - "Implementation guidance is clear"
+        - "Testing procedures are comprehensive"
+        - "GDD exceeds accessibility standards"
+
+  # 可访问性专项考虑
+  accessibility_specializations:
+    visual_accessibility:
+      - "Screen reader compatibility throughout"
+      - "High contrast and customizable color options"
+      - "Scalable text and UI elements"
+      - "Audio descriptions for visual content"
+      - "Tactile feedback alternatives"
+    
+    auditory_accessibility:
+      - "Comprehensive subtitle and caption systems"
+      - "Visual sound indicators and alerts"
+      - "Haptic feedback for audio cues"
+      - "Sign language support where applicable"
+      - "Adjustable audio mixing and clarity"
+    
+    motor_accessibility:
+      - "Customizable control schemes and remapping"
+      - "One-handed and switch-accessible controls"
+      - "Adjustable timing and difficulty settings"
+      - "Alternative input method support"
+      - "Reduced precision requirements with assists"
+    
+    cognitive_accessibility:
+      - "Clear, simple language and instructions"
+      - "Consistent navigation and interaction patterns"
+      - "Memory aids and progress tracking"
+      - "Customizable complexity and information density"
+      - "Multiple learning and play styles supported"
+
+  # 协作模式
+  collaboration_patterns:
+    accessibility_integration:
+      - "Accessibility specialist involved in all phases"
+      - "Regular accessibility reviews and checkpoints"
+      - "Cross-functional accessibility training"
+      - "Disabled user community engagement"
+    
+    inclusive_design_process:
+      - "Nothing about us without us principle"
+      - "Disabled users as design consultants"
+      - "Accessibility testing throughout development"
+      - "Continuous accessibility improvement"
+    
+    knowledge_sharing:
+      - "Accessibility best practices documentation"
+      - "Team accessibility training and awareness"
+      - "Industry accessibility standard compliance"
+      - "Community accessibility advocacy"
+
+  # 质量标准
+  quality_standards:
+    accessibility_compliance:
+      - "WCAG 2.1 AA compliance minimum"
+      - "Platform accessibility guidelines adherence"
+      - "Industry accessibility standards exceeded"
+      - "Legal accessibility requirements met"
+    
+    inclusive_design_quality:
+      - "Multiple pathways to all content and features"
+      - "Customizable experience for diverse needs"
+      - "Respectful and authentic representation"
+      - "Seamless assistive technology integration"
+    
+    user_experience_quality:
+      - "Disabled users report equivalent enjoyment"
+      - "Accessibility features enhance experience for all"
+      - "No segregation or separate accessibility modes"
+      - "Inclusive community and social features"
+
+  # 成功指标
+  success_metrics:
+    accessibility_metrics:
+      - "Percentage of disabled users who can fully play"
+      - "Assistive technology compatibility score"
+      - "Accessibility standard compliance rating"
+      - "User satisfaction among disabled players"
+    
+    inclusive_design_metrics:
+      - "Diversity of player base achieved"
+      - "Accessibility feature usage rates"
+      - "Community inclusivity measures"
+      - "Representation authenticity scores"
+    
+    business_impact_metrics:
+      - "Market reach expansion to disabled community"
+      - "Positive accessibility press and recognition"
+      - "Accessibility award eligibility and wins"
+      - "Long-term player retention across abilities"
+
+# 使用指南
+usage_notes: |
+  这个可访问性优先的工作流程用于：
+  1. 从设计初期就集成可访问性考虑
+  2. 确保游戏对残障玩家完全可用和享受
+  3. 超越最低合规要求，实现真正的包容性设计
+  4. 建立可访问性最佳实践和标准
+  5. 创建对所有玩家都更好的游戏体验
+
+# BMAD集成
+bmad_integration:
+  accessibility_handoff:
+    - "详细的可访问性技术实现指南"
+    - "平台特定的可访问性API集成要求"
+    - "可访问性测试和验证程序"
+    - "辅助技术兼容性规格"
+    - "包容性设计实施检查清单"
+  
+  ongoing_support:
+    - "可访问性监控和改进流程"
+    - "用户反馈收集和响应机制"
+    - "可访问性更新和维护计划"
+    - "社区包容性管理策略"

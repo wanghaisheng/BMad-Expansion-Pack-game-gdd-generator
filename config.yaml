@@ -1,0 +1,10 @@
+name: bmad-gdd-generator
+version: 1.0.0
+short-title: Game Design Document Generator
+description: >-
+  Comprehensive Game Design Document generator for BMad Method providing specialized agents, 
+  workflows, and tools for creating GDDs that seamlessly integrate with BMAD game development 
+  workflows. Includes 9 specialized game design agents, 4 workflows from concept to 
+  implementation-ready specifications, and BMAD compatibility validation.
+author: WangHaiSheng
+slashPrefix: gdd

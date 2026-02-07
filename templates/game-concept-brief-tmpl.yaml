@@ -1,0 +1,77 @@
+---
+template:
+  id: game-concept-brief-tmpl
+  name: Game Concept Brief
+  version: 1.0
+  description: One-page document expanding a game idea into a clear concept with core mechanics
+  output:
+    format: markdown
+    filename: "{{title}}-concept.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: one_sentence
+    title: One-Sentence Summary
+    instruction: |
+      Create a compelling one-sentence summary that captures:
+      - The core gameplay
+      - The player fantasy
+      - The unique hook
+      Example: "When [player action], [player role] must [core challenge] or else [failure state]."
+    elicit: true
+
+  - id: expanded_paragraph
+    title: Expanded Paragraph
+    instruction: |
+      Expand the concept into a full paragraph (5-7 sentences) including:
+      - Game world and setting
+      - Player role introduction
+      - Core gameplay loop
+      - Primary challenge/conflict
+      - Victory conditions and stakes
+      - Hint at progression system
+    elicit: true
+
+  - id: player_role
+    title: Player Role Profile
+    instruction: |
+      Define the player's identity:
+      - Character/role name
+      - Core abilities/powers
+      - Primary motivation/goal
+      - What makes them unique
+      - Why players will connect
+    elicit: true
+
+  - id: opposition
+    title: Opposition/Challenge
+    instruction: |
+      Define the opposing forces:
+      - Nature of challenge (enemies, puzzles, environment, time)
+      - Primary antagonist or obstacle
+      - Why they oppose the player
+      - Their power/advantage
+    elicit: true
+
+  - id: stakes
+    title: Stakes and Consequences
+    instruction: |
+      Clarify what's at risk:
+      - Personal stakes for player character
+      - Broader world implications
+      - Time pressure elements
+      - Consequences of failure
+    elicit: true
+
+  - id: unique_hook
+    title: Unique Hook
+    instruction: |
+      What makes this game special:
+      - Fresh gameplay mechanic
+      - Unique world element
+      - Innovative player interaction
+      - Genre-blending elements
+    elicit: true

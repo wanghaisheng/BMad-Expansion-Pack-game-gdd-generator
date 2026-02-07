@@ -1,0 +1,98 @@
+{
+  "name": "@bmad-method/game-design-document-generator",
+  "version": "1.0.0",
+  "description": "Game Design Document Generator for BMad Method - AI-powered game design documentation system with comprehensive GDD creation, platform optimization, and cultural adaptation",
+  "main": "index.js",
+  "keywords": [
+    "bmad-method",
+    "expansion-pack",
+    "game-design",
+    "game-development",
+    "gdd",
+    "game-design-document",
+    "ai-game-design",
+    "game-documentation",
+    "platform-optimization",
+    "cultural-adaptation",
+    "accessibility",
+    "monetization",
+    "mobile-games",
+    "pc-games",
+    "console-games",
+    "vr-ar-games",
+    "web-games",
+    "cross-platform",
+    "localization",
+    "game-systems",
+    "player-experience",
+    "technical-design"
+  ],
+  "author": "Wes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanghaisheng/BMad-Expansion-Pack-game-gdd-generator"
+  },
+  "bmadExpansion": {
+    "type": "expansion-pack",
+    "category": "game-design",
+    "agents": 29,
+    "workflows": 23,
+    "templates": 21,
+    "checklists": 33,
+    "tasks": 43,
+    "dataReferences": 5,
+    "platforms": [
+      "mobile",
+      "pc",
+      "console",
+      "web",
+      "vr",
+      "ar"
+    ],
+    "gameTypes": [
+      "action-rpg",
+      "strategy",
+      "casual-puzzle",
+      "simulation",
+      "multiplayer"
+    ],
+    "culturalSupport": [
+      "eastern-markets",
+      "western-markets",
+      "localization"
+    ],
+    "specializations": [
+      "accessibility",
+      "monetization",
+      "live-operations",
+      "market-analysis",
+      "technical-architecture",
+      "cultural-adaptation"
+    ]
+  },
+  "peerDependencies": {
+    "bmad-method": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "node scripts/validate-system.js",
+    "docs": "node scripts/generate-docs.js"
+  },
+  "files": [
+    "agents/",
+    "tasks/",
+    "templates/",
+    "checklists/",
+    "workflows/",
+    "data/",
+    "agent-teams/",
+    "README.md",
+    "README_ZH.md",
+    "SYSTEM_OVERVIEW.md",
+    "docs/"
+  ]
+}

@@ -1,0 +1,91 @@
+---
+template:
+  id: character-design-profile
+  name: Game Character Design Profile
+  version: 1.0
+  description: Comprehensive character design worksheet for game development
+  output:
+    format: markdown
+    filename: "{{character_name}}-design.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+sections:
+  - id: basics
+    title: Basic Information
+    instruction: |
+      Create character foundation:
+      - Full name and aliases
+      - Character type (player character, NPC, boss, etc.)
+      - Role in game (protagonist, ally, merchant, enemy)
+      - Visual description and silhouette
+      - First impression on players
+      - Memorable visual hook
+  - id: gameplay_function
+    title: Gameplay Function
+    instruction: |
+      Define mechanical role:
+      - Primary gameplay purpose
+      - Abilities and skills
+      - Stats and attributes
+      - Special powers or mechanics
+      - Interaction methods with player
+      - Combat role (if applicable)
+      - Progression potential
+    elicit: true
+  - id: narrative_role
+    title: Narrative Role
+    instruction: |
+      Develop story function:
+      - Story archetype (mentor, rival, comic relief, etc.)
+      - Character motivation and goals
+      - Relationship to main plot
+      - Key story moments they drive
+      - Dialogue style and personality
+      - Character arc (if applicable)
+    elicit: true
+  - id: visual_design
+    title: Visual Design
+    instruction: |
+      Define appearance and style:
+      - Art style consistency
+      - Color palette and themes
+      - Costume/outfit design
+      - Distinctive visual elements
+      - Animation considerations
+      - Facial expressions and poses
+      - Size and proportions
+    elicit: true
+  - id: audio_design
+    title: Audio Design
+    instruction: |
+      Define sound identity:
+      - Voice characteristics (if voiced)
+      - Sound effects associated with character
+      - Musical themes or leitmotifs
+      - Footstep and movement sounds
+      - Combat or ability sounds
+      - Emotional audio cues
+  - id: player_interaction
+    title: Player Interaction
+    instruction: |
+      Design player relationship:
+      - How players first encounter them
+      - Interaction mechanics available
+      - Dialogue trees or conversation system
+      - Quest or mission involvement
+      - Reputation or relationship systems
+      - Memorable moments with player
+    elicit: true
+  - id: technical_specs
+    title: Technical Specifications
+    instruction: |
+      Define implementation details:
+      - Asset requirements (models, textures, animations)
+      - AI behavior patterns (for NPCs)
+      - Performance considerations
+      - Platform-specific adaptations
+      - Accessibility features
+      - Localization requirements
+

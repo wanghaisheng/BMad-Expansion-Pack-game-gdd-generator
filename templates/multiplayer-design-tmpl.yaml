@@ -1,0 +1,91 @@
+---
+template:
+  id: multiplayer-design-tmpl
+  name: Multiplayer Game Design Template
+  version: 1.0
+  description: Comprehensive template for multiplayer game system design
+  output:
+    format: markdown
+    filename: "{{game_title}}-multiplayer-design.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: multiplayer_overview
+    title: Multiplayer Overview
+    instruction: |
+      Define the multiplayer game concept:
+      - Multiplayer game type (competitive, cooperative, MMO, etc.)
+      - Player count and team structures
+      - Core multiplayer gameplay loop
+      - Session duration and match types
+      - Progression in multiplayer context
+    elicit: true
+
+  - id: matchmaking_system
+    title: Matchmaking System
+    instruction: |
+      Design fair and efficient matchmaking:
+      - Skill-based matchmaking algorithms
+      - Geographic and latency considerations
+      - Queue management and wait time optimization
+      - Team balancing mechanisms
+      - Seasonal ranking and progression systems
+    elicit: true
+
+  - id: social_systems
+    title: Social Systems
+    instruction: |
+      Create engaging social features:
+      - Friend and guild systems
+      - Communication tools (voice, text, emotes)
+      - Social discovery and networking
+      - Community events and activities
+      - Player reputation and behavior systems
+    elicit: true
+
+  - id: competitive_systems
+    title: Competitive Systems
+    instruction: |
+      Design competitive gameplay elements:
+      - Ranking and league systems
+      - Tournament and esports support
+      - Spectator and replay systems
+      - Achievement and recognition systems
+      - Seasonal content and rewards
+    elicit: true
+
+  - id: anti_cheat
+    title: Anti-Cheat and Fair Play
+    instruction: |
+      Implement fair play measures:
+      - Anti-cheat detection systems
+      - Reporting and moderation tools
+      - Penalty and suspension systems
+      - Appeal and review processes
+      - Community self-moderation features
+    elicit: true
+
+  - id: network_architecture
+    title: Network Architecture
+    instruction: |
+      Plan multiplayer technical infrastructure:
+      - Client-server vs peer-to-peer architecture
+      - Latency compensation and prediction
+      - Data synchronization strategies
+      - Scalability and load balancing
+      - Regional server deployment
+    elicit: true
+
+  - id: community_management
+    title: Community Management
+    instruction: |
+      Plan community building and management:
+      - Community guidelines and policies
+      - Moderation tools and procedures
+      - Community events and engagement
+      - Feedback collection and response
+      - Influencer and content creator support
+    elicit: true

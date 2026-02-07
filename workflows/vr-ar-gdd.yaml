@@ -1,0 +1,460 @@
+name: VR/AR Game GDD Workflow
+description: Specialized workflow for creating GDDs optimized for Virtual and Augmented Reality platforms
+icon: 🥽
+category: platform-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for VR and AR gaming platforms"
+    target_output: "VR/AR-optimized GDD ready for immersive experience development"
+    estimated_duration: "4-6 weeks depending on complexity"
+    team_size: "8-10 specialists with VR/AR expertise"
+    
+  # VR/AR特殊考虑
+  vr_ar_considerations:
+    immersion_factors:
+      - "Presence and spatial awareness"
+      - "Natural interaction paradigms"
+      - "Comfort and motion sickness prevention"
+      - "Social presence in shared spaces"
+      - "Haptic and multi-sensory feedback"
+    
+    technical_constraints:
+      - "High frame rate requirements (90+ FPS)"
+      - "Low latency interaction demands"
+      - "Limited processing power on standalone devices"
+      - "Battery life considerations"
+      - "Tracking accuracy and reliability"
+    
+    user_experience_challenges:
+      - "Onboarding users to VR/AR interfaces"
+      - "Preventing simulator sickness"
+      - "Designing for various play spaces"
+      - "Accessibility in 3D environments"
+      - "Social interaction in virtual spaces"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：VR/AR市场与平台研究
+    - phase: "vr_ar_market_research"
+      name: "VR/AR Market & Platform Research"
+      duration: "1-2 weeks"
+      description: "Research VR/AR markets and establish platform-specific strategy"
+      
+      participants:
+        primary:
+          - market-analyst
+          - vr-ar-specialist
+          - technical-designer
+        supporting:
+          - accessibility-specialist
+          - western-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "VR/AR market analysis report"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "1 week"
+          deliverable: "Platform-specific experience strategy"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "VR/AR technical requirements"
+      
+      deliverables:
+        - "VR/AR Market Analysis"
+        - "Platform Comparison (Oculus, HTC, PlayStation VR, etc.)"
+        - "Hardware Requirements Specification"
+        - "User Demographics and Behavior Analysis"
+        - "Competitive Landscape in VR/AR Gaming"
+      
+      quality_gates:
+        - "Target platform capabilities understood"
+        - "Market opportunity validated"
+        - "Technical constraints identified"
+        - "User behavior patterns analyzed"
+
+    # 第二阶段：沉浸式体验设计
+    - phase: "immersive_experience_design"
+      name: "Immersive Experience Design"
+      duration: "2-3 weeks"
+      description: "Design core immersive experience leveraging VR/AR unique capabilities"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - vr-ar-specialist
+          - player-experience-designer
+          - game-world-designer
+        supporting:
+          - mechanics-specialist
+          - ui-ux-designer
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1-2 weeks"
+          deliverable: "VR/AR-optimized mechanics"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "1-2 weeks"
+          deliverable: "Immersive world design"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "2 weeks"
+          deliverable: "Immersive interaction design"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "VR/AR progression systems"
+      
+      deliverables:
+        - "Immersive Mechanics Specification"
+        - "Spatial Interaction Design"
+        - "Comfort and Safety Guidelines"
+        - "World Scale and Navigation Design"
+        - "Presence and Immersion Framework"
+      
+      quality_gates:
+        - "Mechanics leverage VR/AR capabilities"
+        - "Interactions feel natural and intuitive"
+        - "Comfort guidelines are comprehensive"
+        - "World design supports immersion"
+
+    # 第三阶段：空间UI/UX设计
+    - phase: "spatial_ui_ux_design"
+      name: "Spatial UI/UX Design"
+      duration: "1-2 weeks"
+      description: "Create 3D spatial user interfaces and interaction paradigms"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - vr-ar-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - technical-designer
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Spatial UI/UX specification"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "VR/AR accessibility implementation"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "1 week"
+          deliverable: "Interaction paradigm design"
+      
+      deliverables:
+        - "Spatial UI/UX Specification"
+        - "3D Interaction Paradigms"
+        - "Hand Tracking and Gesture Design"
+        - "Voice Command Integration"
+        - "VR/AR Accessibility Guidelines"
+      
+      quality_gates:
+        - "UI elements are readable in 3D space"
+        - "Interactions are accessible and comfortable"
+        - "Multiple input methods are supported"
+        - "Spatial navigation is intuitive"
+
+    # 第四阶段：高性能VR/AR技术架构
+    - phase: "high_performance_vr_ar_tech"
+      name: "High-Performance VR/AR Technical Architecture"
+      duration: "1-2 weeks"
+      description: "Define technical architecture meeting VR/AR performance requirements"
+      
+      participants:
+        primary:
+          - technical-designer
+          - vr-ar-specialist
+        supporting:
+          - game-systems-architect
+          - audio-designer
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1-2 weeks"
+          deliverable: "VR/AR technical architecture"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "1 week"
+          deliverable: "Performance optimization strategy"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "1 week"
+          deliverable: "Spatial audio specification"
+      
+      deliverables:
+        - "High-Performance VR/AR Architecture"
+        - "Rendering Pipeline Optimization"
+        - "Spatial Audio Implementation"
+        - "Tracking and Input System Design"
+        - "Cross-Platform Compatibility Strategy"
+      
+      quality_gates:
+        - "Frame rate targets are achievable"
+        - "Latency requirements are met"
+        - "Performance scales across devices"
+        - "Spatial audio enhances immersion"
+
+    # 第五阶段：沉浸式内容创作
+    - phase: "immersive_content_creation"
+      name: "Immersive Content Creation"
+      duration: "1-2 weeks"
+      description: "Design content creation guidelines for VR/AR experiences"
+      
+      participants:
+        primary:
+          - game-art-director
+          - audio-designer
+          - game-narrative-designer
+          - vr-ar-specialist
+        supporting:
+          - game-world-designer
+          - game-dialog-designer
+      
+      tasks:
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "1-2 weeks"
+          deliverable: "VR/AR art direction guide"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "1 week"
+          deliverable: "Immersive audio design"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1 week"
+          deliverable: "VR/AR narrative design"
+      
+      deliverables:
+        - "VR/AR Art Direction Guide"
+        - "Immersive Audio Design Specification"
+        - "VR/AR Narrative Design Framework"
+        - "Environmental Storytelling Guidelines"
+        - "Asset Creation Standards"
+      
+      quality_gates:
+        - "Art style supports immersion"
+        - "Audio design leverages spatial capabilities"
+        - "Narrative integrates with interaction"
+        - "Content creation pipeline is efficient"
+
+    # 第六阶段：社交与多人VR/AR
+    - phase: "social_multiplayer_vr_ar"
+      name: "Social & Multiplayer VR/AR"
+      duration: "1-2 weeks"
+      description: "Design social features and multiplayer experiences for VR/AR"
+      
+      participants:
+        primary:
+          - multiplayer-specialist
+          - vr-ar-specialist
+          - liveops-designer
+        supporting:
+          - player-experience-designer
+          - accessibility-specialist
+      
+      tasks:
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1-2 weeks"
+          deliverable: "VR/AR multiplayer specification"
+          
+        - task: "design-vr-ar-experience"
+          owner: "vr-ar-specialist"
+          duration: "1 week"
+          deliverable: "Social presence design"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "VR/AR live operations plan"
+      
+      deliverables:
+        - "VR/AR Multiplayer Specification"
+        - "Social Presence and Avatar Design"
+        - "Shared Space Interaction Guidelines"
+        - "VR/AR Community Features"
+        - "Cross-Platform Social Integration"
+      
+      quality_gates:
+        - "Social features enhance presence"
+        - "Multiplayer interactions are natural"
+        - "Avatar systems support expression"
+        - "Community features encourage engagement"
+
+    # 第七阶段：VR/AR质量保证
+    - phase: "vr_ar_quality_assurance"
+      name: "VR/AR Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review for VR/AR-specific requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - vr-ar-specialist
+          - playtesting-simulator
+        supporting:
+          - accessibility-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "VR/AR GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "VR/AR playtesting simulation"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "3-5 days"
+          deliverable: "VR/AR design critique"
+      
+      deliverables:
+        - "VR/AR GDD Review Report"
+        - "Comfort and Safety Assessment"
+        - "Performance Benchmark Results"
+        - "Accessibility Compliance Report"
+        - "Platform Certification Readiness"
+      
+      quality_gates:
+        - "All VR/AR requirements are met"
+        - "Comfort and safety standards achieved"
+        - "Performance targets are realistic"
+        - "Platform certification requirements satisfied"
+
+  # VR/AR特殊流程
+  vr_ar_specific_processes:
+    comfort_optimization:
+      - "Motion sickness prevention strategies"
+      - "Comfort settings and customization"
+      - "Play session length recommendations"
+      - "Break and rest period integration"
+    
+    platform_certification:
+      - "Oculus Store certification requirements"
+      - "SteamVR compatibility testing"
+      - "PlayStation VR certification process"
+      - "Mobile VR platform requirements"
+    
+    user_onboarding:
+      - "VR/AR first-time user experience"
+      - "Safety briefing and setup guidance"
+      - "Comfort level assessment and adjustment"
+      - "Progressive complexity introduction"
+    
+    content_optimization:
+      - "Asset optimization for VR/AR performance"
+      - "LOD systems for immersive environments"
+      - "Spatial audio optimization"
+      - "Haptic feedback integration"
+
+  # VR/AR成功指标
+  vr_ar_success_metrics:
+    immersion_metrics:
+      - "Presence and immersion ratings"
+      - "Motion sickness incident rates"
+      - "Session length and comfort levels"
+      - "User preference for VR/AR vs traditional"
+    
+    technical_metrics:
+      - "Frame rate consistency (90+ FPS)"
+      - "Motion-to-photon latency"
+      - "Tracking accuracy and stability"
+      - "Battery life impact"
+    
+    engagement_metrics:
+      - "Return rate after first session"
+      - "Social interaction frequency"
+      - "Content completion rates"
+      - "User-generated content creation"
+    
+    accessibility_metrics:
+      - "Accessibility feature usage rates"
+      - "Comfort setting customization"
+      - "Alternative input method adoption"
+      - "Inclusive design effectiveness"
+
+  # VR/AR风险管理
+  vr_ar_risk_management:
+    comfort_risks:
+      - risk: "High motion sickness rates"
+        mitigation: "Comprehensive comfort testing and options"
+        
+      - risk: "User fatigue and discomfort"
+        mitigation: "Session length limits and break reminders"
+        
+      - risk: "Accessibility barriers"
+        mitigation: "Multiple interaction methods and customization"
+    
+    technical_risks:
+      - risk: "Performance issues on target hardware"
+        mitigation: "Aggressive optimization and scalable quality"
+        
+      - risk: "Tracking system failures"
+        mitigation: "Robust tracking recovery and fallback systems"
+        
+      - risk: "Platform fragmentation"
+        mitigation: "Cross-platform compatibility layer"
+    
+    market_risks:
+      - risk: "Limited VR/AR market adoption"
+        mitigation: "Hybrid experiences and traditional platform support"
+        
+      - risk: "High development costs"
+        mitigation: "Efficient development pipeline and asset reuse"
+        
+      - risk: "Platform policy changes"
+        mitigation: "Multi-platform strategy and compliance monitoring"
+
+# 使用指南
+usage_notes: |
+  这个VR/AR游戏工作流程专门用于：
+  1. 创建针对沉浸式平台优化的GDD
+  2. 确保用户舒适度和安全性
+  3. 充分利用VR/AR独特的交互能力
+  4. 建立高性能的技术架构
+  5. 设计自然的社交和多人体验
+
+# BMAD集成
+bmad_integration:
+  vr_ar_handoff_requirements:
+    - "高性能VR/AR渲染管线和优化策略"
+    - "空间交互和手势识别系统"
+    - "舒适度和安全性实现指南"
+    - "跨平台VR/AR兼容性架构"
+    - "沉浸式音频和触觉反馈系统"
+  
+  platform_optimization:
+    - "Oculus、SteamVR、PSVR特定优化"
+    - "移动VR和独立设备支持"
+    - "AR平台（ARKit、ARCore）集成"
+    - "混合现实和空间计算功能"

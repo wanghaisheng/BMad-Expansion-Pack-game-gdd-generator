@@ -1,0 +1,260 @@
+name: Cultural Adaptation Template
+description: Comprehensive template for adapting games to different cultural markets and regions
+icon: 🌍
+category: localization
+version: "1.0"
+
+template:
+  # 目标市场分析
+  target_markets:
+    primary_markets:
+      - region: "[North America, Europe, East Asia, etc.]"
+        countries: "[Specific countries]"
+        languages: "[Primary languages]"
+        cultural_context: "[Key cultural considerations]"
+        market_size: "[Market potential and size]"
+        competition_analysis: "[Local competitors and preferences]"
+    
+    secondary_markets:
+      - region: "[Secondary market regions]"
+        priority_level: "[High/Medium/Low]"
+        entry_strategy: "[Market entry approach]"
+        localization_scope: "[Full/Partial/Minimal]"
+
+  # 文化适应策略
+  cultural_adaptation:
+    visual_adaptations:
+      art_style_considerations:
+        - element: "[Character design, UI elements, etc.]"
+          original_approach: "[Current design]"
+          cultural_concern: "[Why it needs adaptation]"
+          adapted_approach: "[How to adapt]"
+          regions_affected: "[Which markets need this change]"
+      
+      color_symbolism:
+        - color: "[Color name]"
+          western_meaning: "[Western cultural meaning]"
+          eastern_meaning: "[Eastern cultural meaning]"
+          other_meanings: "[Other regional meanings]"
+          usage_recommendations: "[How to use appropriately]"
+      
+      iconography_symbols:
+        - symbol: "[Symbol/Icon description]"
+          cultural_significance: "[Cultural meaning]"
+          potential_issues: "[Possible problems]"
+          alternatives: "[Alternative approaches]"
+          regions_affected: "[Affected markets]"
+
+    narrative_adaptations:
+      story_themes:
+        - theme: "[Story theme]"
+          cultural_sensitivity: "[Sensitivity level]"
+          adaptation_needed: "[Yes/No/Partial]"
+          adaptation_approach: "[How to adapt]"
+          alternative_themes: "[Alternative approaches]"
+      
+      character_relationships:
+        - relationship_type: "[Family, Romance, Friendship, etc.]"
+          cultural_variations: "[How different cultures view this]"
+          adaptation_strategy: "[How to handle differences]"
+          content_warnings: "[Potential sensitive areas]"
+      
+      moral_values:
+        - value: "[Honor, Individual vs Collective, etc.]"
+          western_perspective: "[Western viewpoint]"
+          eastern_perspective: "[Eastern viewpoint]"
+          other_perspectives: "[Other cultural viewpoints]"
+          game_implementation: "[How to represent in game]"
+
+    gameplay_adaptations:
+      difficulty_preferences:
+        - region: "[Market region]"
+          preferred_difficulty: "[Easy/Medium/Hard/Variable]"
+          progression_style: "[Linear/Open/Guided]"
+          failure_tolerance: "[High/Medium/Low]"
+          adaptation_approach: "[How to accommodate]"
+      
+      social_features:
+        - feature: "[Chat, Guilds, Competition, etc.]"
+          cultural_acceptance: "[High/Medium/Low]"
+          privacy_concerns: "[Data protection requirements]"
+          implementation_notes: "[How to implement appropriately]"
+      
+      monetization_preferences:
+        - region: "[Market region]"
+          preferred_model: "[Premium/F2P/Subscription/Hybrid]"
+          payment_methods: "[Preferred payment options]"
+          spending_patterns: "[Typical spending behavior]"
+          cultural_considerations: "[Pay-to-win attitudes, etc.]"
+
+  # 本地化要求
+  localization_requirements:
+    language_localization:
+      text_localization:
+        - language: "[Language name]"
+          script_type: "[Latin, Cyrillic, CJK, Arabic, etc.]"
+          reading_direction: "[LTR/RTL]"
+          text_expansion: "[Expected text length change]"
+          font_requirements: "[Special font needs]"
+          character_encoding: "[UTF-8, UTF-16, etc.]"
+      
+      audio_localization:
+        - language: "[Language name]"
+          voice_acting_needed: "[Yes/No/Partial]"
+          cultural_voice_preferences: "[Voice style preferences]"
+          lip_sync_requirements: "[Needed for this language]"
+          audio_quality_standards: "[Technical requirements]"
+      
+      ui_localization:
+        - language: "[Language name]"
+          ui_layout_changes: "[Text direction, button placement]"
+          input_method_support: "[IME, special keyboards]"
+          cultural_ui_preferences: "[Design preferences]"
+          accessibility_requirements: "[Regional accessibility needs]"
+
+    cultural_content_review:
+      content_sensitivity_areas:
+        - content_type: "[Violence, Religion, Politics, etc.]"
+          sensitivity_level: "[High/Medium/Low]"
+          affected_regions: "[Which markets are sensitive]"
+          content_guidelines: "[How to handle appropriately]"
+          alternative_approaches: "[If content needs changing]"
+      
+      age_rating_considerations:
+        - region: "[Market region]"
+          rating_system: "[ESRB, PEGI, CERO, etc.]"
+          content_concerns: "[What might affect rating]"
+          target_rating: "[Desired age rating]"
+          content_adjustments: "[Changes needed for rating]"
+
+  # 技术本地化
+  technical_localization:
+    platform_requirements:
+      - platform: "[PC, Mobile, Console]"
+        region: "[Market region]"
+        technical_requirements: "[Platform-specific needs]"
+        certification_process: "[Local certification requirements]"
+        distribution_channels: "[Local distribution platforms]"
+    
+    data_compliance:
+      - region: "[Market region]"
+        data_protection_laws: "[GDPR, CCPA, local laws]"
+        data_storage_requirements: "[Local storage requirements]"
+        user_consent_requirements: "[Consent mechanisms needed]"
+        privacy_policy_requirements: "[Local privacy policy needs]"
+    
+    payment_integration:
+      - region: "[Market region]"
+        preferred_payment_methods: "[Credit cards, mobile payments, etc.]"
+        local_payment_providers: "[Alipay, WeChat Pay, etc.]"
+        currency_support: "[Local currency requirements]"
+        tax_considerations: "[Local tax requirements]"
+
+  # 市场营销适应
+  marketing_adaptation:
+    messaging_strategy:
+      - region: "[Market region]"
+        key_selling_points: "[What appeals to this market]"
+        messaging_tone: "[Formal/Casual/Playful/etc.]"
+        cultural_references: "[Local references to include]"
+        taboo_topics: "[Topics to avoid]"
+    
+    visual_marketing:
+      - region: "[Market region]"
+        preferred_art_style: "[Marketing art preferences]"
+        color_preferences: "[Marketing color schemes]"
+        layout_preferences: "[Marketing layout styles]"
+        celebrity_endorsements: "[Local influencer considerations]"
+    
+    channel_strategy:
+      - region: "[Market region]"
+        primary_channels: "[Social media, traditional media, etc.]"
+        platform_preferences: "[WeChat, Twitter, TikTok, etc.]"
+        content_format_preferences: "[Video, images, text]"
+        timing_considerations: "[Best times to post, cultural events]"
+
+  # 社区管理
+  community_management:
+    community_platforms:
+      - region: "[Market region]"
+        preferred_platforms: "[Discord, QQ, Line, etc.]"
+        moderation_requirements: "[Cultural moderation needs]"
+        community_guidelines: "[Region-specific guidelines]"
+        language_support: "[Community language support]"
+    
+    customer_support:
+      - region: "[Market region]"
+        support_languages: "[Languages needed for support]"
+        support_channels: "[Email, chat, phone, etc.]"
+        cultural_support_expectations: "[Response time, formality]"
+        escalation_procedures: "[How to handle cultural issues]"
+
+  # 法律合规
+  legal_compliance:
+    content_regulations:
+      - region: "[Market region]"
+        content_restrictions: "[What content is restricted]"
+        approval_processes: "[Government approval needed]"
+        ongoing_compliance: "[Monitoring requirements]"
+        penalty_risks: "[Consequences of non-compliance]"
+    
+    business_regulations:
+      - region: "[Market region]"
+        business_license_requirements: "[Local business requirements]"
+        tax_obligations: "[Local tax requirements]"
+        employment_law: "[If hiring locally]"
+        intellectual_property: "[Local IP considerations]"
+
+  # 测试与验证
+  cultural_testing:
+    focus_group_testing:
+      - region: "[Market region]"
+        target_demographics: "[Age, gender, gaming experience]"
+        testing_methodology: "[How to conduct cultural testing]"
+        key_questions: "[What to test for culturally]"
+        success_metrics: "[How to measure cultural acceptance]"
+    
+    beta_testing_strategy:
+      - region: "[Market region]"
+        beta_participant_criteria: "[Who to include in beta]"
+        cultural_feedback_collection: "[How to gather cultural feedback]"
+        iteration_process: "[How to incorporate feedback]"
+        launch_readiness_criteria: "[When culturally ready to launch]"
+
+  # 风险评估
+  cultural_risks:
+    high_risk_areas:
+      - risk_area: "[Content, Marketing, Business Practice]"
+        risk_description: "[What could go wrong]"
+        potential_impact: "[Business impact if it happens]"
+        mitigation_strategy: "[How to prevent/handle]"
+        monitoring_approach: "[How to watch for this risk]"
+    
+    contingency_planning:
+      - scenario: "[Potential cultural issue scenario]"
+        response_plan: "[How to respond]"
+        communication_strategy: "[How to communicate about it]"
+        recovery_approach: "[How to recover from the issue]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于确保游戏能够成功适应不同的文化市场：
+  1. 深入研究目标市场的文化特点
+  2. 识别可能的文化敏感点
+  3. 制定具体的适应策略
+  4. 建立文化测试和验证流程
+  5. 准备风险缓解措施
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD本地化代理提供详细的文化适应指南
+    - 确保技术实现考虑文化差异
+    - 提供可操作的本地化检查清单
+    - 支持多地区同时开发的工作流程
+  
+  handoff_requirements:
+    - 详细的文化适应规格说明
+    - 本地化资产清单和要求
+    - 文化测试标准和流程
+    - 合规性检查清单

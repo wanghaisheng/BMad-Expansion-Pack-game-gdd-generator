@@ -1,0 +1,460 @@
+name: Strategy Game GDD Workflow
+description: Specialized workflow for creating GDDs for strategy games including RTS, TBS, and 4X games
+icon: ♟️
+category: genre-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for strategy game development"
+    target_output: "Strategy game GDD with deep systems and balanced mechanics"
+    estimated_duration: "5-8 weeks depending on complexity"
+    team_size: "8-12 specialists with strategy game expertise"
+    
+  # 策略游戏特殊考虑
+  strategy_considerations:
+    core_pillars:
+      - "Deep strategic decision-making"
+      - "Complex interconnected systems"
+      - "Long-term planning and consequences"
+      - "Multiple viable strategies and paths"
+      - "Emergent gameplay from system interactions"
+    
+    player_expectations:
+      - "High replay value and depth"
+      - "Balanced and fair competitive play"
+      - "Clear information and feedback systems"
+      - "Meaningful choices with trade-offs"
+      - "Scalable complexity for different skill levels"
+    
+    design_challenges:
+      - "Balancing complexity vs accessibility"
+      - "Preventing dominant strategies"
+      - "Managing information overload"
+      - "Creating engaging early game"
+      - "Maintaining tension throughout"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：策略游戏市场与类型研究
+    - phase: "strategy_market_research"
+      name: "Strategy Game Market & Genre Research"
+      duration: "1-2 weeks"
+      description: "Research strategy game market and establish genre-specific positioning"
+      
+      participants:
+        primary:
+          - market-analyst
+          - strategy-specialist
+          - game-systems-architect
+        supporting:
+          - western-game-designer
+          - eastern-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Strategy game market analysis"
+          
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "1 week"
+          deliverable: "Genre analysis and positioning"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Strategy game concept framework"
+      
+      deliverables:
+        - "Strategy Game Market Analysis"
+        - "Genre Positioning and Differentiation"
+        - "Competitive Analysis of Strategy Games"
+        - "Target Audience Segmentation"
+        - "Platform Strategy for Strategy Games"
+      
+      quality_gates:
+        - "Strategy game market opportunity validated"
+        - "Genre positioning is clear and differentiated"
+        - "Target audience preferences understood"
+        - "Competitive landscape analyzed"
+
+    # 第二阶段：核心策略系统设计
+    - phase: "core_strategy_systems"
+      name: "Core Strategy Systems Design"
+      duration: "2-3 weeks"
+      description: "Design the fundamental strategic systems and mechanics"
+      
+      participants:
+        primary:
+          - strategy-specialist
+          - game-systems-architect
+          - mechanics-specialist
+          - technical-designer
+        supporting:
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "2 weeks"
+          deliverable: "Core strategy systems specification"
+          
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "2 weeks"
+          deliverable: "Detailed mechanics implementation"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Integrated systems design"
+          
+        - task: "analyze-game-design-structure"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Systems complexity analysis"
+      
+      deliverables:
+        - "Core Strategy Systems Specification"
+        - "Resource Management Systems"
+        - "Decision Tree and Choice Architecture"
+        - "Victory Conditions and Win States"
+        - "Balance Framework and Methodology"
+      
+      quality_gates:
+        - "Core systems create meaningful strategic choices"
+        - "Resource systems are balanced and interconnected"
+        - "Victory conditions encourage diverse strategies"
+        - "Systems complexity is manageable"
+
+    # 第三阶段：游戏平衡与深度设计
+    - phase: "balance_depth_design"
+      name: "Game Balance & Depth Design"
+      duration: "2-3 weeks"
+      description: "Create balanced, deep strategic gameplay with multiple viable paths"
+      
+      participants:
+        primary:
+          - strategy-specialist
+          - mechanics-specialist
+          - playtesting-simulator
+        supporting:
+          - game-systems-architect
+          - multiplayer-specialist
+      
+      tasks:
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "2 weeks"
+          deliverable: "Advanced strategy systems"
+          
+        - task: "workshop-game-mechanics"
+          owner: "mechanics-specialist"
+          duration: "2 weeks"
+          deliverable: "Balance testing framework"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1-2 weeks"
+          deliverable: "Balance simulation results"
+      
+      deliverables:
+        - "Advanced Strategy Systems Design"
+        - "Game Balance Framework"
+        - "Counter-Strategy and Meta-Game Design"
+        - "Difficulty Scaling and AI Behavior"
+        - "Replay Value and Variation Systems"
+      
+      quality_gates:
+        - "Multiple viable strategies exist"
+        - "No dominant strategies identified"
+        - "Balance framework is comprehensive"
+        - "Replay value is high"
+
+    # 第四阶段：信息系统与UI设计
+    - phase: "information_ui_design"
+      name: "Information Systems & UI Design"
+      duration: "1-2 weeks"
+      description: "Design information presentation and user interface for complex strategy games"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - strategy-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - technical-designer
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Strategy game UI specification"
+          
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "1 week"
+          deliverable: "Information architecture design"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Strategy game accessibility plan"
+      
+      deliverables:
+        - "Strategy Game UI/UX Specification"
+        - "Information Architecture and Hierarchy"
+        - "Data Visualization and Feedback Systems"
+        - "Accessibility for Complex Interfaces"
+        - "Customization and Personalization Options"
+      
+      quality_gates:
+        - "UI handles complex information clearly"
+        - "Information hierarchy supports decision-making"
+        - "Interface is accessible to diverse players"
+        - "Customization options meet player needs"
+
+    # 第五阶段：AI与单人体验
+    - phase: "ai_singleplayer_design"
+      name: "AI & Single-Player Experience Design"
+      duration: "1-2 weeks"
+      description: "Design AI opponents and single-player campaign experiences"
+      
+      participants:
+        primary:
+          - strategy-specialist
+          - game-narrative-designer
+          - technical-designer
+        supporting:
+          - game-world-designer
+          - playtesting-simulator
+      
+      tasks:
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "1-2 weeks"
+          deliverable: "AI behavior specification"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1 week"
+          deliverable: "Campaign and scenario design"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "AI technical requirements"
+      
+      deliverables:
+        - "AI Behavior and Difficulty Design"
+        - "Single-Player Campaign Structure"
+        - "Scenario and Mission Design"
+        - "Tutorial and Learning Progression"
+        - "AI Technical Implementation Guide"
+      
+      quality_gates:
+        - "AI provides appropriate challenge levels"
+        - "Campaign structure supports learning"
+        - "Scenarios teach strategic concepts"
+        - "Tutorial effectively onboards players"
+
+    # 第六阶段：多人与竞技设计
+    - phase: "multiplayer_competitive_design"
+      name: "Multiplayer & Competitive Design"
+      duration: "1-2 weeks"
+      description: "Design multiplayer modes and competitive features"
+      
+      participants:
+        primary:
+          - multiplayer-specialist
+          - strategy-specialist
+          - liveops-designer
+        supporting:
+          - technical-designer
+          - monetization-designer
+      
+      tasks:
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Multiplayer systems specification"
+          
+        - task: "design-strategy-mechanics"
+          owner: "strategy-specialist"
+          duration: "1 week"
+          deliverable: "Competitive balance framework"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Competitive scene support plan"
+      
+      deliverables:
+        - "Multiplayer Systems Specification"
+        - "Competitive Balance Framework"
+        - "Ranking and Matchmaking Systems"
+        - "Tournament and Esports Support"
+        - "Community and Mod Support"
+      
+      quality_gates:
+        - "Multiplayer modes are balanced and fair"
+        - "Matchmaking supports skill-based play"
+        - "Competitive scene is supported"
+        - "Community features encourage engagement"
+
+    # 第七阶段：策略游戏质量保证
+    - phase: "strategy_quality_assurance"
+      name: "Strategy Game Quality Assurance"
+      duration: "1-2 weeks"
+      description: "Comprehensive quality review focusing on strategy game requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - strategy-specialist
+          - playtesting-simulator
+          - game-design-critic
+        supporting:
+          - multiplayer-specialist
+          - accessibility-specialist
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Strategy GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1-2 weeks"
+          deliverable: "Strategy game playtesting results"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Strategy game design critique"
+      
+      deliverables:
+        - "Strategy Game GDD Review Report"
+        - "Balance Testing and Validation Results"
+        - "Accessibility and Usability Assessment"
+        - "Competitive Readiness Evaluation"
+        - "Launch Strategy and Community Plan"
+      
+      quality_gates:
+        - "All strategy game requirements met"
+        - "Balance testing validates design"
+        - "Accessibility standards achieved"
+        - "Competitive readiness confirmed"
+
+  # 策略游戏特殊流程
+  strategy_specific_processes:
+    balance_methodology:
+      - "Mathematical modeling of game systems"
+      - "Statistical analysis of strategy effectiveness"
+      - "Iterative balance testing and adjustment"
+      - "Community feedback integration"
+    
+    complexity_management:
+      - "Progressive complexity introduction"
+      - "Information layering and filtering"
+      - "Customizable interface complexity"
+      - "Tutorial and learning support systems"
+    
+    competitive_support:
+      - "Tournament mode and spectator features"
+      - "Replay system and analysis tools"
+      - "Community-driven content and mods"
+      - "Professional esports integration"
+    
+    long_term_engagement:
+      - "Seasonal content and meta shifts"
+      - "Expansion and DLC planning"
+      - "Community challenges and events"
+      - "Leaderboards and achievement systems"
+
+  # 策略游戏成功指标
+  strategy_success_metrics:
+    engagement_metrics:
+      - "Average session length (target: 45+ minutes)"
+      - "Games completed vs abandoned"
+      - "Return rate after first week"
+      - "Depth of feature usage"
+    
+    balance_metrics:
+      - "Strategy diversity in competitive play"
+      - "Win rate distribution across strategies"
+      - "Meta-game evolution and stability"
+      - "Player satisfaction with balance"
+    
+    learning_metrics:
+      - "Tutorial completion rates"
+      - "Skill progression over time"
+      - "Help system usage patterns"
+      - "Community knowledge sharing"
+    
+    community_metrics:
+      - "Multiplayer participation rates"
+      - "Community content creation"
+      - "Tournament and event participation"
+      - "Mod creation and adoption"
+
+  # 策略游戏风险管理
+  strategy_risk_management:
+    design_risks:
+      - risk: "Overly complex systems overwhelming players"
+        mitigation: "Progressive complexity and excellent tutorials"
+        
+      - risk: "Dominant strategies emerging"
+        mitigation: "Comprehensive balance testing and ongoing updates"
+        
+      - risk: "Information overload in UI"
+        mitigation: "Layered information architecture and customization"
+    
+    market_risks:
+      - risk: "Niche audience limiting commercial success"
+        mitigation: "Accessibility features and broader appeal elements"
+        
+      - risk: "High competition from established franchises"
+        mitigation: "Strong differentiation and innovation"
+        
+      - risk: "Long development cycles"
+        mitigation: "Iterative development and early testing"
+    
+    technical_risks:
+      - risk: "AI performance and scalability issues"
+        mitigation: "Efficient AI architecture and performance testing"
+        
+      - risk: "Multiplayer synchronization challenges"
+        mitigation: "Robust networking architecture and testing"
+        
+      - risk: "Save game corruption in complex systems"
+        mitigation: "Robust save system with validation and backup"
+
+# 使用指南
+usage_notes: |
+  这个策略游戏工作流程专门用于：
+  1. 创建深度和平衡兼备的策略游戏GDD
+  2. 确保复杂系统的可理解性和可访问性
+  3. 建立可持续的竞技和社区生态
+  4. 实现高重玩价值和长期参与度
+  5. 支持从休闲到硬核的不同玩家群体
+
+# BMAD集成
+bmad_integration:
+  strategy_handoff_requirements:
+    - "复杂系统架构和数据管理"
+    - "AI行为树和决策系统实现"
+    - "平衡测试和调优工具"
+    - "多人同步和网络架构"
+    - "模组支持和社区工具"
+  
+  genre_optimization:
+    - "大规模数据处理和可视化"
+    - "实时策略vs回合制系统架构"
+    - "保存系统和状态管理"
+    - "性能优化和可扩展性"

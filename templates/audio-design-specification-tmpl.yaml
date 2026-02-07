@@ -1,0 +1,324 @@
+name: Audio Design Specification Template
+description: Comprehensive template for game audio design including music, sound effects, and voice
+icon: 🎵
+category: audio
+version: "1.0"
+
+template:
+  # 音频概述
+  audio_overview:
+    audio_vision:
+      artistic_direction: "[Realistic, Stylized, Fantasy, Sci-fi, etc.]"
+      emotional_tone: "[Epic, Intimate, Mysterious, Playful, etc.]"
+      cultural_influence: "[Western, Eastern, Ethnic, Modern, etc.]"
+      audio_style: "[Orchestral, Electronic, Hybrid, Minimalist, etc.]"
+    
+    technical_specifications:
+      sample_rate: "[44.1kHz, 48kHz, 96kHz]"
+      bit_depth: "[16-bit, 24-bit, 32-bit]"
+      audio_format: "[WAV, OGG, MP3, AAC]"
+      compression_strategy: "[Lossless, High quality, Balanced, Compressed]"
+      platform_requirements: "[Platform-specific audio requirements]"
+
+  # 音频资产清单（可直接用于附录资产索引）
+  audio_asset_inventory:
+    naming_rules:
+      bgm_prefix: "MX_"
+      sfx_prefix: "SX_"
+      vo_prefix: "VO_"
+      variant_and_version: "[_01, v001, language suffixes like _zh/_en]"
+    suggested_fields:
+      - id
+      - category  # BGM/SFX/VO/Ambience/UI
+      - name
+      - usage
+      - duration_or_loop
+      - format
+      - sample_rate
+      - bit_rate
+      - channels
+      - loudness_target
+      - platforms
+      - dependencies
+      - file_path
+      - status
+      - localization_languages  # for VO
+    platform_profiles:
+      mobile:
+        low: "[size/quality constraints]"
+        mid: "[default shipping target]"
+        high: "[high-end devices]"
+      pc_console:
+        standard: "[baseline quality]"
+        high: "[premium quality]"
+    validation_gates:
+      - "[Naming compliant]"
+      - "[Format/codec compliant]"
+      - "[Loop points and loudness targets validated]"
+
+  # 音乐设计
+  music_design:
+    musical_style:
+      genre: "[Orchestral, Electronic, Rock, Ambient, etc.]"
+      instrumentation: "[Orchestra, Synthesizers, Guitar, etc.]"
+      tempo_range: "[BPM ranges for different contexts]"
+      key_signatures: "[Preferred keys and modes]"
+      harmonic_language: "[Tonal, Modal, Atonal, etc.]"
+    
+    adaptive_music_system:
+      music_layers:
+        - layer_name: "[Base, Percussion, Melody, etc.]"
+          purpose: "[What this layer adds to the music]"
+          trigger_conditions: "[When this layer plays]"
+          fade_behavior: "[How it fades in/out]"
+          loop_points: "[Where the layer can loop]"
+      
+      dynamic_parameters:
+        - parameter: "[Intensity, Tension, Activity, etc.]"
+          range: "[0-100, Low-High, etc.]"
+          musical_effect: "[How this affects the music]"
+          game_triggers: "[What game events change this]"
+          transition_time: "[How quickly changes occur]"
+      
+      musical_transitions:
+        - transition_type: "[Combat to Exploration, Menu to Game, etc.]"
+          transition_method: "[Crossfade, Stinger, Hard cut, etc.]"
+          transition_duration: "[Length of transition]"
+          musical_bridge: "[Connecting musical elements]"
+    
+    music_categories:
+      - category: "[Main Theme, Combat, Exploration, etc.]"
+        duration: "[Track length or loop duration]"
+        intensity_level: "[Low, Medium, High energy]"
+        emotional_goal: "[What emotion to evoke]"
+        instrumentation: "[Specific instruments for this category]"
+        adaptive_features: "[How this music adapts to gameplay]"
+        cultural_considerations: "[Regional variations needed]"
+
+  # 音效设计
+  sound_effects_design:
+    sfx_categories:
+      interface_sounds:
+        - sound_type: "[Button clicks, Menu transitions, etc.]"
+          audio_character: "[Crisp, Soft, Mechanical, Organic, etc.]"
+          volume_level: "[Relative volume level]"
+          frequency_range: "[Frequency characteristics]"
+          variation_strategy: "[How to avoid repetition]"
+      
+      gameplay_sounds:
+        - sound_type: "[Weapon sounds, Movement, Interactions, etc.]"
+          audio_character: "[Realistic, Stylized, Fantasy, etc.]"
+          impact_level: "[Subtle, Moderate, Dramatic]"
+          spatial_behavior: "[Mono, Stereo, 3D positioned]"
+          distance_modeling: "[How sound changes with distance]"
+          occlusion_behavior: "[How obstacles affect sound]"
+      
+      environmental_sounds:
+        - environment_type: "[Forest, City, Dungeon, etc.]"
+          ambient_layers: "[Background ambient sounds]"
+          interactive_elements: "[Sounds triggered by player actions]"
+          weather_variations: "[How weather affects audio]"
+          time_of_day_changes: "[Day/night audio variations]"
+          seasonal_variations: "[Seasonal audio changes]"
+    
+    audio_implementation:
+      3d_audio_system:
+        spatialization_method: "[HRTF, Binaural, Surround, etc.]"
+        distance_attenuation: "[Linear, Logarithmic, Custom curve]"
+        doppler_effects: "[Enabled for moving objects]"
+        reverb_system: "[Environmental reverb implementation]"
+        occlusion_system: "[How obstacles block sound]"
+      
+      dynamic_mixing:
+        - mix_state: "[Combat, Exploration, Dialogue, etc.]"
+          priority_sounds: "[Which sounds are most important]"
+          ducking_behavior: "[How sounds duck for important audio]"
+          eq_adjustments: "[Frequency adjustments for this state]"
+          compression_settings: "[Dynamic range adjustments]"
+
+  # 语音设计
+  voice_design:
+    dialogue_system:
+      voice_direction:
+        - character_type: "[Protagonist, NPC, Narrator, etc.]"
+          voice_characteristics: "[Age, Gender, Accent, Personality]"
+          emotional_range: "[Emotional expressions needed]"
+          cultural_background: "[Cultural voice considerations]"
+          language_variations: "[Multiple language support]"
+      
+      recording_specifications:
+        recording_quality: "[Studio quality, Field recording, etc.]"
+        microphone_setup: "[Microphone type and positioning]"
+        room_acoustics: "[Dry, Natural reverb, etc.]"
+        noise_floor: "[Background noise requirements]"
+        delivery_format: "[File format and specifications]"
+      
+      dialogue_implementation:
+        lip_sync_requirements: "[Phoneme-based, Viseme-based, etc.]"
+        subtitle_synchronization: "[Timing and display requirements]"
+        localization_support: "[Multiple language implementation]"
+        dynamic_dialogue: "[Procedural or adaptive dialogue]"
+        voice_processing: "[Real-time effects on voice]"
+    
+    voice_over_categories:
+      - category: "[Narrative, Tutorial, Combat barks, etc.]"
+        tone_style: "[Serious, Humorous, Dramatic, etc.]"
+        delivery_pace: "[Fast, Medium, Slow paced delivery]"
+        emotional_intensity: "[Subtle, Moderate, Intense]"
+        cultural_adaptation: "[Regional voice variations]"
+        accessibility_features: "[Audio descriptions, etc.]"
+
+  # 交互音频
+  interactive_audio:
+    procedural_audio:
+      - system: "[Footsteps, Weather, Crowds, etc.]"
+        generation_method: "[Layered samples, Synthesis, Hybrid]"
+        variation_parameters: "[What creates variations]"
+        real_time_processing: "[Real-time effects and modifications]"
+        performance_impact: "[CPU/Memory usage considerations]"
+    
+    player_feedback_audio:
+      - feedback_type: "[Health status, Achievement, Progress, etc.]"
+        audio_cue_design: "[How the audio communicates information]"
+        accessibility_considerations: "[Audio alternatives for hearing impaired]"
+        cultural_universality: "[Cross-cultural understanding]"
+        customization_options: "[Player customization of audio cues]"
+    
+    adaptive_systems:
+      - system_name: "[Dynamic weather, Crowd reactions, etc.]"
+        input_parameters: "[What drives the adaptive behavior]"
+        output_variations: "[How the audio changes]"
+        transition_smoothness: "[How smoothly changes occur]"
+        performance_optimization: "[Efficiency considerations]"
+
+  # 技术实现
+  technical_implementation:
+    audio_engine:
+      engine_choice: "[Wwise, FMOD, Unity Audio, Unreal Audio, etc.]"
+      platform_support: "[Supported platforms and limitations]"
+      memory_management: "[Audio memory allocation strategy]"
+      streaming_strategy: "[When to stream vs load audio]"
+      compression_settings: "[Platform-specific compression]"
+    
+    performance_optimization:
+      - optimization_area: "[Memory usage, CPU usage, Loading times]"
+        current_target: "[Performance target for this area]"
+        optimization_techniques: "[Specific techniques to use]"
+        quality_trade_offs: "[What quality is sacrificed]"
+        platform_variations: "[Platform-specific optimizations]"
+    
+    audio_middleware:
+      integration_requirements: "[How audio integrates with game engine]"
+      scripting_capabilities: "[Audio scripting and automation]"
+      debugging_tools: "[Audio debugging and profiling tools]"
+      version_control: "[Audio asset version control strategy]"
+
+  # 平台特定考虑
+  platform_considerations:
+    mobile_audio:
+      battery_optimization: "[Audio processing efficiency for battery life]"
+      speaker_limitations: "[Optimizing for small speakers]"
+      headphone_optimization: "[Optimizing for mobile headphones]"
+      background_audio: "[Handling audio when app is backgrounded]"
+      notification_integration: "[Audio notifications and alerts]"
+    
+    console_audio:
+      - console: "[PlayStation, Xbox, Nintendo Switch]"
+        audio_capabilities: "[Platform-specific audio features]"
+        surround_sound_support: "[Multi-channel audio support]"
+        haptic_integration: "[Audio-haptic feedback integration]"
+        certification_requirements: "[Platform audio certification needs]"
+    
+    pc_audio:
+      audio_driver_support: "[DirectSound, WASAPI, ASIO support]"
+      hardware_scalability: "[Scaling from basic to high-end audio hardware]"
+      user_customization: "[Audio settings and customization options]"
+      accessibility_support: "[Screen reader and accessibility integration]"
+    
+    vr_ar_audio:
+      spatial_audio_requirements: "[3D audio for immersive experiences]"
+      head_tracking_integration: "[Audio that follows head movement]"
+      comfort_considerations: "[Audio comfort for extended VR sessions]"
+      mixed_reality_audio: "[Blending real and virtual audio for AR]"
+
+  # 本地化与文化适应
+  localization_cultural:
+    voice_localization:
+      - language: "[Target language]"
+        voice_talent_requirements: "[Native speaker, Accent, etc.]"
+        cultural_voice_preferences: "[Regional voice preferences]"
+        recording_location: "[Local vs remote recording]"
+        quality_assurance: "[Native speaker QA process]"
+    
+    music_cultural_adaptation:
+      - region: "[Target region/culture]"
+        musical_preferences: "[Regional musical preferences]"
+        cultural_instruments: "[Instruments to include/avoid]"
+        tempo_preferences: "[Regional tempo preferences]"
+        harmonic_preferences: "[Regional harmonic preferences]"
+    
+    sound_cultural_considerations:
+      - sound_type: "[Animal sounds, Crowd sounds, etc.]"
+        cultural_variations: "[How sounds differ by culture]"
+        cultural_sensitivity: "[Sounds to avoid in certain cultures]"
+        regional_alternatives: "[Alternative sounds for different regions]"
+
+  # 质量保证与测试
+  quality_assurance:
+    audio_testing_procedures:
+      technical_testing:
+        - test_type: "[Frequency response, Dynamic range, etc.]"
+          testing_method: "[How to perform this test]"
+          acceptance_criteria: "[What constitutes passing]"
+          testing_tools: "[Tools needed for testing]"
+      
+      subjective_testing:
+        - test_type: "[Emotional impact, Clarity, etc.]"
+          testing_methodology: "[How to conduct subjective tests]"
+          test_participant_criteria: "[Who should participate in testing]"
+          evaluation_criteria: "[How to evaluate subjective responses]"
+    
+    platform_testing:
+      - platform: "[Mobile, Console, PC, etc.]"
+        specific_tests: "[Platform-specific audio tests]"
+        common_issues: "[Known audio issues on this platform]"
+        testing_hardware: "[Required testing hardware]"
+        certification_testing: "[Platform certification audio tests]"
+
+  # 后期制作与交付
+  post_production:
+    mastering_standards:
+      loudness_standards: "[LUFS targets for different content types]"
+      dynamic_range: "[Dynamic range targets]"
+      frequency_balance: "[EQ guidelines and standards]"
+      quality_control: "[Final quality control procedures]"
+    
+    asset_delivery:
+      file_organization: "[How audio files should be organized]"
+      naming_conventions: "[File naming standards]"
+      metadata_requirements: "[Required metadata for audio files]"
+      version_control: "[Audio asset versioning system]"
+      backup_strategy: "[Audio asset backup and archival]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建全面的游戏音频设计规格：
+  1. 建立清晰的音频艺术方向和技术标准
+  2. 设计适应性音频系统增强游戏体验
+  3. 考虑平台特性和技术限制
+  4. 规划本地化和文化适应策略
+  5. 建立质量保证和测试流程
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD音频代理提供详细的音频实现指南
+    - 确保音频系统与游戏引擎集成
+    - 提供平台特定的音频优化策略
+    - 支持音频资产管理和版本控制
+  
+  handoff_requirements:
+    - 详细的音频技术规格和标准
+    - 音频资产清单和组织结构
+    - 平台特定的音频实现指南
+    - 质量保证和测试程序

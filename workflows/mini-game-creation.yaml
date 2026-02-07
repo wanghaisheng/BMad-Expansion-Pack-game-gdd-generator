@@ -1,0 +1,65 @@
+---
+# workflows/mini-game-creation.yaml
+name: mini-game-creation
+title: Mini Game Creation Workflow
+description: |
+  Pipeline for designing and documenting a standalone mini-game or game prototype (simple mechanics).
+
+triggers:
+  - command: /mini-game
+  - intent: "design a mini game"
+
+inputs:
+  - working_title
+  - genre
+  - target_platform
+
+agents:
+  - game-systems-architect
+  - player-experience-designer
+  - mechanics-specialist
+  - technical-designer
+  - gdd-reviewer
+  - playtesting-simulator
+
+steps:
+  - id: concept
+    title: Generate game concept
+    agent: game-systems-architect
+    outputs: game_concept
+
+  - id: mechanics_outline
+    title: Create core mechanics outline
+    agent: mechanics-specialist
+    inputs: game_concept
+    outputs: mechanics_outline
+
+  - id: feature_design
+    title: Design game features
+    agent: technical-designer
+    inputs: mechanics_outline
+    outputs: feature_design
+
+  - id: balance_pass
+    title: Balance mechanics & difficulty
+    agent: mechanics-specialist
+    inputs: feature_design
+    outputs: balanced_design
+
+  - id: playtest_simulation
+    title: Simulate playtesting
+    agent: playtesting-simulator
+    inputs: balanced_design
+    outputs: playtest_feedback
+
+  - id: final_design
+    title: Final design document & polish
+    agent: gdd-reviewer
+    inputs:
+      - balanced_design
+      - playtest_feedback
+    outputs: final_mini_game_design
+
+outputs:
+  - final_mini_game_design
+

@@ -1,0 +1,259 @@
+name: GDD Generation Workflow
+description: Streamlined workflow for generating comprehensive Game Design Documents using specialized GDD agents
+icon: 📋
+category: core
+version: "2.0"
+
+workflow:
+  overview:
+    purpose: "Generate a complete, professional Game Design Document through coordinated agent collaboration"
+    target_output: "Comprehensive GDD ready for development handoff"
+    estimated_duration: "2-4 hours for initial draft, 1-2 days for complete document"
+    
+  phases:
+    # Phase 1: GDD Foundation (30 minutes)
+    - phase: "gdd_foundation"
+      name: "GDD Structure and Foundation"
+      duration: "30 minutes"
+      description: "Establish GDD structure, game concept, and core requirements"
+      
+      agent_sequence:
+        - agent: "game-systems-architect"
+          task: "generate-gdd-foundation"
+          input: "User requirements and game concept"
+          output: "Game concept brief and section outline"
+          
+        - agent: "market-analyst"
+          task: "create-market-analysis"
+          input: "Game concept and target audience info"
+          output: "Market analysis and competitive positioning"
+      
+      deliverables:
+        - "GDD Document Structure"
+        - "Core Game Concept"
+        - "Market Analysis Summary"
+    
+    # Phase 2: Core Design (60 minutes)
+    - phase: "core_design"
+      name: "Core Game Design Elements"
+      duration: "60 minutes"
+      description: "Design core gameplay mechanics, player experience, and game world"
+      
+      agent_sequence:
+        - agent: "mechanics-specialist"
+          task: "design-core-mechanics"
+          input: "Game concept and structure"
+          output: "Core gameplay mechanics and systems"
+          
+        - agent: "player-experience-designer"
+          task: "design-onboarding"
+          input: "Core mechanics and game concept"
+          output: "Player experience flow, onboarding, and feedback assets"
+          
+        - agent: "game-world-designer"
+          task: "create-game-world"
+          input: "Game concept and mechanics"
+          output: "Game world design and setting"
+      
+      deliverables:
+        - "Core Mechanics Specification"
+        - "Player Experience Design"
+        - "Game World Design"
+    
+    # Phase 3: Specialized Design (90 minutes)
+    - phase: "specialized_design"
+      name: "Specialized Design Elements"
+      duration: "90 minutes"
+      description: "Develop specialized aspects including narrative, UI/UX, art, and audio"
+      
+      parallel_agents:
+        - agent: "game-narrative-designer"
+          task: "design-game-narrative"
+          output: "Story structure, characters, and narrative elements"
+          
+        - agent: "ui-ux-designer"
+          task: "design-ui-ux-systems"
+          output: "UI/UX specs, screen inventory, storyboard, and UI asset list"
+          
+        - agent: "game-art-director"
+          task: "create-art-style-guide"
+          output: "Art direction guide, naming rules, and asset pipeline details"
+          
+        - agent: "audio-designer"
+          task: "design-audio-systems"
+          output: "Audio design and audio asset list with platform profiles"
+          
+        - agent: "monetization-designer"
+          task: "design-monetization-strategy"
+          output: "Business model and monetization strategy"
+      
+      deliverables:
+        - "Narrative Design Document"
+        - "UI/UX Specifications"
+        - "Art Direction Guide"
+        - "Audio Design Specifications"
+        - "Monetization Strategy"
+    
+    # Phase 4: Platform & Technical (45 minutes)
+    - phase: "platform_technical"
+      name: "Platform and Technical Specifications"
+      duration: "45 minutes"
+      description: "Define platform requirements and technical specifications"
+      
+      agent_sequence:
+        - agent: "mobile-game-specialist"
+          task: "design-platform-optimization"
+          input: "Game design and target platforms"
+          output: "Platform-specific requirements and constraints"
+          
+        - agent: "technical-designer"
+          task: "create-technical-specification"
+          input: "Game design and platform requirements"
+          output: "Technical architecture, asset automation, and media profiles"
+          
+        - agent: "accessibility-specialist"
+          task: "create-accessibility-plan"
+          input: "Complete game design"
+          output: "Accessibility specifications and guidelines"
+      
+      deliverables:
+        - "Platform Requirements"
+        - "Technical Specifications"
+        - "Accessibility Guidelines"
+    
+    # Phase 5: Quality Assurance (30 minutes)
+    - phase: "quality_assurance"
+      name: "GDD Review and Validation"
+      duration: "30 minutes"
+      description: "Review, validate, and finalize the complete GDD"
+      
+      agent_sequence:
+        - agent: "gdd-reviewer"
+          task: "comprehensive-gdd-review"
+          input: "Complete GDD draft"
+          output: "Quality review report and recommendations"
+          
+        - agent: "gdd-validator"
+          task: "validate-gdd-completeness"
+          input: "Reviewed GDD"
+          output: "Validation report including asset list coverage and compliance"
+          
+        - agent: "game-systems-architect"
+          task: "generate-comprehensive-gdd"
+          input: "Validated GDD content"
+          output: "Final formatted GDD document"
+      
+      deliverables:
+        - "GDD Quality Review"
+        - "Final Comprehensive GDD"
+
+  execution_strategy:
+    coordination_method: "Sequential with parallel specialized design phase"
+    
+    agent_handoffs:
+      - from: "game-systems-architect"
+        to: "market-analyst"
+        data: "Game concept brief and requirements"
+        
+      - from: "market-analyst"
+        to: "mechanics-specialist"
+        data: "Market-validated game concept"
+        
+      - from: "mechanics-specialist"
+        to: "player-experience-designer"
+        data: "Core mechanics specification"
+        
+      - from: "player-experience-designer"
+        to: "specialized_agents"
+        data: "Player experience framework"
+        
+      - from: "specialized_agents"
+        to: "platform_agents"
+        data: "Complete design specifications"
+        
+      - from: "platform_agents"
+        to: "quality_agents"
+        data: "Technical and platform specifications"
+    
+    quality_gates:
+      - gate: "concept_validation"
+        criteria: "Game concept is unique, viable, and market-appropriate"
+        
+      - gate: "design_coherence"
+        criteria: "All design elements work together cohesively"
+        
+      - gate: "technical_feasibility"
+        criteria: "Technical requirements are realistic and achievable"
+
+      - gate: "asset_readiness"
+        criteria: "Asset lists, naming rules, metadata schema, and media profiles are production-ready"
+        
+      - gate: "completeness_check"
+        criteria: "GDD covers all necessary aspects for development"
+
+  output_specifications:
+    document_format: "Comprehensive markdown GDD with standardized sections"
+    
+    required_sections:
+      - "Executive Summary"
+      - "Game Overview"
+      - "Core Gameplay Mechanics"
+      - "Player Experience Design"
+      - "Game World and Setting"
+      - "Narrative Design"
+      - "Art Direction"
+      - "Audio Design"
+      - "UI/UX Specifications"
+      - "Technical Requirements"
+      - "Platform Specifications"
+      - "Monetization Strategy"
+      - "Development Roadmap"
+      - "Risk Assessment"
+    
+    master_template_sections:
+      - "1_Copyright Information.md"
+      - "2_Version History.md"
+      - "3_Game Overview.md"
+      - "4_Gameplay and Mechanics.md"
+      - "5_Story, Setting and Character.md"
+      - "6_Levels.md"
+      - "7_Interface.md"
+      - "8_Artificial Intelligence.md"
+      - "9_Technical.md"
+      - "10_Game Art.md"
+      - "11_Secondary Software.md"
+      - "12_Management.md"
+      - "13_Appendices.md"
+    
+    quality_standards:
+      - "Clear, actionable specifications"
+      - "Consistent terminology throughout"
+      - "Comprehensive coverage of all game aspects"
+      - "Development-ready detail level"
+      - "Professional presentation quality"
+
+usage_instructions: |
+  This workflow generates a comprehensive GDD through coordinated agent collaboration:
+  
+  1. Start with clear game concept and requirements
+  2. Agents work sequentially with defined handoffs
+  3. Specialized design phase runs in parallel for efficiency
+  4. Quality assurance ensures completeness and coherence
+  5. Final output is a development-ready GDD
+  
+  Key success factors:
+  - Clear initial requirements and vision
+  - Proper agent coordination and data handoffs
+  - Thorough quality review process
+  - Focus on actionable, development-ready content
+    
+    Master template alignment:
+    - Produces standardized chapters matching GDDMarkdownTemplate
+    - Missing chapters handled by generation tasks:
+      - `create-copyright-section` → 1
+      - `create-version-history` → 2
+      - `design-ai-spec` → 8
+      - `define-secondary-software` → 11
+      - `create-management-plan` → 12
+      - `compile-appendices` → 13
+    - Output path convention: deliverables/<project>/GDD/<version>/

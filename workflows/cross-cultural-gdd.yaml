@@ -1,0 +1,506 @@
+name: Cross-Cultural GDD Workflow
+description: Specialized workflow for creating GDDs designed for multiple cultural markets from the start
+icon: 🌍
+category: specialized
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a GDD designed for successful launch across multiple cultural markets simultaneously"
+    target_output: "Culturally adaptive GDD with region-specific variations and global appeal"
+    estimated_duration: "6-10 weeks with extensive cultural validation"
+    team_size: "12-16 specialists including cultural experts from target regions"
+    
+  # 跨文化设计原则
+  cross_cultural_principles:
+    core_principles:
+      - "Cultural authenticity over stereotypical representation"
+      - "Respectful adaptation rather than direct translation"
+      - "Universal themes with local expression"
+      - "Inclusive design that celebrates diversity"
+      - "Collaborative development with cultural communities"
+    
+    target_markets:
+      primary_regions:
+        - "East Asia (China, Japan, Korea)"
+        - "North America (US, Canada)"
+        - "Europe (Major EU markets)"
+        - "Southeast Asia (Major markets)"
+      
+      secondary_regions:
+        - "Latin America"
+        - "Middle East and North Africa"
+        - "Sub-Saharan Africa"
+        - "South Asia"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：全球市场研究
+    - phase: "global_market_research"
+      name: "Global Market Research & Cultural Analysis"
+      duration: "2-3 weeks"
+      description: "Comprehensive research across all target cultural markets"
+      
+      participants:
+        primary:
+          - market-analyst
+          - eastern-game-designer
+          - western-game-designer
+          - localization-specialist
+        supporting:
+          - game-systems-architect
+          - player-experience-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "2 weeks"
+          deliverable: "Global market analysis report"
+          cultural_focus: "Cross-cultural market opportunities and challenges"
+          
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Eastern market cultural analysis"
+          cultural_focus: "East Asian gaming preferences and cultural values"
+          
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Western market cultural analysis"
+          cultural_focus: "Western gaming preferences and cultural values"
+          
+        - task: "create-localization-plan"
+          owner: "localization-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Global localization strategy"
+          cultural_focus: "Language and cultural adaptation requirements"
+      
+      deliverables:
+        - "Global Market Analysis Report"
+        - "Cultural Preferences Matrix"
+        - "Regional Gaming Behavior Analysis"
+        - "Cross-Cultural Opportunity Assessment"
+        - "Global Localization Strategy"
+      
+      quality_gates:
+        - "All target markets thoroughly researched"
+        - "Cultural differences and similarities identified"
+        - "Market opportunities validated across regions"
+        - "Localization requirements clearly defined"
+
+    # 第二阶段：通用核心设计
+    - phase: "universal_core_design"
+      name: "Universal Core Design Development"
+      duration: "2-3 weeks"
+      description: "Design core game elements that work across all target cultures"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - mechanics-specialist
+          - player-experience-designer
+          - game-world-designer
+        supporting:
+          - eastern-game-designer
+          - western-game-designer
+          - localization-specialist
+      
+      tasks:
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Culturally universal game concept"
+          cultural_focus: "Core concept that resonates across cultures"
+          
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Cross-cultural mechanics design"
+          cultural_focus: "Mechanics that work in all target markets"
+          
+        - task: "expand-game-concept"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Universal player experience design"
+          cultural_focus: "Player experience that appeals globally"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "1-2 weeks"
+          deliverable: "Culturally adaptive world design"
+          cultural_focus: "World framework that supports cultural variations"
+      
+      deliverables:
+        - "Universal Game Concept"
+        - "Cross-Cultural Mechanics Specification"
+        - "Global Player Experience Design"
+        - "Culturally Adaptive World Framework"
+      
+      quality_gates:
+        - "Core design appeals to all target cultures"
+        - "Mechanics avoid cultural conflicts"
+        - "Player experience is universally engaging"
+        - "World design supports cultural customization"
+
+    # 第三阶段：文化适应设计
+    - phase: "cultural_adaptation"
+      name: "Cultural Adaptation & Localization Design"
+      duration: "2-3 weeks"
+      description: "Create culture-specific adaptations and variations"
+      
+      participants:
+        primary:
+          - eastern-game-designer
+          - western-game-designer
+          - localization-specialist
+          - game-narrative-designer
+          - game-art-director
+        supporting:
+          - audio-designer
+          - ui-ux-designer
+      
+      tasks:
+        - task: "create-cultural-adaptation"
+          owner: "localization-specialist"
+          duration: "2 weeks"
+          deliverable: "Comprehensive cultural adaptation guide"
+          cultural_focus: "Detailed adaptation strategies for each market"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "2 weeks"
+          deliverable: "Culturally adaptive narrative framework"
+          cultural_focus: "Story elements that adapt to different cultures"
+          
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "1-2 weeks"
+          deliverable: "Cross-cultural art direction guide"
+          cultural_focus: "Visual styles that work across cultures"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "1 week"
+          deliverable: "Culturally adaptive audio design"
+          cultural_focus: "Audio that adapts to cultural preferences"
+      
+      deliverables:
+        - "Cultural Adaptation Guide"
+        - "Region-Specific Design Variations"
+        - "Cross-Cultural Narrative Framework"
+        - "Adaptive Art Direction Guide"
+        - "Cultural Audio Design Specifications"
+      
+      quality_gates:
+        - "Each culture has appropriate adaptations"
+        - "Cultural sensitivities are respected"
+        - "Adaptations maintain core game integrity"
+        - "Local preferences are authentically represented"
+
+    # 第四阶段：技术与平台本地化
+    - phase: "technical_localization"
+      name: "Technical & Platform Localization"
+      duration: "1-2 weeks"
+      description: "Technical implementation of cultural adaptations and platform requirements"
+      
+      participants:
+        primary:
+          - technical-designer
+          - mobile-game-specialist
+          - pc-console-specialist
+          - web-game-specialist
+        supporting:
+          - localization-specialist
+          - ui-ux-designer
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Cross-cultural technical architecture"
+          cultural_focus: "Technical systems supporting cultural variations"
+          
+        - task: "design-platform-optimization"
+          owner: "mobile-game-specialist"
+          duration: "1 week"
+          deliverable: "Platform-specific cultural optimizations"
+          cultural_focus: "Platform preferences in different regions"
+          
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1 week"
+          deliverable: "Culturally adaptive UI/UX design"
+          cultural_focus: "Interface design for different cultural contexts"
+      
+      deliverables:
+        - "Cross-Cultural Technical Architecture"
+        - "Platform-Specific Cultural Features"
+        - "Adaptive UI/UX Specifications"
+        - "Localization Technical Requirements"
+      
+      quality_gates:
+        - "Technical architecture supports all cultural variations"
+        - "Platform-specific requirements addressed"
+        - "UI/UX adapts appropriately to cultural contexts"
+        - "Localization systems are robust and scalable"
+
+    # 第五阶段：商业模式适应
+    - phase: "business_model_adaptation"
+      name: "Business Model & Monetization Adaptation"
+      duration: "1-2 weeks"
+      description: "Adapt monetization and business models for different cultural markets"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - market-analyst
+          - eastern-game-designer
+          - western-game-designer
+        supporting:
+          - liveops-designer
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1-2 weeks"
+          deliverable: "Cross-cultural monetization strategy"
+          cultural_focus: "Monetization approaches for different cultures"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Global live operations plan"
+          cultural_focus: "Live ops that work across cultures"
+          
+        - task: "market-viability-assessment"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Cross-cultural business viability analysis"
+          cultural_focus: "Business model validation across markets"
+      
+      deliverables:
+        - "Cross-Cultural Monetization Strategy"
+        - "Regional Business Model Variations"
+        - "Global Live Operations Plan"
+        - "Cultural Business Viability Analysis"
+      
+      quality_gates:
+        - "Monetization is culturally appropriate in all markets"
+        - "Business models align with regional preferences"
+        - "Live operations support cultural diversity"
+        - "Revenue projections are realistic across regions"
+
+    # 第六阶段：文化验证与测试
+    - phase: "cultural_validation"
+      name: "Cultural Validation & Community Testing"
+      duration: "2-3 weeks"
+      description: "Extensive validation with cultural communities and experts"
+      
+      participants:
+        primary:
+          - playtesting-simulator
+          - game-design-critic
+          - eastern-game-designer
+          - western-game-designer
+          - localization-specialist
+        supporting:
+          - accessibility-specialist
+          - player-experience-designer
+      
+      tasks:
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "2 weeks"
+          deliverable: "Cross-cultural playtesting results"
+          cultural_focus: "Testing with players from all target cultures"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Cultural design critique"
+          cultural_focus: "Professional review of cultural adaptations"
+          
+        - task: "incorporate-playtesting-feedback"
+          owner: "localization-specialist"
+          duration: "1 week"
+          deliverable: "Cultural feedback integration"
+          cultural_focus: "Incorporating cultural community feedback"
+      
+      deliverables:
+        - "Cross-Cultural Testing Report"
+        - "Cultural Community Feedback Analysis"
+        - "Cultural Sensitivity Audit"
+        - "Global Market Readiness Assessment"
+      
+      quality_gates:
+        - "All cultural communities validate the design"
+        - "Cultural sensitivities are properly addressed"
+        - "Adaptations are authentic and respectful"
+        - "Global launch readiness confirmed"
+
+    # 第七阶段：最终整合与文档
+    - phase: "final_integration"
+      name: "Final Integration & Documentation"
+      duration: "1 week"
+      description: "Final integration of all cultural elements and comprehensive documentation"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - gdd-validator
+          - localization-specialist
+        supporting:
+          - game-systems-architect
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "3-5 days"
+          deliverable: "Cross-cultural design review"
+          cultural_focus: "Comprehensive review of all cultural elements"
+          
+        - task: "final-game-design-polish"
+          owner: "gdd-validator"
+          duration: "3-5 days"
+          deliverable: "Cross-cultural complete GDD"
+          cultural_focus: "Final validation and documentation"
+      
+      deliverables:
+        - "Cross-Cultural Complete GDD"
+        - "Cultural Implementation Guide"
+        - "Global Launch Strategy"
+        - "Cultural Maintenance Plan"
+      
+      quality_gates:
+        - "All cultural requirements documented"
+        - "Implementation guidance is clear for all regions"
+        - "Launch strategy addresses all markets"
+        - "Long-term cultural maintenance planned"
+
+  # 文化专项考虑
+  cultural_specializations:
+    eastern_markets:
+      design_preferences:
+        - "Social and community-focused features"
+        - "Collection and progression mechanics"
+        - "Seasonal events and limited-time content"
+        - "Character customization and expression"
+      
+      cultural_values:
+        - "Harmony and group cooperation"
+        - "Respect for hierarchy and tradition"
+        - "Face-saving and status display"
+        - "Long-term commitment and loyalty"
+    
+    western_markets:
+      design_preferences:
+        - "Individual achievement and competition"
+        - "Narrative depth and character development"
+        - "Fair monetization and value transparency"
+        - "Accessibility and inclusive representation"
+      
+      cultural_values:
+        - "Individual expression and choice"
+        - "Fairness and equal opportunity"
+        - "Innovation and creativity"
+        - "Diversity and inclusion"
+    
+    emerging_markets:
+      design_considerations:
+        - "Mobile-first and accessible design"
+        - "Local payment method integration"
+        - "Bandwidth and performance optimization"
+        - "Cultural authenticity and representation"
+      
+      business_considerations:
+        - "Affordable pricing strategies"
+        - "Local partnership opportunities"
+        - "Regulatory compliance requirements"
+        - "Community building and support"
+
+  # 协作模式
+  collaboration_patterns:
+    cultural_integration:
+      - "Cultural experts involved throughout all phases"
+      - "Regular cross-cultural design reviews"
+      - "Community representative consultation"
+      - "Continuous cultural sensitivity validation"
+    
+    global_coordination:
+      - "Synchronized development across time zones"
+      - "Shared cultural knowledge repository"
+      - "Cross-cultural team training and awareness"
+      - "Global community engagement strategy"
+    
+    local_partnerships:
+      - "Cultural consultant networks in each region"
+      - "Local community advisory groups"
+      - "Regional testing and validation partners"
+      - "Cultural authenticity verification processes"
+
+  # 质量标准
+  quality_standards:
+    cultural_authenticity:
+      - "Respectful and accurate cultural representation"
+      - "Avoidance of stereotypes and cultural appropriation"
+      - "Community validation of cultural elements"
+      - "Ongoing cultural sensitivity monitoring"
+    
+    global_coherence:
+      - "Consistent core experience across all cultures"
+      - "Seamless integration of cultural adaptations"
+      - "Unified brand identity with local expression"
+      - "Cross-cultural player community harmony"
+    
+    market_readiness:
+      - "Regulatory compliance in all target markets"
+      - "Platform certification across regions"
+      - "Localization quality exceeds industry standards"
+      - "Cultural marketing strategies validated"
+
+  # 成功指标
+  success_metrics:
+    cultural_acceptance:
+      - "Positive reception from cultural communities"
+      - "Cultural authenticity scores from experts"
+      - "Community engagement across all regions"
+      - "Cultural sensitivity incident rates"
+    
+    market_performance:
+      - "Successful launch metrics in all target markets"
+      - "Cross-cultural player retention rates"
+      - "Regional revenue performance"
+      - "Global brand recognition and reputation"
+    
+    long_term_sustainability:
+      - "Ongoing cultural community relationships"
+      - "Successful cultural content updates"
+      - "Cross-cultural player community health"
+      - "Cultural adaptation scalability"
+
+# 使用指南
+usage_notes: |
+  这个跨文化工作流程用于：
+  1. 从设计初期就考虑多个文化市场
+  2. 创建既有全球吸引力又有本地相关性的游戏
+  3. 建立可持续的跨文化开发和运营流程
+  4. 确保文化敏感性和真实性
+  5. 实现真正的全球化游戏体验
+
+# BMAD集成
+bmad_integration:
+  cross_cultural_handoff:
+    - "详细的文化适应技术实现指南"
+    - "区域特定的功能和内容要求"
+    - "跨文化测试和验证程序"
+    - "本地化系统和工作流程"
+    - "文化社区管理策略"
+  
+  global_operations:
+    - "多区域部署和运营计划"
+    - "跨文化内容更新流程"
+    - "全球社区管理系统"
+    - "文化敏感性监控机制"

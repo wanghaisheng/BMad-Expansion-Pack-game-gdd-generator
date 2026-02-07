@@ -1,0 +1,91 @@
+---
+template:
+  id: monetization-strategy-tmpl
+  name: Monetization Strategy Template
+  version: 1.0
+  description: Comprehensive template for game monetization strategy design
+  output:
+    format: markdown
+    filename: "{{game_title}}-monetization-strategy.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: business_model
+    title: Business Model Overview
+    instruction: |
+      Define the core business model:
+      - Primary monetization model (F2P, Premium, Subscription, Hybrid)
+      - Target revenue streams and priorities
+      - Player value proposition
+      - Competitive pricing analysis
+      - Market positioning strategy
+    elicit: true
+
+  - id: player_segmentation
+    title: Player Segmentation
+    instruction: |
+      Define player segments and targeting:
+      - Free player experience and value
+      - Low-spender conversion strategies
+      - Mid-tier player retention and growth
+      - High-value player (whale) services
+      - Churn prevention and win-back strategies
+    elicit: true
+
+  - id: monetization_mechanics
+    title: Monetization Mechanics
+    instruction: |
+      Design specific monetization systems:
+      - In-app purchase categories and pricing
+      - Virtual currency systems and exchange rates
+      - Subscription tiers and benefits
+      - Advertisement integration and rewards
+      - Battle pass and seasonal content
+    elicit: true
+
+  - id: conversion_funnel
+    title: Conversion Funnel
+    instruction: |
+      Optimize player conversion journey:
+      - First purchase incentives and timing
+      - Conversion touchpoints and triggers
+      - Purchase flow optimization
+      - Payment method integration
+      - Regional pricing and localization
+    elicit: true
+
+  - id: retention_monetization
+    title: Retention and Monetization
+    instruction: |
+      Balance retention with revenue:
+      - Daily/weekly/monthly engagement drivers
+      - Progression gates and monetization points
+      - Social pressure and FOMO mechanics
+      - Seasonal events and limited offers
+      - Long-term player value optimization
+    elicit: true
+
+  - id: ethical_considerations
+    title: Ethical Monetization
+    instruction: |
+      Ensure ethical and sustainable practices:
+      - Player protection and spending limits
+      - Transparent pricing and value communication
+      - Avoiding predatory mechanics
+      - Child protection measures
+      - Regulatory compliance (loot boxes, gambling)
+    elicit: true
+
+  - id: analytics_kpis
+    title: Analytics and KPIs
+    instruction: |
+      Define success metrics and tracking:
+      - Key performance indicators (ARPU, LTV, etc.)
+      - Conversion rate tracking
+      - Player behavior analytics
+      - A/B testing framework
+      - Revenue forecasting and modeling
+    elicit: true

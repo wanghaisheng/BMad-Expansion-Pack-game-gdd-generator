@@ -1,0 +1,460 @@
+name: Western Style Game GDD Workflow
+description: Specialized workflow for creating GDDs tailored to Western gaming markets and cultural preferences
+icon: 🗽
+category: regional
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for Western gaming markets and cultural preferences"
+    target_output: "Culturally adapted GDD for Western markets including North America, Europe, and other Western regions"
+    estimated_duration: "4-6 weeks depending on complexity"
+    team_size: "8-12 specialists with Western market expertise"
+    
+  # 西方游戏市场特殊考虑
+  western_considerations:
+    cultural_values:
+      - "Individualism and personal achievement"
+      - "Fair play and competitive integrity"
+      - "Transparency and player agency"
+      - "Diversity and inclusive representation"
+      - "Privacy and data protection rights"
+    
+    gameplay_preferences:
+      - "Skill-based progression and merit systems"
+      - "Clear value propositions in monetization"
+      - "Accessibility and inclusive design"
+      - "Narrative depth and character development"
+      - "Player choice and meaningful consequences"
+    
+    market_characteristics:
+      - "Premium and subscription model acceptance"
+      - "PC and console gaming traditions"
+      - "Strong preference for fair monetization"
+      - "High production value expectations"
+      - "Active modding and community creation"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：西方市场深度研究
+    - phase: "western_market_research"
+      name: "Western Market Deep Research"
+      duration: "1-2 weeks"
+      description: "Comprehensive research of Western gaming markets and cultural preferences"
+      
+      participants:
+        primary:
+          - market-analyst
+          - western-game-designer
+          - localization-specialist
+        supporting:
+          - monetization-designer
+          - pc-console-specialist
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Western market analysis report"
+          
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Western cultural adaptation strategy"
+          
+        - task: "create-cultural-adaptation"
+          owner: "localization-specialist"
+          duration: "1 week"
+          deliverable: "Western localization plan"
+      
+      deliverables:
+        - "Western Market Analysis and Segmentation"
+        - "Cultural Values and Gaming Preferences Study"
+        - "Competitive Landscape in Western Markets"
+        - "Platform Preferences and Distribution Channels"
+        - "Regulatory and Privacy Requirements"
+      
+      quality_gates:
+        - "Western market opportunities clearly identified"
+        - "Cultural preferences thoroughly understood"
+        - "Privacy and regulatory requirements documented"
+        - "Competitive positioning established"
+
+    # 第二阶段：西方文化适应设计
+    - phase: "western_cultural_design"
+      name: "Western Cultural Adaptation Design"
+      duration: "2-3 weeks"
+      description: "Design game elements that resonate with Western cultural values and preferences"
+      
+      participants:
+        primary:
+          - western-game-designer
+          - game-systems-architect
+          - player-experience-designer
+          - game-narrative-designer
+        supporting:
+          - game-world-designer
+          - game-art-director
+      
+      tasks:
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "2-3 weeks"
+          deliverable: "Western-adapted game design"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Culturally adapted concept"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "2 weeks"
+          deliverable: "Western narrative design"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Merit-based progression systems"
+      
+      deliverables:
+        - "Western-Adapted Game Design"
+        - "Inclusive Character and World Design"
+        - "Narrative with Western Themes and Values"
+        - "Merit-Based Progression Systems"
+        - "Player Agency and Choice Architecture"
+      
+      quality_gates:
+        - "Design elements resonate with Western values"
+        - "Representation is diverse and inclusive"
+        - "Narrative themes appeal to Western audiences"
+        - "Progression systems reward skill and effort"
+
+    # 第三阶段：公平货币化与透明度设计
+    - phase: "fair_monetization_design"
+      name: "Fair Monetization & Transparency Design"
+      duration: "1-2 weeks"
+      description: "Design monetization systems that align with Western fairness and transparency expectations"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - western-game-designer
+          - player-experience-designer
+        supporting:
+          - game-design-critic
+          - accessibility-specialist
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1-2 weeks"
+          deliverable: "Western monetization strategy"
+          
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1 week"
+          deliverable: "Fair play framework"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Transparent progression design"
+      
+      deliverables:
+        - "Fair and Transparent Monetization Strategy"
+        - "Premium and Subscription Model Design"
+        - "Cosmetic-Only Microtransaction Framework"
+        - "Clear Value Proposition Documentation"
+        - "Anti-Pay-to-Win Safeguards"
+      
+      quality_gates:
+        - "Monetization is perceived as fair and optional"
+        - "Value propositions are clear and honest"
+        - "No pay-to-win mechanics in competitive contexts"
+        - "Transparency in all monetization aspects"
+
+    # 第四阶段：高品质技术架构
+    - phase: "high_quality_technical"
+      name: "High-Quality Technical Architecture"
+      duration: "1-2 weeks"
+      description: "Design technical architecture meeting Western quality and performance expectations"
+      
+      participants:
+        primary:
+          - technical-designer
+          - pc-console-specialist
+          - western-game-designer
+        supporting:
+          - game-systems-architect
+          - accessibility-specialist
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1-2 weeks"
+          deliverable: "Western technical architecture"
+          
+        - task: "design-pc-console-features"
+          owner: "pc-console-specialist"
+          duration: "1 week"
+          deliverable: "Platform optimization strategy"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Western accessibility standards"
+      
+      deliverables:
+        - "High-Quality Technical Architecture"
+        - "PC/Console Optimization Strategy"
+        - "Comprehensive Accessibility Implementation"
+        - "Privacy-by-Design Framework"
+        - "Modding Support and Community Tools"
+      
+      quality_gates:
+        - "Architecture supports high production values"
+        - "Performance meets Western platform standards"
+        - "Accessibility exceeds minimum requirements"
+        - "Privacy protection is built-in from design"
+
+    # 第五阶段：包容性与可访问性
+    - phase: "inclusivity_accessibility"
+      name: "Inclusivity & Accessibility Design"
+      duration: "1-2 weeks"
+      description: "Implement comprehensive inclusivity and accessibility features for Western markets"
+      
+      participants:
+        primary:
+          - accessibility-specialist
+          - western-game-designer
+          - ui-ux-designer
+        supporting:
+          - localization-specialist
+          - game-narrative-designer
+      
+      tasks:
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Comprehensive accessibility plan"
+          
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1 week"
+          deliverable: "Inclusivity guidelines"
+          
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1 week"
+          deliverable: "Inclusive UI/UX design"
+      
+      deliverables:
+        - "Comprehensive Accessibility Plan"
+        - "Inclusive Character and Content Guidelines"
+        - "Multi-Language and Cultural Support"
+        - "Adaptive Interface and Control Options"
+        - "Diverse Representation Framework"
+      
+      quality_gates:
+        - "Accessibility features exceed industry standards"
+        - "Representation is authentic and diverse"
+        - "Content is inclusive and respectful"
+        - "Interface adapts to diverse needs"
+
+    # 第六阶段：社区与模组支持
+    - phase: "community_modding_support"
+      name: "Community & Modding Support"
+      duration: "1-2 weeks"
+      description: "Design community features and modding support popular in Western markets"
+      
+      participants:
+        primary:
+          - western-game-designer
+          - liveops-designer
+          - technical-designer
+        supporting:
+          - multiplayer-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Community features specification"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Western community strategy"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Modding support architecture"
+      
+      deliverables:
+        - "Community Features and Tools"
+        - "Modding Support and Documentation"
+        - "User-Generated Content Framework"
+        - "Community Governance and Moderation"
+        - "Creator Economy and Recognition Systems"
+      
+      quality_gates:
+        - "Community tools empower player creativity"
+        - "Modding support is comprehensive and secure"
+        - "User-generated content systems are robust"
+        - "Community governance is fair and transparent"
+
+    # 第七阶段：西方游戏质量保证
+    - phase: "western_quality_assurance"
+      name: "Western Game Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review focusing on Western market requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - western-game-designer
+          - playtesting-simulator
+        supporting:
+          - accessibility-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Western GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "Western market playtesting"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "3-5 days"
+          deliverable: "Western design critique"
+      
+      deliverables:
+        - "Western Game GDD Review Report"
+        - "Cultural Appropriateness Assessment"
+        - "Accessibility Compliance Verification"
+        - "Privacy and Ethics Review"
+        - "Launch Strategy for Western Markets"
+      
+      quality_gates:
+        - "All Western market requirements met"
+        - "Cultural sensitivity and inclusivity confirmed"
+        - "Accessibility compliance exceeded"
+        - "Privacy and ethical standards met"
+
+  # 西方游戏特殊流程
+  western_specific_processes:
+    inclusivity_validation:
+      - "Diverse focus group testing and feedback"
+      - "Accessibility expert review and validation"
+      - "Cultural sensitivity audit by diverse reviewers"
+      - "Community representative consultation"
+    
+    platform_optimization:
+      - "Steam, Epic Games Store optimization"
+      - "Console certification and optimization"
+      - "PC hardware scalability testing"
+      - "Cross-platform feature implementation"
+    
+    privacy_compliance:
+      - "GDPR and CCPA compliance implementation"
+      - "Privacy-by-design architecture review"
+      - "Data minimization and user control"
+      - "Transparent privacy policy and practices"
+    
+    community_building:
+      - "Discord and Reddit community setup"
+      - "Influencer and content creator programs"
+      - "Beta testing and early access programs"
+      - "Community feedback integration systems"
+
+  # 西方游戏成功指标
+  western_success_metrics:
+    quality_metrics:
+      - "Review scores on Steam, Metacritic, etc."
+      - "User satisfaction and recommendation rates"
+      - "Technical performance and stability ratings"
+      - "Accessibility feature adoption and feedback"
+    
+    fairness_metrics:
+      - "Player perception of monetization fairness"
+      - "Competitive balance satisfaction scores"
+      - "Transparency and trust ratings"
+      - "Community sentiment analysis"
+    
+    inclusivity_metrics:
+      - "Diverse player base representation"
+      - "Accessibility feature usage rates"
+      - "Inclusive content appreciation scores"
+      - "Community diversity and health indicators"
+    
+    community_metrics:
+      - "Modding community size and activity"
+      - "User-generated content creation rates"
+      - "Community event participation"
+      - "Long-term community retention"
+
+  # 西方游戏风险管理
+  western_risk_management:
+    cultural_risks:
+      - risk: "Lack of diverse representation"
+        mitigation: "Comprehensive inclusivity review and testing"
+        
+      - risk: "Cultural insensitivity or stereotyping"
+        mitigation: "Cultural consultant review and community feedback"
+        
+      - risk: "Accessibility barriers excluding players"
+        mitigation: "Extensive accessibility testing and implementation"
+    
+    business_risks:
+      - risk: "Monetization backlash from community"
+        mitigation: "Transparent, fair monetization and community communication"
+        
+      - risk: "Privacy regulation violations"
+        mitigation: "Privacy-by-design and legal compliance review"
+        
+      - risk: "Platform policy changes"
+        mitigation: "Multi-platform strategy and policy monitoring"
+    
+    quality_risks:
+      - risk: "Technical performance issues"
+        mitigation: "Extensive testing and optimization"
+        
+      - risk: "Community management challenges"
+        mitigation: "Professional community management and clear guidelines"
+        
+      - risk: "Competitive market saturation"
+        mitigation: "Strong differentiation and unique value proposition"
+
+# 使用指南
+usage_notes: |
+  这个西方风格游戏工作流程专门用于：
+  1. 创建符合西方文化价值观和游戏偏好的GDD
+  2. 确保游戏的包容性、可访问性和文化敏感性
+  3. 建立公平透明的货币化模式和竞技环境
+  4. 实施高质量的技术标准和用户体验
+  5. 建立活跃的社区和模组生态系统
+
+# BMAD集成
+bmad_integration:
+  western_handoff_requirements:
+    - "高质量的技术架构和性能优化"
+    - "全面的可访问性功能实现"
+    - "隐私保护和数据安全系统"
+    - "模组支持和社区工具开发"
+    - "多平台兼容性和优化"
+  
+  cultural_optimization:
+    - "包容性UI/UX设计和多样化内容"
+    - "透明的货币化系统和公平竞技机制"
+    - "社区管理工具和用户生成内容支持"
+    - "隐私合规和用户控制功能"

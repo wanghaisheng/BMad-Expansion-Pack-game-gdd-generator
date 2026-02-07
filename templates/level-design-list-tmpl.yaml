@@ -1,0 +1,54 @@
+---
+template:
+  id: level-design-list-tmpl
+  name: Level Design List
+  version: 1.0
+  description: Table summarizing every level/area for game design phase
+  output:
+    format: markdown
+    filename: "{{title}}-level-list.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: overview
+    title: Level Design Overview
+    instruction: |
+      Create overview of level structure:
+      - Total number of levels/areas
+      - World progression breakdown
+      - Difficulty curve considerations
+      - Key gameplay milestones
+    elicit: true
+
+  - id: levels
+    title: Level Details
+    instruction: |
+      For each level/area, define:
+      - Level number and name
+      - Environment theme
+      - Setting (location and atmosphere)
+      - Primary gameplay objective
+      - Core mechanics featured
+      - Challenge/obstacle design
+      - Rewards and progression
+      - Connection to next level
+    repeatable: true
+    elicit: true
+    sections:
+      - id: level_entry
+        title: "Level {{level_number}}: {{level_name}}"
+        template: |
+          **Environment:** {{environment_theme}}
+          **Setting:** {{location_atmosphere}}
+
+          **Objective:** {{primary_objective}}
+          **Mechanics:** {{core_mechanics}}
+          **Challenge:** {{main_challenge}}
+
+          **Progression:** {{player_advancement}}
+          **Transition:** {{next_level_connection}}
+
+          **Design Notes:** {{additional_notes}}

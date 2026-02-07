@@ -1,0 +1,11 @@
+name: Competitive Analysis-Driven GDD Workflow
+description: Specialized workflow for creating GDDs with deep competitive intelligence and market positioning
+icon: 🎯
+category: specialized
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a GDD with comprehensive competitive analysis driving strategic design decisions"
+    target_output: "Compe

@@ -1,0 +1,406 @@
+name: Mobile Game GDD Workflow
+description: Specialized workflow for creating GDDs optimized for mobile gaming platforms
+icon: 📱
+category: platform-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for mobile gaming platforms"
+    target_output: "Mobile-optimized GDD ready for iOS/Android development"
+    estimated_duration: "3-6 weeks depending on complexity"
+    team_size: "6-10 specialists with mobile expertise"
+    
+  # 移动端特殊考虑
+  mobile_considerations:
+    platform_constraints:
+      - "Touch-first interaction design"
+      - "Battery life optimization"
+      - "Variable screen sizes and orientations"
+      - "Network connectivity variations"
+      - "App store guidelines and restrictions"
+    
+    user_behavior_patterns:
+      - "Short session gameplay (2-10 minutes)"
+      - "Frequent interruptions and resumption"
+      - "Social sharing and viral mechanics"
+      - "Free-to-play monetization expectations"
+      - "Accessibility across age groups"
+    
+    technical_limitations:
+      - "Limited processing power and memory"
+      - "Touch input precision constraints"
+      - "Audio limitations in public spaces"
+      - "Storage space considerations"
+      - "Platform-specific performance requirements"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：移动市场研究
+    - phase: "mobile_market_research"
+      name: "Mobile Market Research & Positioning"
+      duration: "1 week"
+      description: "Research mobile gaming market and establish positioning strategy"
+      
+      participants:
+        primary:
+          - market-analyst
+          - mobile-game-specialist
+          - monetization-designer
+        supporting:
+          - eastern-game-designer
+          - western-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "3-4 days"
+          deliverable: "Mobile market analysis report"
+          
+        - task: "optimize-mobile-experience"
+          owner: "mobile-game-specialist"
+          duration: "2-3 days"
+          deliverable: "Mobile optimization strategy"
+          
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "2-3 days"
+          deliverable: "Mobile monetization framework"
+      
+      deliverables:
+        - "Mobile Market Analysis"
+        - "Competitive Mobile Landscape"
+        - "Mobile Monetization Strategy"
+        - "Platform Guidelines Compliance Plan"
+      
+      quality_gates:
+        - "Mobile market opportunity validated"
+        - "Monetization model appropriate for mobile"
+        - "Platform compliance requirements understood"
+        - "Competitive differentiation established"
+
+    # 第二阶段：移动端核心设计
+    - phase: "mobile_core_design"
+      name: "Mobile-Optimized Core Design"
+      duration: "1-2 weeks"
+      description: "Design core gameplay optimized for mobile interaction patterns"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - mechanics-specialist
+          - mobile-game-specialist
+          - player-experience-designer
+        supporting:
+          - ui-ux-designer
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1 week"
+          deliverable: "Mobile-optimized core mechanics"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "3-4 days"
+          deliverable: "Mobile game concept refinement"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Mobile progression system"
+      
+      deliverables:
+        - "Mobile Core Mechanics Specification"
+        - "Touch Interaction Design"
+        - "Session-Based Progression System"
+        - "Mobile Game Loop Definition"
+      
+      quality_gates:
+        - "Mechanics work well with touch controls"
+        - "Gameplay suits short session lengths"
+        - "Progression encourages return visits"
+        - "Core loop is engaging and accessible"
+
+    # 第三阶段：移动UI/UX设计
+    - phase: "mobile_ui_ux"
+      name: "Mobile UI/UX Design"
+      duration: "1-2 weeks"
+      description: "Create mobile-optimized user interface and experience design"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - mobile-game-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - localization-specialist
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Mobile UI/UX specification"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "3-5 days"
+          deliverable: "Mobile accessibility plan"
+          
+        - task: "create-localization-plan"
+          owner: "localization-specialist"
+          duration: "3-5 days"
+          deliverable: "Mobile localization strategy"
+      
+      deliverables:
+        - "Mobile UI/UX Specification"
+        - "Touch Interface Guidelines"
+        - "Screen Adaptation Strategy"
+        - "Mobile Accessibility Plan"
+        - "Localization Implementation Plan"
+      
+      quality_gates:
+        - "UI works across all target screen sizes"
+        - "Touch targets meet accessibility standards"
+        - "Interface supports multiple languages"
+        - "Navigation is intuitive for mobile users"
+
+    # 第四阶段：移动技术架构
+    - phase: "mobile_technical"
+      name: "Mobile Technical Architecture"
+      duration: "1 week"
+      description: "Define technical architecture optimized for mobile platforms"
+      
+      participants:
+        primary:
+          - technical-designer
+          - mobile-game-specialist
+        supporting:
+          - game-systems-architect
+          - audio-designer
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Mobile technical architecture"
+          
+        - task: "optimize-mobile-experience"
+          owner: "mobile-game-specialist"
+          duration: "3-5 days"
+          deliverable: "Mobile performance optimization plan"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "3-5 days"
+          deliverable: "Mobile audio specification"
+      
+      deliverables:
+        - "Mobile Technical Architecture"
+        - "Performance Optimization Strategy"
+        - "Battery Life Optimization Plan"
+        - "Mobile Audio Design Specification"
+        - "Platform-Specific Implementation Guide"
+      
+      quality_gates:
+        - "Architecture supports target devices"
+        - "Performance requirements are realistic"
+        - "Battery optimization is prioritized"
+        - "Platform guidelines are followed"
+
+    # 第五阶段：移动内容与社交
+    - phase: "mobile_content_social"
+      name: "Mobile Content & Social Features"
+      duration: "1-2 weeks"
+      description: "Design content and social features optimized for mobile engagement"
+      
+      participants:
+        primary:
+          - game-narrative-designer
+          - liveops-designer
+          - multiplayer-specialist
+        supporting:
+          - game-world-designer
+          - game-dialog-designer
+      
+      tasks:
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1 week"
+          deliverable: "Mobile narrative design"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Mobile live operations plan"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Mobile social features specification"
+      
+      deliverables:
+        - "Mobile Narrative Design"
+        - "Live Operations Strategy"
+        - "Social Features Specification"
+        - "Content Update Pipeline"
+        - "Community Management Plan"
+      
+      quality_gates:
+        - "Content suits mobile consumption patterns"
+        - "Social features encourage engagement"
+        - "Live ops plan supports retention"
+        - "Content pipeline is sustainable"
+
+    # 第六阶段：移动质量保证
+    - phase: "mobile_quality_assurance"
+      name: "Mobile Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review for mobile-specific requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - mobile-game-specialist
+          - playtesting-simulator
+        supporting:
+          - accessibility-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "3-5 days"
+          deliverable: "Mobile GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "3-5 days"
+          deliverable: "Mobile playtesting simulation"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "2-3 days"
+          deliverable: "Mobile design critique"
+      
+      deliverables:
+        - "Mobile GDD Review Report"
+        - "Mobile Playtesting Results"
+        - "Platform Compliance Checklist"
+        - "Mobile Quality Assurance Report"
+      
+      quality_gates:
+        - "All mobile requirements are met"
+        - "Platform guidelines compliance confirmed"
+        - "Performance targets are achievable"
+        - "User experience is optimized for mobile"
+
+  # 移动端特殊流程
+  mobile_specific_processes:
+    app_store_preparation:
+      - "App store optimization (ASO) planning"
+      - "Screenshot and video asset planning"
+      - "App description and keyword strategy"
+      - "Rating and review management strategy"
+    
+    platform_compliance:
+      - "iOS App Store guidelines compliance"
+      - "Google Play Store policy compliance"
+      - "Age rating and content guidelines"
+      - "Privacy policy and data handling"
+    
+    monetization_optimization:
+      - "In-app purchase design and pricing"
+      - "Ad integration and user experience"
+      - "Subscription model implementation"
+      - "Regional pricing strategy"
+    
+    performance_testing:
+      - "Device compatibility testing matrix"
+      - "Battery life impact assessment"
+      - "Network connectivity testing"
+      - "Memory usage optimization"
+
+  # 移动端成功指标
+  mobile_success_metrics:
+    engagement_metrics:
+      - "Daily Active Users (DAU)"
+      - "Session length and frequency"
+      - "Day 1, 7, 30 retention rates"
+      - "User lifetime value (LTV)"
+    
+    monetization_metrics:
+      - "Average Revenue Per User (ARPU)"
+      - "Conversion rate to paying user"
+      - "In-app purchase frequency"
+      - "Ad revenue per user"
+    
+    technical_metrics:
+      - "App store rating and reviews"
+      - "Crash rate and stability"
+      - "Loading time and performance"
+      - "Battery usage impact"
+    
+    market_metrics:
+      - "App store ranking position"
+      - "Organic vs paid user acquisition"
+      - "Viral coefficient and sharing"
+      - "Market share in category"
+
+  # 移动端风险管理
+  mobile_risk_management:
+    platform_risks:
+      - risk: "App store rejection or removal"
+        mitigation: "Early compliance review and testing"
+        
+      - risk: "Platform policy changes"
+        mitigation: "Flexible architecture and compliance monitoring"
+        
+      - risk: "Device fragmentation issues"
+        mitigation: "Comprehensive device testing matrix"
+    
+    market_risks:
+      - risk: "High user acquisition costs"
+        mitigation: "Strong organic growth and viral features"
+        
+      - risk: "Monetization model rejection"
+        mitigation: "Multiple monetization options and A/B testing"
+        
+      - risk: "Competitive market saturation"
+        mitigation: "Strong differentiation and niche targeting"
+    
+    technical_risks:
+      - risk: "Performance issues on older devices"
+        mitigation: "Scalable graphics and performance options"
+        
+      - risk: "Battery drain complaints"
+        mitigation: "Aggressive battery optimization"
+        
+      - risk: "Network connectivity problems"
+        mitigation: "Offline mode and connection resilience"
+
+# 使用指南
+usage_notes: |
+  这个移动游戏工作流程专门用于：
+  1. 创建针对移动平台优化的GDD
+  2. 确保符合iOS和Android平台要求
+  3. 优化触摸交互和短会话游戏体验
+  4. 实施适合移动端的货币化策略
+  5. 建立可持续的移动游戏运营模式
+
+# BMAD集成
+bmad_integration:
+  mobile_handoff_requirements:
+    - "移动平台特定的技术架构"
+    - "触摸交互和UI实现指南"
+    - "性能优化和电池管理策略"
+    - "应用商店合规性检查清单"
+    - "移动端测试和质量保证计划"
+  
+  platform_optimization:
+    - "iOS和Android特定的实现指导"
+    - "设备兼容性和性能要求"
+    - "移动端资产管理和优化"
+    - "网络连接和离线功能规格"

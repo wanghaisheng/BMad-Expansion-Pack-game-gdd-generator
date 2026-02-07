@@ -1,0 +1,97 @@
+---
+template:
+  id: game-design-outline
+  name: Game Design Outline Template
+  version: 1.0
+  description: Comprehensive outline for game structure and progression
+  output:
+    format: markdown
+    filename: "{{title}}-outline.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+sections:
+  - id: overview
+    title: Game Overview
+    instruction: |
+      Create high-level game summary including:
+      - Core concept in one sentence
+      - Primary gameplay challenge
+      - Genre and platform
+      - Target audience
+      - Unique selling proposition
+  - id: progression_structure
+    title: Three-Act Progression Structure
+    subsections:
+      - id: act1
+        title: Act 1 - Introduction & Tutorial
+        instruction: |
+          Detail opening game experience:
+          - Opening sequence/hook
+          - World and mechanics introduction
+          - Player character establishment
+          - Core gameplay tutorial
+          - First major challenge
+          - Transition to main game
+        elicit: true
+      - id: act2a
+        title: Act 2A - Exploration & Mastery
+        instruction: |
+          Map early-to-mid game progression:
+          - Core mechanics expansion
+          - World exploration opportunities
+          - Skill/ability progression
+          - Increasing challenge complexity
+        elicit: true
+      - id: act2b
+        title: Act 2B - Advanced Challenges
+        instruction: |
+          Map mid-to-late game progression:
+          - Advanced mechanic combinations
+          - Peak difficulty challenges
+          - Major story/gameplay revelations
+          - Preparation for final challenges
+          - Crisis/setback moments
+        elicit: true
+      - id: act3
+        title: Act 3 - Climax & Resolution
+        instruction: |
+          Design endgame experience:
+          - Final challenge preparation
+          - Climactic gameplay sequences
+          - All mechanics integration
+          - Resolution and rewards
+          - Post-game content (if applicable)
+        elicit: true
+  - id: player_progression
+    title: Player Progression Arcs
+    instruction: |
+      Map player skill and character development:
+      - Starting abilities/knowledge
+      - Learning curve milestones
+      - Skill mastery checkpoints
+      - Character/equipment upgrades
+      - Final mastery state
+    elicit: true
+  - id: core_themes
+    title: Design Themes & Pillars
+    instruction: |
+      Identify core design elements:
+      - Primary design pillars (3-5 key principles)
+      - How gameplay reinforces themes
+      - Player experience goals
+      - Emotional journey design
+      - Thematic consistency
+  - id: level_breakdown
+    title: Level/Area Breakdown
+    instruction: |
+      Create level-by-level outline with:
+      - Level purpose (teach mechanic/advance story)
+      - Key gameplay elements introduced
+      - Challenge progression
+      - Rewards and unlocks
+      - Connection to overall progression
+    repeatable: true
+    elicit: true
+

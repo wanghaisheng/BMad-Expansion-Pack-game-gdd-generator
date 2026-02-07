@@ -1,0 +1,67 @@
+---
+workflow:
+  id: game-greenfield-workflow
+  name: Greenfield Game Development Workflow
+  description: >-
+    End‑to‑end pipeline for designing a brand‑new game: concept → design → prototype →
+    playtesting feedback → polish → professional review.
+  phases:
+    ideation:
+      - agent: game-systems-architect
+        task: brainstorm-game-concept
+        output: game-concept-brief.md
+      - agent: game-world-designer
+        task: build-game-world
+        input: game-concept-brief.md
+        output: game-world-guide.md
+      - agent: player-experience-designer
+        task: develop-game-characters
+        input: game-concept-brief.md
+        output: game-characters.md
+    design:
+      - agent: game-systems-architect
+        task: analyze-game-design-structure
+        input:
+          - game-concept-brief.md
+          - game-world-guide.md
+          - game-characters.md
+        output: game-design-outline.md
+      - agent: technical-designer
+        task: create-technical-specification
+        input: game-design-outline.md
+        output: technical-spec.md
+    prototyping:
+      - agent: mechanics-specialist
+        task: design-core-mechanics
+        input: game-design-outline.md
+        repeat: per-feature
+        output: mechanics-documentation.md
+      - agent: technical-designer
+        task: create-implementation-guide
+        input: mechanics-documentation.md
+        output: implementation-guide.md
+    validation:
+      - agent: playtesting-simulator
+        task: simulate-playtesting
+        input: mechanics-documentation.md
+        output: playtest-analysis.md
+      - agent: gdd-reviewer
+        task: incorporate-playtest-feedback
+        input:
+          - mechanics-documentation.md
+          - playtest-analysis.md
+        output: refined-game-design.md
+    finalization:
+      - agent: gdd-validator
+        task: comprehensive-design-review
+        input: refined-game-design.md
+        output: final-gdd.md
+      - agent: market-analyst
+        task: market-viability-assessment
+        input: final-gdd.md
+        output: market-analysis.md
+  completion_criteria:
+    - final-gdd.md exists
+    - market-analysis.md exists
+...
+

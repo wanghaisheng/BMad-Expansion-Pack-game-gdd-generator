@@ -1,0 +1,310 @@
+---
+template:
+  id: comprehensive-gdd-tmpl
+  name: Comprehensive Game Design Document
+  version: 1.0
+  description: Complete game design document template for professional game development
+  output:
+    format: markdown
+    filename: "{{game_title}}-gdd.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: executive_summary
+    title: Executive Summary
+    instruction: |
+      Create a compelling overview that captures the essence of the game:
+      - Game concept in 2-3 sentences
+      - Target audience and platform
+      - Unique selling points
+      - Development scope and timeline
+      - Success metrics
+    elicit: true
+
+  - id: game_concept
+    title: Game Concept
+    subsections:
+      - id: core_concept
+        title: Core Concept
+        instruction: |
+          Define the fundamental game idea:
+          - High-level pitch (elevator pitch)
+          - Core fantasy/player fantasy
+          - Primary genre and sub-genres
+          - Key differentiators from competitors
+        elicit: true
+      
+      - id: target_audience
+        title: Target Audience
+        instruction: |
+          Define who will play this game:
+          - Primary demographic (age, platform, gaming experience)
+          - Secondary audiences
+          - Player motivations and preferences
+          - Accessibility considerations
+        elicit: true
+      
+      - id: platform_strategy
+        title: Platform Strategy
+        instruction: |
+          Specify technical platform approach:
+          - Primary platform(s)
+          - Secondary platform considerations
+          - Technical requirements overview
+          - Performance targets
+        elicit: true
+
+  - id: core_gameplay
+    title: Core Gameplay
+    subsections:
+      - id: game_pillars
+        title: Game Pillars
+        instruction: |
+          Define 3-5 core design principles that guide all decisions:
+          - Each pillar should be specific and actionable
+          - Explain how each pillar serves player experience
+          - Provide examples of how pillars influence design
+        elicit: true
+        repeatable: true
+      
+      - id: core_loop
+        title: Core Gameplay Loop
+        instruction: |
+          Design the fundamental 30-60 second player experience:
+          - Step-by-step player actions
+          - Timing for each action
+          - Feedback and rewards provided
+          - How loop connects to longer progression
+        elicit: true
+      
+      - id: victory_conditions
+        title: Victory and Failure Conditions
+        instruction: |
+          Define clear success and failure states:
+          - Primary victory conditions
+          - Secondary objectives
+          - Failure states and consequences
+          - Recovery mechanisms
+        elicit: true
+
+  - id: game_mechanics
+    title: Game Mechanics
+    instruction: |
+      Detail each major mechanic that defines the gameplay experience.
+      Each mechanic should be specific enough for implementation.
+    subsections:
+      - id: primary_mechanics
+        title: Primary Mechanics
+        instruction: |
+          Define core gameplay mechanics:
+          - Mechanic name and description
+          - Player input required
+          - System response and feedback
+          - Interaction with other mechanics
+          - Implementation complexity estimate
+        elicit: true
+        repeatable: true
+      
+      - id: progression_systems
+        title: Progression Systems
+        instruction: |
+          Design how players advance and grow:
+          - Experience/leveling systems
+          - Skill trees or upgrade paths
+          - Unlock mechanisms
+          - Progression pacing and milestones
+        elicit: true
+      
+      - id: economy_systems
+        title: Economy Systems
+        instruction: |
+          Define resource management and monetization:
+          - Currency types (soft/hard)
+          - Resource sources and sinks
+          - Pricing and balance considerations
+          - Monetization integration (if applicable)
+        elicit: true
+
+  - id: level_design
+    title: Level Design Framework
+    subsections:
+      - id: level_structure
+        title: Level Structure
+        instruction: |
+          Define how levels are organized and flow:
+          - World structure (linear/hub/open)
+          - Level types and purposes
+          - Difficulty progression
+          - Estimated content volume
+        elicit: true
+      
+      - id: level_guidelines
+        title: Level Design Guidelines
+        instruction: |
+          Create reusable design patterns:
+          - Level pacing and flow principles
+          - Challenge escalation patterns
+          - Environmental storytelling approach
+          - Modular design components
+        elicit: true
+
+  - id: technical_requirements
+    title: Technical Requirements
+    subsections:
+      - id: performance_targets
+        title: Performance Targets
+        instruction: |
+          Define measurable technical goals:
+          - Frame rate targets (60 FPS minimum recommended)
+          - Memory usage limits
+          - Loading time requirements
+          - Battery life considerations (mobile)
+        elicit: true
+      
+      - id: platform_specifications
+        title: Platform Specifications
+        instruction: |
+          Detail platform-specific requirements:
+          - Minimum device specifications
+          - Input methods supported
+          - Screen resolutions and aspect ratios
+          - Platform-specific features utilized
+        elicit: true
+      
+      - id: technical_architecture
+        title: Technical Architecture
+        instruction: |
+          Outline high-level technical approach:
+          - Recommended game engine/framework
+          - Key systems and their interactions
+          - Data management approach
+          - Scalability considerations
+        elicit: true
+
+  - id: art_and_audio
+    title: Art and Audio Direction
+    subsections:
+      - id: visual_style
+        title: Visual Style
+        instruction: |
+          Define the game's visual identity:
+          - Art style and aesthetic direction
+          - Color palette and mood
+          - Character and environment design principles
+          - UI/UX style guidelines
+        elicit: true
+      
+      - id: audio_design
+        title: Audio Design
+        instruction: |
+          Specify audio and music approach:
+          - Music style and mood
+          - Sound effect design principles
+          - Voice acting requirements (if any)
+          - Audio implementation strategy
+        elicit: true
+
+  - id: asset_pipeline
+    title: Asset Pipeline and Appendices
+    instruction: |
+      Provide production-ready asset details:
+      - Asset naming rules, prefixes, folder structure, and variant/version conventions
+      - Format categories aligned to: 3d_model/image/image_sequence/sprite_sheet/video/audio/shader/material/font/prefab/level/fx_particle/ui_element/other
+      - Minimum asset list covering characters, environments, props, UI, FX, audio, and any media assets used
+      - Asset metadata fields for validation (LOD/Platform/Usage/Author/Version/Dependencies)
+      - Media profiles and validation rules for video/audio/image_sequence/sprite_sheet per platform tier
+      Output must be suitable for inclusion in GDD appendices as an asset index and roadmap.
+    elicit: true
+
+  - id: user_experience
+    title: User Experience Design
+    subsections:
+      - id: onboarding
+        title: Onboarding and Tutorial
+        instruction: |
+          Design the new player experience:
+          - Tutorial flow and pacing
+          - Learning curve management
+          - Help and hint systems
+          - Accessibility features
+        elicit: true
+      
+      - id: ui_flow
+        title: UI Flow and Navigation
+        instruction: |
+          Map user interface structure:
+          - Main menu and navigation
+          - In-game UI elements
+          - Settings and options
+          - Information hierarchy
+        elicit: true
+
+  - id: market_analysis
+    title: Market Analysis
+    subsections:
+      - id: competitive_landscape
+        title: Competitive Analysis
+        instruction: |
+          Analyze similar games and market position:
+          - Direct competitors
+          - Indirect competitors
+          - Market gaps and opportunities
+          - Differentiation strategy
+        elicit: true
+      
+      - id: business_model
+        title: Business Model
+        instruction: |
+          Define monetization and business approach:
+          - Revenue model (premium/freemium/subscription)
+          - Pricing strategy
+          - Post-launch content plans
+          - Success metrics and KPIs
+        elicit: true
+
+  - id: development_plan
+    title: Development Plan
+    subsections:
+      - id: milestone_breakdown
+        title: Milestone Breakdown
+        instruction: |
+          Create high-level development phases:
+          - Pre-production phase
+          - Production milestones
+          - Polish and optimization phase
+          - Launch preparation
+        elicit: true
+      
+      - id: risk_assessment
+        title: Risk Assessment
+        instruction: |
+          Identify potential development risks:
+          - Technical risks and mitigation
+          - Design risks and alternatives
+          - Market risks and contingencies
+          - Resource and timeline risks
+        elicit: true
+
+  - id: appendices
+    title: Appendices
+    subsections:
+      - id: reference_materials
+        title: Reference Materials
+        instruction: |
+          Document inspiration and research sources:
+          - Competitive analysis sources
+          - Art and design references
+          - Technical documentation
+          - Market research data
+      
+      - id: change_log
+        title: Change Log
+        instruction: |
+          Track document evolution:
+          - Version history
+          - Major changes and rationale
+          - Review and approval history
+          - Next review date

@@ -1,0 +1,99 @@
+---
+template:
+  id: playtesting-feedback-form-tmpl
+  name: Playtesting Feedback Form
+  version: 1.0
+  description: Structured questionnaire for game playtesters
+  output:
+    format: markdown
+    filename: "playtest-feedback-{{tester_name}}.md"
+
+workflow:
+  elicitation: true
+  allow_skip: true
+
+sections:
+  - id: tester_info
+    title: Playtester Information
+    instruction: |
+      Collect tester details:
+      - Tester name
+      - Gaming experience level
+      - Genre preferences
+      - Platform used
+      - Date of playtest session
+    elicit: true
+
+  - id: overall_impressions
+    title: Overall Impressions
+    instruction: |
+      Gather general reactions:
+      - What was most fun/engaging
+      - What was confusing or frustrating
+      - Most memorable gameplay moments
+      - Overall enjoyment rating (1-10)
+      - Would you play again?
+    elicit: true
+
+  - id: gameplay_mechanics
+    title: Gameplay Mechanics Feedback
+    instruction: |
+      Evaluate core mechanics:
+      - Favorite gameplay mechanic and why
+      - Most difficult or unclear mechanic
+      - Control responsiveness
+      - Mechanic balance and fairness
+      - Learning curve assessment
+    elicit: true
+
+  - id: difficulty_progression
+    title: Difficulty & Progression
+    instruction: |
+      Assess challenge and advancement:
+      - Most challenging sections
+      - Easiest or boring sections
+      - Progression pacing
+      - Difficulty spikes or valleys
+      - Sense of achievement
+    elicit: true
+
+  - id: world_presentation
+    title: World & Presentation
+    instruction: |
+      Review game world and aesthetics:
+      - Visual style appeal
+      - Audio and music quality
+      - World immersion level
+      - UI/UX clarity and usability
+    elicit: true
+
+  - id: emotional_engagement
+    title: Emotional Engagement
+    instruction: |
+      Document emotional impact:
+      - Strong emotions felt during play
+      - Moments of excitement or tension
+      - Connection to characters/story
+      - Satisfaction with outcomes
+    elicit: true
+
+  - id: technical_issues
+    title: Technical Issues
+    instruction: |
+      Note any technical problems:
+      - Bugs or glitches encountered
+      - Performance issues
+      - Control or input problems
+      - Crashes or stability issues
+    elicit: true
+
+  - id: suggestions
+    title: Final Suggestions
+    instruction: |
+      Provide improvement recommendations:
+      - Top three improvements needed
+      - Would you recommend to others
+      - Comparison to similar games
+      - Additional features desired
+      - Overall development feedback
+    elicit: true

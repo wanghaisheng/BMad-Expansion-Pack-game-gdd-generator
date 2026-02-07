@@ -1,0 +1,91 @@
+---
+# workflows/action-rpg-gdd.yaml
+name: action-rpg-gdd
+title: Action RPG Game Design Document Workflow
+description: |
+  Specialized workflow for creating comprehensive GDDs for Action RPG games,
+  focusing on combat systems, character progression, and narrative integration.
+
+triggers:
+  - command: /action-rpg-gdd
+  - intent: "design an action RPG game"
+
+inputs:
+  - game_title
+  - target_platform
+  - setting_theme
+
+agents:
+  - game-systems-architect
+  - mechanics-specialist
+  - player-experience-designer
+  - narrative-designer
+  - game-world-designer
+  - technical-designer
+  - ui-ux-designer
+  - gdd-reviewer
+
+steps:
+  - id: core_concept
+    title: Define Action RPG core concept
+    agent: game-systems-architect
+    outputs: action_rpg_concept
+
+  - id: combat_system
+    title: Design combat mechanics and systems
+    agent: mechanics-specialist
+    inputs: action_rpg_concept
+    outputs: combat_system_design
+
+  - id: progression_system
+    title: Create character progression and RPG systems
+    agent: player-experience-designer
+    inputs: 
+      - action_rpg_concept
+      - combat_system_design
+    outputs: progression_system_design
+
+  - id: world_narrative
+    title: Build game world and narrative structure
+    agent: game-world-designer
+    inputs: action_rpg_concept
+    outputs: world_narrative_design
+
+  - id: story_integration
+    title: Integrate story with gameplay systems
+    agent: narrative-designer
+    inputs:
+      - world_narrative_design
+      - progression_system_design
+    outputs: integrated_narrative
+
+  - id: technical_architecture
+    title: Define technical requirements for Action RPG
+    agent: technical-designer
+    inputs:
+      - combat_system_design
+      - progression_system_design
+    outputs: technical_specification
+
+  - id: ui_systems
+    title: Design Action RPG specific UI systems
+    agent: ui-ux-designer
+    inputs:
+      - combat_system_design
+      - progression_system_design
+    outputs: ui_system_design
+
+  - id: final_integration
+    title: Integrate all systems into comprehensive GDD
+    agent: gdd-reviewer
+    inputs:
+      - combat_system_design
+      - progression_system_design
+      - world_narrative_design
+      - integrated_narrative
+      - technical_specification
+      - ui_system_design
+    outputs: action_rpg_gdd
+
+outputs:
+  - action_rpg_gdd

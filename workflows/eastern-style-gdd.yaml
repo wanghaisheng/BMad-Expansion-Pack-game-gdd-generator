@@ -1,0 +1,460 @@
+name: Eastern Style Game GDD Workflow
+description: Specialized workflow for creating GDDs tailored to Eastern gaming markets and cultural preferences
+icon: 🏮
+category: regional
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for Eastern gaming markets and cultural preferences"
+    target_output: "Culturally adapted GDD for Eastern markets including China, Japan, Korea, and Southeast Asia"
+    estimated_duration: "4-6 weeks depending on complexity"
+    team_size: "8-12 specialists with Eastern market expertise"
+    
+  # 东方游戏市场特殊考虑
+  eastern_considerations:
+    cultural_values:
+      - "Collectivism and community-oriented gameplay"
+      - "Respect for hierarchy and progression systems"
+      - "Emphasis on social status and face-saving"
+      - "Long-term commitment and relationship building"
+      - "Harmony and balance in game systems"
+    
+    gameplay_preferences:
+      - "Social and guild-based features"
+      - "Collection and completion mechanics"
+      - "Gacha and randomized reward systems"
+      - "Character customization and expression"
+      - "Seasonal events and limited-time content"
+    
+    market_characteristics:
+      - "Mobile-first gaming preferences"
+      - "Free-to-play with microtransaction models"
+      - "High tolerance for grinding and repetition"
+      - "Strong preference for multiplayer and social features"
+      - "Integration with social media and streaming platforms"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：东方市场深度研究
+    - phase: "eastern_market_research"
+      name: "Eastern Market Deep Research"
+      duration: "1-2 weeks"
+      description: "Comprehensive research of Eastern gaming markets and cultural preferences"
+      
+      participants:
+        primary:
+          - market-analyst
+          - eastern-game-designer
+          - localization-specialist
+        supporting:
+          - monetization-designer
+          - mobile-game-specialist
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Eastern market analysis report"
+          
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Cultural adaptation strategy"
+          
+        - task: "create-cultural-adaptation"
+          owner: "localization-specialist"
+          duration: "1 week"
+          deliverable: "Cultural localization plan"
+      
+      deliverables:
+        - "Eastern Market Analysis and Segmentation"
+        - "Cultural Values and Preferences Study"
+        - "Competitive Landscape in Eastern Markets"
+        - "Platform Preferences and Distribution Channels"
+        - "Regulatory and Compliance Requirements"
+      
+      quality_gates:
+        - "Eastern market opportunities clearly identified"
+        - "Cultural preferences thoroughly understood"
+        - "Regulatory requirements documented"
+        - "Competitive positioning established"
+
+    # 第二阶段：文化适应性设计
+    - phase: "cultural_adaptation_design"
+      name: "Cultural Adaptation Design"
+      duration: "2-3 weeks"
+      description: "Design game elements that resonate with Eastern cultural values and preferences"
+      
+      participants:
+        primary:
+          - eastern-game-designer
+          - game-systems-architect
+          - player-experience-designer
+          - game-world-designer
+        supporting:
+          - game-narrative-designer
+          - game-art-director
+      
+      tasks:
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "2-3 weeks"
+          deliverable: "Eastern-adapted game design"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Culturally adapted concept"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "2 weeks"
+          deliverable: "Eastern-themed world design"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Eastern progression systems"
+      
+      deliverables:
+        - "Culturally Adapted Game Design"
+        - "Eastern Aesthetic and Visual Direction"
+        - "Social and Community Features Design"
+        - "Character and Customization Systems"
+        - "Cultural Narrative and Storytelling"
+      
+      quality_gates:
+        - "Design elements resonate with Eastern values"
+        - "Visual style appeals to target markets"
+        - "Social features match cultural expectations"
+        - "Narrative is culturally appropriate and engaging"
+
+    # 第三阶段：社交与收集系统设计
+    - phase: "social_collection_systems"
+      name: "Social & Collection Systems Design"
+      duration: "1-2 weeks"
+      description: "Design social features and collection mechanics popular in Eastern markets"
+      
+      participants:
+        primary:
+          - eastern-game-designer
+          - multiplayer-specialist
+          - monetization-designer
+        supporting:
+          - liveops-designer
+          - ui-ux-designer
+      
+      tasks:
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "1-2 weeks"
+          deliverable: "Social systems specification"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Eastern multiplayer features"
+          
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1 week"
+          deliverable: "Eastern monetization strategy"
+      
+      deliverables:
+        - "Guild and Community Systems"
+        - "Collection and Gacha Mechanics"
+        - "Social Status and Ranking Systems"
+        - "Gift and Sharing Features"
+        - "Eastern Monetization Framework"
+      
+      quality_gates:
+        - "Social systems encourage community building"
+        - "Collection mechanics are engaging and fair"
+        - "Status systems provide meaningful progression"
+        - "Monetization aligns with Eastern preferences"
+
+    # 第四阶段：移动优先技术架构
+    - phase: "mobile_first_technical"
+      name: "Mobile-First Technical Architecture"
+      duration: "1-2 weeks"
+      description: "Design technical architecture optimized for Eastern mobile gaming preferences"
+      
+      participants:
+        primary:
+          - technical-designer
+          - mobile-game-specialist
+          - eastern-game-designer
+        supporting:
+          - game-systems-architect
+          - audio-designer
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1-2 weeks"
+          deliverable: "Eastern mobile architecture"
+          
+        - task: "optimize-mobile-experience"
+          owner: "mobile-game-specialist"
+          duration: "1 week"
+          deliverable: "Mobile optimization strategy"
+          
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "1 week"
+          deliverable: "Platform integration plan"
+      
+      deliverables:
+        - "Mobile-First Technical Architecture"
+        - "Eastern Platform Integration Strategy"
+        - "Performance Optimization for Eastern Devices"
+        - "Network Architecture for Eastern Infrastructure"
+        - "Payment Integration for Eastern Markets"
+      
+      quality_gates:
+        - "Architecture optimized for mobile platforms"
+        - "Performance suitable for Eastern device ecosystem"
+        - "Network design handles Eastern infrastructure"
+        - "Payment systems support local preferences"
+
+    # 第五阶段：本地化与文化敏感性
+    - phase: "localization_cultural_sensitivity"
+      name: "Localization & Cultural Sensitivity"
+      duration: "1-2 weeks"
+      description: "Implement comprehensive localization and cultural sensitivity measures"
+      
+      participants:
+        primary:
+          - localization-specialist
+          - eastern-game-designer
+          - accessibility-specialist
+        supporting:
+          - game-narrative-designer
+          - ui-ux-designer
+      
+      tasks:
+        - task: "create-localization-plan"
+          owner: "localization-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Eastern localization strategy"
+          
+        - task: "create-cultural-adaptation"
+          owner: "eastern-game-designer"
+          duration: "1 week"
+          deliverable: "Cultural sensitivity guidelines"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Eastern accessibility plan"
+      
+      deliverables:
+        - "Comprehensive Localization Strategy"
+        - "Cultural Sensitivity Guidelines"
+        - "Multi-Language Implementation Plan"
+        - "Regional Content Adaptation"
+        - "Eastern Accessibility Standards"
+      
+      quality_gates:
+        - "Localization covers all target Eastern markets"
+        - "Cultural sensitivity is thoroughly addressed"
+        - "Content is appropriate for all target regions"
+        - "Accessibility meets Eastern standards"
+
+    # 第六阶段：运营与社区管理
+    - phase: "operations_community_management"
+      name: "Live Operations & Community Management"
+      duration: "1-2 weeks"
+      description: "Design live operations and community management for Eastern markets"
+      
+      participants:
+        primary:
+          - liveops-designer
+          - eastern-game-designer
+          - multiplayer-specialist
+        supporting:
+          - monetization-designer
+          - market-analyst
+      
+      tasks:
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1-2 weeks"
+          deliverable: "Eastern live operations plan"
+          
+        - task: "design-eastern-game-elements"
+          owner: "eastern-game-designer"
+          duration: "1 week"
+          deliverable: "Eastern community strategy"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Eastern social features"
+      
+      deliverables:
+        - "Eastern Live Operations Strategy"
+        - "Seasonal Events and Festival Integration"
+        - "Community Management for Eastern Platforms"
+        - "Influencer and KOL Engagement Strategy"
+        - "Eastern Social Media Integration"
+      
+      quality_gates:
+        - "Live operations align with Eastern preferences"
+        - "Seasonal content respects cultural calendar"
+        - "Community management suits Eastern platforms"
+        - "Influencer strategy is culturally appropriate"
+
+    # 第七阶段：东方游戏质量保证
+    - phase: "eastern_quality_assurance"
+      name: "Eastern Game Quality Assurance"
+      duration: "1 week"
+      description: "Comprehensive quality review focusing on Eastern market requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - eastern-game-designer
+          - playtesting-simulator
+        supporting:
+          - localization-specialist
+          - game-design-critic
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Eastern GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "Eastern market playtesting"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "3-5 days"
+          deliverable: "Eastern design critique"
+      
+      deliverables:
+        - "Eastern Game GDD Review Report"
+        - "Cultural Appropriateness Assessment"
+        - "Eastern Market Readiness Evaluation"
+        - "Regulatory Compliance Verification"
+        - "Launch Strategy for Eastern Markets"
+      
+      quality_gates:
+        - "All Eastern market requirements met"
+        - "Cultural appropriateness confirmed"
+        - "Regulatory compliance achieved"
+        - "Market readiness validated"
+
+  # 东方游戏特殊流程
+  eastern_specific_processes:
+    cultural_validation:
+      - "Native speaker and cultural expert review"
+      - "Focus group testing with Eastern players"
+      - "Cultural sensitivity audit and feedback"
+      - "Regional beta testing and iteration"
+    
+    platform_integration:
+      - "WeChat, QQ, Line platform integration"
+      - "Eastern payment system integration"
+      - "Local app store optimization"
+      - "Regional server and CDN setup"
+    
+    regulatory_compliance:
+      - "Content rating and approval processes"
+      - "Data protection and privacy compliance"
+      - "Gaming time restrictions and controls"
+      - "Anti-addiction system implementation"
+    
+    community_building:
+      - "Eastern social media strategy"
+      - "KOL and influencer partnerships"
+      - "Community events and competitions"
+      - "Fan art and user-generated content support"
+
+  # 东方游戏成功指标
+  eastern_success_metrics:
+    cultural_metrics:
+      - "Cultural acceptance and resonance scores"
+      - "Local community engagement levels"
+      - "Cultural content sharing and discussion"
+      - "Regional preference alignment"
+    
+    market_metrics:
+      - "Market share in target Eastern countries"
+      - "Revenue performance vs local competitors"
+      - "User acquisition cost in Eastern markets"
+      - "Lifetime value of Eastern players"
+    
+    social_metrics:
+      - "Guild and community participation rates"
+      - "Social feature usage and engagement"
+      - "User-generated content creation"
+      - "Viral sharing and word-of-mouth"
+    
+    localization_metrics:
+      - "Multi-language user adoption"
+      - "Regional content engagement"
+      - "Cultural event participation"
+      - "Local platform integration success"
+
+  # 东方游戏风险管理
+  eastern_risk_management:
+    cultural_risks:
+      - risk: "Cultural misunderstanding or offense"
+        mitigation: "Extensive cultural consultation and testing"
+        
+      - risk: "Inappropriate content for regional standards"
+        mitigation: "Regional content review and adaptation"
+        
+      - risk: "Failure to resonate with local preferences"
+        mitigation: "Deep market research and local testing"
+    
+    regulatory_risks:
+      - risk: "Changing government regulations"
+        mitigation: "Regulatory monitoring and compliance systems"
+        
+      - risk: "Content approval delays or rejections"
+        mitigation: "Early regulatory consultation and preparation"
+        
+      - risk: "Data protection and privacy violations"
+        mitigation: "Comprehensive privacy compliance framework"
+    
+    market_risks:
+      - risk: "Strong local competition"
+        mitigation: "Unique value proposition and differentiation"
+        
+      - risk: "Platform policy changes"
+        mitigation: "Multi-platform strategy and relationships"
+        
+      - risk: "Economic or political instability"
+        mitigation: "Diversified market approach and flexibility"
+
+# 使用指南
+usage_notes: |
+  这个东方风格游戏工作流程专门用于：
+  1. 创建深度适应东方文化和价值观的GDD
+  2. 确保游戏在东方市场的文化适宜性和吸引力
+  3. 建立符合东方玩家偏好的社交和收集系统
+  4. 实施有效的本地化和文化敏感性措施
+  5. 建立可持续的东方市场运营和社区策略
+
+# BMAD集成
+bmad_integration:
+  eastern_handoff_requirements:
+    - "东方平台特定的技术集成和API"
+    - "文化适应的UI/UX实现和本地化系统"
+    - "东方支付系统和货币化功能集成"
+    - "社交平台集成和分享功能"
+    - "合规性监控和内容审核系统"
+  
+  cultural_optimization:
+    - "多语言支持和字体渲染系统"
+    - "文化特定的游戏机制和功能"
+    - "东方审美和视觉风格实现"
+    - "地区特定的网络优化和CDN配置"

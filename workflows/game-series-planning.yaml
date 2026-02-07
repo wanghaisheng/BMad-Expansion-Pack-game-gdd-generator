@@ -1,0 +1,79 @@
+---
+# workflows/game-series-planning.yaml
+name: game-series-planning
+title: Game Series Planning Workflow
+description: |
+  Plan a multi‑game franchise or episodic game series, including overarching gameplay arcs
+  and individual installment roadmaps.
+
+triggers:
+  - command: /game-series-plan
+  - intent: "plan a game series"
+
+inputs:
+  - series_title
+  - genre
+  - num_installments
+
+agents:
+  - game-systems-architect
+  - game-world-designer
+  - player-experience-designer
+  - technical-designer
+  - mechanics-specialist
+  - market-analyst
+
+steps:
+  - id: franchise_concept
+    title: Define series franchise concept
+    agent: game-systems-architect
+    outputs: franchise_concept
+
+  - id: game_world_bible
+    title: Build series bible (world, mechanics, progression)
+    agent: game-world-designer
+    inputs: franchise_concept
+    outputs: series_bible
+
+  - id: player_progression_arcs
+    title: Map long‑term player progression and mechanics evolution
+    agent: player-experience-designer
+    inputs:
+      - franchise_concept
+      - series_bible
+    outputs: progression_arc_map
+
+  - id: installment_designs
+    title: Design each installment overview
+    agent: game-systems-architect
+    repeat: num_installments
+    inputs:
+      - franchise_concept
+      - progression_arc_map
+    outputs: installment_designs
+
+  - id: market_alignment
+    title: Genre & market alignment check
+    agent: market-analyst
+    inputs: installment_designs
+    outputs: market_positioning
+
+  - id: technical_roadmap
+    title: Compile technical development roadmap
+    agent: technical-designer
+    inputs:
+      - series_bible
+      - progression_arc_map
+      - installment_designs
+      - market_positioning
+    outputs: series_roadmap
+
+  - id: design_review
+    title: Design review and validation
+    agent: mechanics-specialist
+    inputs: series_roadmap
+    outputs: final_series_plan
+
+outputs:
+  - final_series_plan
+

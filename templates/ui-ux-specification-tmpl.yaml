@@ -1,0 +1,123 @@
+---
+template:
+  id: ui-ux-specification-tmpl
+  name: UI/UX Specification Template
+  version: 1.0
+  description: Comprehensive template for user interface and experience design specifications
+  output:
+    format: markdown
+    filename: "{{game_title}}-ui-ux-spec.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: design_principles
+    title: UI/UX Design Principles
+    instruction: |
+      Establish core design principles:
+      - Visual design philosophy and style
+      - User experience goals and priorities
+      - Accessibility and inclusion principles
+      - Platform-specific design considerations
+      - Brand integration and consistency
+    elicit: true
+
+  - id: information_architecture
+    title: Information Architecture
+    instruction: |
+      Design information structure and navigation:
+      - Menu hierarchy and navigation flow
+      - Information grouping and categorization
+      - Search and discovery mechanisms
+      - Content organization principles
+      - User journey mapping
+    elicit: true
+
+  - id: visual_design_system
+    title: Visual Design System
+    instruction: |
+      Create comprehensive visual design system:
+      - Color palette and usage guidelines
+      - Typography hierarchy and specifications
+      - Icon system and visual language
+      - Component library and patterns
+      - Animation and transition principles
+    elicit: true
+
+  - id: interaction_design
+    title: Interaction Design
+    instruction: |
+      Define user interactions and behaviors:
+      - Input methods and gesture support
+      - Feedback systems and micro-interactions
+      - State management and transitions
+      - Error handling and recovery
+      - Progressive disclosure and complexity management
+    elicit: true
+
+  - id: screen_inventory
+    title: Screen Inventory
+    instruction: |
+      Create a complete screen inventory:
+      - ScreenId, purpose, entry/exit points
+      - Key components and states (normal/empty/loading/error)
+      - Localization keys for texts (LocKey)
+      - Accessibility labels and requirements (A11yLabel)
+      - Analytics events per screen and key actions (AnalyticsEvent)
+      - Dependent assets (icons, fonts, motion assets, UI audio cues)
+    elicit: true
+
+  - id: ui_storyboard
+    title: UI Storyboard
+    instruction: |
+      Storyboard key user flows step-by-step:
+      - Steps or frames with triggers and success criteria
+      - UI overlays, micro-interactions, transitions and timing
+      - Text variants and localization considerations
+      - Asset references for each step (AssetIds)
+    elicit: true
+
+  - id: ui_asset_inventory
+    title: UI Asset Inventory
+    instruction: |
+      Produce UI asset list with production specs:
+      - Icons, buttons, panels, fonts, illustrations
+      - Motion assets using image_sequence or sprite_sheet (include fps/frame count/naming continuity)
+      - Any tutorial clips (video) if used
+      - For each asset include format choice rationale, resolution, slicing rules, states, platform constraints, and priority
+    elicit: true
+
+  - id: responsive_design
+    title: Responsive Design
+    instruction: |
+      Plan multi-device and screen adaptation:
+      - Breakpoint strategy and screen sizes
+      - Layout adaptation principles
+      - Touch target sizing and spacing
+      - Content prioritization across devices
+      - Performance considerations for different devices
+    elicit: true
+
+  - id: accessibility_design
+    title: Accessibility Design
+    instruction: |
+      Ensure inclusive design for all users:
+      - Visual accessibility (contrast, color, text size)
+      - Motor accessibility (input alternatives, timing)
+      - Cognitive accessibility (clarity, simplicity)
+      - Assistive technology support
+      - Accessibility testing and validation
+    elicit: true
+
+  - id: usability_testing
+    title: Usability Testing Plan
+    instruction: |
+      Plan user testing and validation:
+      - Testing methodology and scenarios
+      - Target user groups and recruitment
+      - Success metrics and evaluation criteria
+      - Iteration and improvement processes
+      - Continuous user feedback integration
+    elicit: true

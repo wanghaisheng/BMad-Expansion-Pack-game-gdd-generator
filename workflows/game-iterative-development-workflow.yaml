@@ -1,0 +1,51 @@
+---
+workflow:
+  id: game-iterative-development-workflow
+  name: Iterative Game Development Workflow
+  description: >-
+    Agile game development cycle with regular feature releases, playtesting feedback, 
+    and milestone professional reviews.
+  phases:
+    sprint-planning:
+      - agent: game-systems-architect
+        task: select-next-feature-set
+        output: development-plan.md
+    feature-loop:
+      - agent: mechanics-specialist
+        task: create-feature-spec
+        input: development-plan.md
+        repeat: per-feature
+        output: feature-spec.md
+      - agent: technical-designer
+        task: workshop-game-mechanics
+        input: feature-spec.md
+        output: refined-mechanics.md
+      - agent: playtesting-simulator
+        task: provide-playtesting-feedback
+        input: refined-mechanics.md
+        output: feature-playtest-notes.md
+      - agent: gdd-reviewer
+        task: final-game-design-polish
+        input:
+          - refined-mechanics.md
+          - feature-playtest-notes.md
+        output: final-feature-spec.md
+      - agent: gdd-reviewer
+        task: integrate-feature
+        input: final-feature-spec.md
+        output: integration-log.md
+    retrospective:
+      - agent: playtesting-simulator
+        task: analyze-playtesting-feedback
+        input: integration-log.md
+        output: development-retro.md
+    milestone-review:
+      - agent: gdd-validator
+        task: game-design-review
+        input: integration-log.md
+        output: milestone-review.md
+  completion_criteria:
+    - integration-log.md exists
+    - milestone-review.md exists
+...
+

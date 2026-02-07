@@ -1,0 +1,63 @@
+bundle:
+  name: Game Design Document Generator Team
+  icon: 🎮
+  description: Complete game design team for creating comprehensive GDDs that seamlessly integrate with BMAD game development workflows
+agents:
+  # GDD 核心设计专家
+  - gdd-architect           # GDD 整体架构和结构设计
+  - game-concept-designer   # 游戏概念和核心玩法设计
+  - player-experience-designer
+  - game-world-designer
+  
+  # GDD 专业领域专家
+  - mechanics-designer      # 游戏机制设计（非技术实现）
+  - narrative-designer      # 叙事和故事设计
+  - ui-ux-designer
+  - art-direction-designer
+  - audio-design-specialist
+  - monetization-designer
+  
+  # GDD 平台与类型专家
+  - mobile-game-designer
+  - pc-console-designer
+  - web-game-designer
+  - casual-game-designer
+  - rpg-designer
+  - strategy-game-designer
+  
+  # GDD 质量与验证专家
+  - gdd-reviewer           # GDD 文档质量审查
+  - gdd-validator         # GDD 完整性验证
+  - market-analyst        # 市场分析和定位
+  - accessibility-designer
+  
+  # GDD 输出专家
+  - gdd-formatter         # GDD 格式化和文档生成
+  - technical-spec-writer # 技术规格文档编写
+  
+workflows:
+  # 基础工作流程
+  - comprehensive-gdd-creation
+  - rapid-prototype-gdd
+  
+  # 平台特定工作流程
+  - mobile-game-gdd
+  - pc-console-gdd
+  - web-game-gdd
+  - vr-ar-gdd
+  
+  # 类型特定工作流程
+  - action-rpg-gdd
+  - strategy-game-gdd
+  - casual-puzzle-gdd
+  - simulation-game-gdd
+  - multiplayer-game-gdd
+  
+  # 地域特定工作流程
+  - eastern-style-gdd
+  - western-style-gdd
+  
+  # 商业导向工作流程
+  - f2p-monetization-gdd
+  - premium-game-gdd
+  - liveops-focused-gdd

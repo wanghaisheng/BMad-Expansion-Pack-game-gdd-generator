@@ -1,0 +1,263 @@
+name: VR/AR Design Specification Template
+description: Comprehensive template for designing VR and AR game experiences
+icon: 🥽
+category: platform-specific
+version: "1.0"
+
+template:
+  # VR/AR概述
+  vr_ar_overview:
+    platform_type:
+      primary_platform: "[VR, AR, Mixed Reality]"
+      target_devices: "[Oculus Quest, HTC Vive, HoloLens, Mobile AR, etc.]"
+      experience_type: "[Room-scale, Seated, Standing, Mobile AR]"
+      interaction_paradigm: "[Hand tracking, Controllers, Gaze, Voice, Gesture]"
+    
+    experience_goals:
+      immersion_level: "[High immersion, Comfortable, Accessible]"
+      comfort_rating: "[Comfort-first, Moderate intensity, High intensity]"
+      session_duration: "[Short sessions <15min, Medium 15-45min, Long >45min]"
+      accessibility_priority: "[High, Medium, Low]"
+
+  # 空间设计
+  spatial_design:
+    play_space_requirements:
+      minimum_space: "[Physical space requirements]"
+      recommended_space: "[Optimal space for best experience]"
+      boundary_handling: "[How to handle play area boundaries]"
+      safety_considerations: "[Obstacle avoidance, guardian systems]"
+    
+    world_scale_design:
+      scale_approach: "[1:1 real scale, Miniature, Giant scale, Variable]"
+      locomotion_methods: "[Teleportation, Smooth locomotion, Room-scale walking]"
+      comfort_options: "[Vignetting, Snap turning, Comfort settings]"
+      spatial_audio_design: "[3D audio, Directional cues, Distance modeling]"
+    
+    environment_layout:
+      - area_name: "[Environment area name]"
+        purpose: "[What happens in this area]"
+        size_dimensions: "[Physical dimensions]"
+        interaction_density: "[Number of interactive elements]"
+        comfort_considerations: "[Motion sickness prevention]"
+        accessibility_features: "[How to make accessible]"
+
+  # 交互设计
+  interaction_design:
+    input_methods:
+      primary_inputs:
+        - input_type: "[Hand tracking, Controllers, Gaze, Voice]"
+          precision_level: "[High, Medium, Low precision required]"
+          comfort_rating: "[Comfortable, Moderate, Challenging]"
+          learning_curve: "[Easy, Medium, Complex to learn]"
+          accessibility_support: "[Alternative input methods]"
+      
+      gesture_vocabulary:
+        - gesture: "[Specific gesture or action]"
+          trigger_method: "[How to perform the gesture]"
+          feedback_type: "[Visual, Haptic, Audio feedback]"
+          error_handling: "[What happens on failed gesture]"
+          cultural_considerations: "[Cultural appropriateness]"
+    
+    object_interaction:
+      interaction_paradigms:
+        - interaction_type: "[Grab, Point, Touch, Gaze, etc.]"
+          object_types: "[What objects use this interaction]"
+          feedback_design: "[How interaction is communicated]"
+          precision_requirements: "[Accuracy needed]"
+          comfort_considerations: "[Ergonomic factors]"
+      
+      physics_simulation:
+        physics_fidelity: "[Realistic, Simplified, Stylized]"
+        collision_detection: "[Precise, Approximate, Simplified]"
+        haptic_feedback: "[Detailed, Basic, None]"
+        weight_simulation: "[Realistic weight, Simplified, None]"
+
+  # 用户界面设计
+  ui_design:
+    spatial_ui_approach:
+      ui_paradigm: "[Diegetic, Spatial, Traditional 2D overlay]"
+      ui_placement: "[World-space, Head-locked, Hand-attached]"
+      interaction_method: "[Ray casting, Direct touch, Gaze, Voice]"
+      readability_optimization: "[Font sizes, contrast, distance]"
+    
+    menu_systems:
+      - menu_type: "[Main menu, Settings, Inventory, etc.]"
+        presentation_style: "[3D spatial, 2D panel, Holographic]"
+        interaction_method: "[How to navigate this menu]"
+        accessibility_features: "[Voice commands, large text, etc.]"
+        comfort_considerations: "[Positioning, motion requirements]"
+    
+    hud_information:
+      information_display: "[Health, Score, Objectives, etc.]"
+      display_method: "[Spatial indicators, HUD overlay, Environmental]"
+      attention_management: "[How to draw attention without overwhelming]"
+      customization_options: "[Player customization of UI elements]"
+
+  # 舒适度与可访问性
+  comfort_accessibility:
+    motion_sickness_prevention:
+      locomotion_comfort:
+        - locomotion_type: "[Teleportation, Smooth, Room-scale]"
+          comfort_rating: "[High, Medium, Low comfort]"
+          customization_options: "[Player comfort settings]"
+          alternative_methods: "[Other locomotion options]"
+      
+      visual_comfort:
+        frame_rate_targets: "[90fps, 72fps, 60fps minimum]"
+        motion_blur_handling: "[Enabled, Disabled, Optional]"
+        vignetting_options: "[Comfort vignetting settings]"
+        brightness_adaptation: "[Auto-adjustment, Manual controls]"
+    
+    accessibility_features:
+      visual_accessibility:
+        - feature: "[Colorblind support, High contrast, Large text]"
+          implementation: "[How this feature works]"
+          customization: "[Player customization options]"
+          testing_method: "[How to test effectiveness]"
+      
+      motor_accessibility:
+        - feature: "[One-handed play, Seated play, Reduced motion]"
+          implementation: "[How this feature works]"
+          alternative_interactions: "[Alternative input methods]"
+          customization: "[Player customization options]"
+      
+      cognitive_accessibility:
+        - feature: "[Simplified UI, Audio cues, Clear instructions]"
+          implementation: "[How this feature works]"
+          difficulty_scaling: "[How complexity can be reduced]"
+          support_systems: "[Help and guidance systems]"
+
+  # 性能优化
+  performance_optimization:
+    rendering_optimization:
+      target_performance:
+        frame_rate: "[Target FPS for each platform]"
+        resolution: "[Render resolution targets]"
+        quality_settings: "[Graphics quality options]"
+        dynamic_scaling: "[Performance-based quality adjustment]"
+      
+      optimization_techniques:
+        - technique: "[Foveated rendering, LOD, Culling, etc.]"
+          implementation: "[How to implement this technique]"
+          performance_gain: "[Expected performance improvement]"
+          quality_impact: "[Effect on visual quality]"
+          platform_support: "[Which platforms support this]"
+    
+    memory_optimization:
+      asset_streaming: "[How to stream assets efficiently]"
+      texture_compression: "[Compression strategies for VR/AR]"
+      geometry_optimization: "[Polygon reduction techniques]"
+      audio_optimization: "[Spatial audio optimization]"
+
+  # 平台特定考虑
+  platform_considerations:
+    vr_platforms:
+      - platform: "[Oculus Quest, PC VR, PlayStation VR, etc.]"
+        capabilities: "[Platform-specific capabilities]"
+        limitations: "[Platform constraints]"
+        optimization_focus: "[Key optimization areas]"
+        unique_features: "[Platform-specific features to leverage]"
+        certification_requirements: "[Platform certification needs]"
+    
+    ar_platforms:
+      - platform: "[iOS ARKit, Android ARCore, HoloLens, etc.]"
+        tracking_capabilities: "[Plane detection, Object tracking, etc.]"
+        environmental_understanding: "[Occlusion, Lighting, etc.]"
+        interaction_methods: "[Touch, Gesture, Voice, etc.]"
+        performance_constraints: "[Battery, Thermal, Processing]"
+        social_considerations: "[Public use, Privacy, etc.]"
+
+  # 内容创作指南
+  content_creation:
+    asset_guidelines:
+      3d_models:
+        polygon_budgets: "[Polygon limits for different object types]"
+        texture_resolutions: "[Texture size guidelines]"
+        material_complexity: "[Shader complexity limits]"
+        animation_considerations: "[Animation performance guidelines]"
+      
+      audio_assets:
+        spatial_audio_format: "[3D audio format requirements]"
+        compression_settings: "[Audio compression guidelines]"
+        dynamic_range: "[Audio level guidelines]"
+        environmental_audio: "[Reverb and environmental effects]"
+    
+    level_design_principles:
+      - principle: "[Scale appropriateness, Comfort zones, etc.]"
+        description: "[What this principle means]"
+        implementation: "[How to apply this principle]"
+        examples: "[Good and bad examples]"
+        testing_method: "[How to validate this principle]"
+
+  # 测试与验证
+  testing_validation:
+    comfort_testing:
+      motion_sickness_testing:
+        test_duration: "[How long to test for comfort]"
+        test_participants: "[Who to test with]"
+        comfort_metrics: "[How to measure comfort]"
+        iteration_process: "[How to improve based on feedback]"
+      
+      usability_testing:
+        interaction_testing: "[Testing interaction methods]"
+        navigation_testing: "[Testing movement and navigation]"
+        ui_testing: "[Testing interface usability]"
+        accessibility_testing: "[Testing accessibility features]"
+    
+    performance_testing:
+      frame_rate_testing: "[How to test and maintain frame rate]"
+      thermal_testing: "[Testing for device overheating]"
+      battery_testing: "[Testing battery consumption]"
+      stability_testing: "[Testing for crashes and stability]"
+
+  # 社交与多人考虑
+  social_multiplayer:
+    social_presence:
+      avatar_representation: "[How players are represented]"
+      non_verbal_communication: "[Gestures, Body language, etc.]"
+      personal_space: "[Respecting personal boundaries]"
+      social_comfort: "[Making social interaction comfortable]"
+    
+    multiplayer_design:
+      shared_space_design: "[How multiple players share space]"
+      interaction_protocols: "[How players interact with each other]"
+      privacy_considerations: "[Personal space and privacy]"
+      moderation_tools: "[Handling inappropriate behavior]"
+
+  # 发布与分发
+  distribution_deployment:
+    platform_requirements:
+      - platform: "[Oculus Store, Steam VR, etc.]"
+        technical_requirements: "[Platform technical specs]"
+        content_guidelines: "[Platform content policies]"
+        certification_process: "[Certification requirements]"
+        marketing_opportunities: "[Platform marketing features]"
+    
+    update_strategy:
+      content_updates: "[How to deliver content updates]"
+      performance_patches: "[How to deploy performance fixes]"
+      feature_additions: "[How to add new features]"
+      backward_compatibility: "[Maintaining compatibility]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建VR/AR游戏的详细设计规格：
+  1. 优先考虑用户舒适度和可访问性
+  2. 充分利用空间交互的独特优势
+  3. 针对平台特性进行优化
+  4. 建立严格的性能和质量标准
+  5. 考虑社交和多人体验的特殊需求
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD VR/AR代理提供详细的平台特定指南
+    - 确保技术架构支持VR/AR特殊要求
+    - 提供性能优化和舒适度标准
+    - 支持平台特定的开发和测试流程
+  
+  handoff_requirements:
+    - 详细的VR/AR技术规格
+    - 平台特定的性能要求
+    - 舒适度和可访问性标准
+    - 交互设计和UI实现指南

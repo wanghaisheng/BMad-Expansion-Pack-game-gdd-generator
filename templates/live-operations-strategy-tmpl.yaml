@@ -1,0 +1,320 @@
+name: Live Operations Strategy Template
+description: Comprehensive template for planning and executing live operations for games
+icon: 📡
+category: live-ops
+version: "1.0"
+
+template:
+  # LiveOps概述
+  liveops_overview:
+    service_model:
+      game_type: "[Premium, F2P, Subscription, Hybrid]"
+      service_duration: "[Expected service lifetime]"
+      update_frequency: "[Daily, Weekly, Monthly, Seasonal]"
+      content_strategy: "[Continuous, Episodic, Event-driven]"
+    
+    business_objectives:
+      primary_kpis:
+        - kpi: "[DAU, MAU, Revenue, Retention, etc.]"
+          target_value: "[Specific target number]"
+          measurement_method: "[How to measure]"
+          improvement_strategy: "[How to improve this KPI]"
+      
+      secondary_kpis:
+        - kpi: "[Engagement, Session length, etc.]"
+          target_value: "[Specific target number]"
+          measurement_method: "[How to measure]"
+          improvement_strategy: "[How to improve this KPI]"
+
+  # 内容更新策略
+  content_update_strategy:
+    regular_content_updates:
+      daily_content:
+        - content_type: "[Daily quests, Login bonuses, etc.]"
+          update_mechanism: "[Automatic, Manual, Hybrid]"
+          content_variety: "[How to keep it fresh]"
+          resource_requirements: "[Art, Design, Development time]"
+      
+      weekly_content:
+        - content_type: "[Weekly challenges, Featured content, etc.]"
+          update_mechanism: "[Automatic, Manual, Hybrid]"
+          content_variety: "[How to keep it fresh]"
+          resource_requirements: "[Art, Design, Development time]"
+      
+      monthly_content:
+        - content_type: "[New levels, Characters, Features, etc.]"
+          update_mechanism: "[Client update, Server-side]"
+          content_scope: "[Size and complexity]"
+          development_pipeline: "[How content is created and deployed]"
+    
+    seasonal_content:
+      seasonal_events:
+        - event_name: "[Holiday events, Themed seasons, etc.]"
+          duration: "[Event length]"
+          frequency: "[Annual, Bi-annual, etc.]"
+          content_scope: "[New mechanics, cosmetics, levels]"
+          preparation_time: "[Development lead time needed]"
+          success_metrics: "[How to measure event success]"
+      
+      battle_passes_seasons:
+        season_length: "[Duration of each season]"
+        tier_structure: "[Free vs Premium tiers]"
+        reward_types: "[Cosmetics, Currency, Gameplay items]"
+        progression_mechanics: "[XP, Challenges, Time-based]"
+        monetization_strategy: "[Premium pass pricing and value]"
+
+  # 事件与活动管理
+  event_management:
+    event_types:
+      limited_time_events:
+        - event_type: "[Competition, Collaboration, Collection, etc.]"
+          target_audience: "[New players, Veterans, Whales, etc.]"
+          duration: "[Event length]"
+          rewards: "[What players can earn]"
+          participation_requirements: "[How to join]"
+          success_metrics: "[Participation rate, completion rate]"
+      
+      community_events:
+        - event_type: "[Tournaments, Community challenges, etc.]"
+          organization_method: "[In-game, External platform]"
+          prize_structure: "[Rewards and recognition]"
+          community_involvement: "[How community participates]"
+          moderation_needs: "[Community management requirements]"
+    
+    event_calendar:
+      annual_planning:
+        major_events: "[List of major annual events]"
+        seasonal_alignment: "[How events align with seasons/holidays]"
+        content_themes: "[Thematic consistency across events]"
+        resource_allocation: "[Team allocation for events]"
+      
+      event_coordination:
+        cross_promotion: "[How events work together]"
+        player_fatigue_management: "[Preventing event burnout]"
+        new_player_onboarding: "[Events for new players]"
+        retention_events: "[Events to bring back lapsed players]"
+
+  # 社区管理
+  community_management:
+    community_platforms:
+      primary_platforms:
+        - platform: "[Discord, Reddit, Twitter, etc.]"
+          purpose: "[News, Support, Discussion, etc.]"
+          moderation_level: "[Heavy, Moderate, Light]"
+          content_strategy: "[What to post and when]"
+          engagement_tactics: "[How to encourage participation]"
+      
+      in_game_community:
+        social_features: "[Chat, Guilds, Friends, etc.]"
+        moderation_tools: "[Automated and manual moderation]"
+        community_guidelines: "[Rules and enforcement]"
+        positive_reinforcement: "[Encouraging good behavior]"
+    
+    community_feedback:
+      feedback_collection:
+        - method: "[Surveys, Forums, Social media, etc.]"
+          frequency: "[How often to collect feedback]"
+          target_topics: "[What to ask about]"
+          analysis_process: "[How to process feedback]"
+      
+      feedback_implementation:
+        prioritization_criteria: "[How to prioritize feedback]"
+        communication_strategy: "[How to communicate changes]"
+        feedback_loop: "[Closing the loop with community]"
+        transparency_level: "[How much to share about decisions]"
+
+  # 数据分析与优化
+  analytics_optimization:
+    data_collection:
+      player_behavior_metrics:
+        - metric: "[Session length, Retention, Progression, etc.]"
+          collection_method: "[How data is collected]"
+          analysis_frequency: "[Daily, Weekly, Monthly]"
+          action_triggers: "[When to take action based on data]"
+      
+      business_metrics:
+        - metric: "[Revenue, ARPU, LTV, Conversion, etc.]"
+          collection_method: "[How data is collected]"
+          analysis_frequency: "[Daily, Weekly, Monthly]"
+          action_triggers: "[When to take action based on data]"
+    
+    a_b_testing:
+      testing_framework:
+        testing_tools: "[Analytics platform, Testing tools]"
+        test_design_process: "[How to design and run tests]"
+        statistical_significance: "[Confidence levels and sample sizes]"
+        rollout_strategy: "[How to implement winning variants]"
+      
+      testing_areas:
+        - area: "[Monetization, Onboarding, Retention, etc.]"
+          test_frequency: "[How often to test this area]"
+          key_metrics: "[What to measure]"
+          risk_assessment: "[Potential negative impacts]"
+    
+    performance_monitoring:
+      real_time_monitoring:
+        server_performance: "[Response times, Uptime, Error rates]"
+        player_experience: "[Crash rates, Loading times, etc.]"
+        business_performance: "[Revenue, DAU, Conversion rates]"
+        alert_systems: "[When and how to alert team]"
+      
+      reporting_dashboards:
+        executive_dashboard: "[High-level KPIs for leadership]"
+        operational_dashboard: "[Day-to-day operational metrics]"
+        development_dashboard: "[Technical and feature performance]"
+        community_dashboard: "[Community health and engagement]"
+
+  # 技术基础设施
+  technical_infrastructure:
+    server_architecture:
+      scalability_planning:
+        expected_concurrent_users: "[Peak concurrent user estimates]"
+        geographic_distribution: "[Global server deployment]"
+        auto_scaling_strategy: "[How to handle traffic spikes]"
+        disaster_recovery: "[Backup and recovery procedures]"
+      
+      content_delivery:
+        asset_streaming: "[How to deliver new content]"
+        update_mechanisms: "[Hot fixes, Client updates, Server updates]"
+        rollback_capabilities: "[How to revert problematic updates]"
+        regional_considerations: "[Content delivery in different regions]"
+    
+    development_pipeline:
+      continuous_deployment:
+        deployment_frequency: "[How often to deploy updates]"
+        testing_pipeline: "[Automated testing before deployment]"
+        rollout_strategy: "[Gradual rollout vs full deployment]"
+        monitoring_post_deployment: "[Post-deployment monitoring]"
+      
+      content_management_system:
+        content_creation_tools: "[Tools for creating live content]"
+        approval_workflows: "[Content review and approval process]"
+        scheduling_system: "[Automated content scheduling]"
+        version_control: "[Managing different content versions]"
+
+  # 货币化与经济
+  monetization_economy:
+    virtual_economy:
+      currency_systems:
+        - currency_type: "[Hard currency, Soft currency, etc.]"
+          earning_methods: "[How players earn this currency]"
+          spending_opportunities: "[What players can buy]"
+          exchange_rates: "[Conversion rates between currencies]"
+          inflation_control: "[How to prevent currency inflation]"
+      
+      pricing_strategy:
+        - item_category: "[Cosmetics, Gameplay items, etc.]"
+          pricing_model: "[Fixed, Dynamic, Auction, etc.]"
+          value_proposition: "[Why players should buy]"
+          price_testing: "[How to test and optimize prices]"
+    
+    monetization_features:
+      battle_pass:
+        tier_structure: "[Free vs Premium progression]"
+        reward_distribution: "[How rewards are distributed across tiers]"
+        completion_rates: "[Target completion rates]"
+        seasonal_themes: "[How themes change each season]"
+      
+      in_app_purchases:
+        - purchase_type: "[Starter packs, Currency, Items, etc.]"
+          target_audience: "[New players, Regular players, Whales]"
+          pricing_strategy: "[Price points and value]"
+          promotion_strategy: "[How to promote these purchases]"
+      
+      subscription_model:
+        subscription_tiers: "[Different subscription levels]"
+        benefits_structure: "[What each tier provides]"
+        retention_strategy: "[How to keep subscribers]"
+        churn_reduction: "[How to reduce subscription cancellations]"
+
+  # 客户支持
+  customer_support:
+    support_channels:
+      - channel: "[In-game, Email, Chat, etc.]"
+        response_time_target: "[Target response time]"
+        support_scope: "[What issues this channel handles]"
+        escalation_process: "[When and how to escalate]"
+        language_support: "[Supported languages]"
+    
+    common_issues:
+      - issue_type: "[Technical, Account, Payment, etc.]"
+        frequency: "[How common this issue is]"
+        resolution_process: "[Standard resolution steps]"
+        prevention_strategy: "[How to prevent this issue]"
+        self_service_options: "[Player self-help options]"
+    
+    player_retention:
+      win_back_campaigns:
+        lapsed_player_identification: "[How to identify lapsed players]"
+        re_engagement_strategies: "[Offers, Content, Communication]"
+        success_metrics: "[How to measure win-back success]"
+        campaign_frequency: "[How often to run campaigns]"
+
+  # 风险管理
+  risk_management:
+    operational_risks:
+      - risk: "[Server downtime, Security breach, etc.]"
+        probability: "[High/Medium/Low]"
+        impact: "[Business impact if it occurs]"
+        mitigation_strategy: "[How to prevent or minimize]"
+        response_plan: "[What to do if it happens]"
+    
+    business_risks:
+      - risk: "[Revenue decline, Player churn, etc.]"
+        probability: "[High/Medium/Low]"
+        impact: "[Business impact if it occurs]"
+        early_warning_signs: "[Indicators to watch for]"
+        mitigation_strategy: "[How to prevent or minimize]"
+    
+    compliance_risks:
+      - risk: "[Regulatory changes, Platform policy changes]"
+        affected_regions: "[Which markets are affected]"
+        compliance_requirements: "[What needs to be done]"
+        implementation_timeline: "[When changes need to be made]"
+        ongoing_monitoring: "[How to stay compliant]"
+
+  # 团队与资源
+  team_resources:
+    liveops_team_structure:
+      - role: "[LiveOps Manager, Community Manager, etc.]"
+        responsibilities: "[Key responsibilities]"
+        required_skills: "[Skills and experience needed]"
+        team_size: "[Number of people in this role]"
+        reporting_structure: "[Who they report to]"
+    
+    cross_functional_collaboration:
+      - department: "[Development, Art, QA, Marketing, etc.]"
+        collaboration_frequency: "[How often to collaborate]"
+        shared_responsibilities: "[Joint responsibilities]"
+        communication_methods: "[How teams communicate]"
+        conflict_resolution: "[How to resolve disagreements]"
+    
+    external_partners:
+      - partner_type: "[Analytics, Customer support, etc.]"
+        services_provided: "[What they provide]"
+        integration_requirements: "[How they integrate with game]"
+        performance_metrics: "[How to measure their performance]"
+        contract_terms: "[Key contract considerations]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建全面的游戏运营策略：
+  1. 定义清晰的运营目标和KPI
+  2. 建立可持续的内容更新流程
+  3. 创建有效的社区管理策略
+  4. 实施数据驱动的优化流程
+  5. 确保技术基础设施支持运营需求
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD运营代理提供详细的运营策略指南
+    - 确保技术架构支持运营需求
+    - 提供数据分析和监控要求
+    - 支持自动化运营流程的实施
+  
+  handoff_requirements:
+    - 详细的技术运营规格
+    - 数据分析和监控要求
+    - 内容管理系统规格
+    - 社区管理工具要求

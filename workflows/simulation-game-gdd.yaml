@@ -1,0 +1,460 @@
+name: Simulation Game GDD Workflow
+description: Specialized workflow for creating GDDs for simulation games including city builders, life sims, and management games
+icon: 🏗️
+category: genre-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for simulation game development"
+    target_output: "Simulation game GDD with complex systems and emergent gameplay"
+    estimated_duration: "5-8 weeks depending on complexity"
+    team_size: "8-12 specialists with simulation game expertise"
+    
+  # 模拟游戏特殊考虑
+  simulation_considerations:
+    core_principles:
+      - "Authentic and believable systems"
+      - "Emergent gameplay from system interactions"
+      - "Player agency and creative expression"
+      - "Long-term progression and development"
+      - "Sandbox and goal-oriented play modes"
+    
+    player_expectations:
+      - "Deep, interconnected systems"
+      - "Realistic cause-and-effect relationships"
+      - "Creative freedom and customization"
+      - "Long-term engagement and progression"
+      - "Educational or skill-building value"
+    
+    design_challenges:
+      - "Balancing realism with fun"
+      - "Managing system complexity"
+      - "Providing clear feedback in complex systems"
+      - "Creating engaging early game experience"
+      - "Maintaining performance with complex simulations"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：模拟游戏市场研究
+    - phase: "simulation_market_research"
+      name: "Simulation Game Market Research"
+      duration: "1-2 weeks"
+      description: "Research simulation game market and establish genre positioning"
+      
+      participants:
+        primary:
+          - market-analyst
+          - simulation-specialist
+          - game-systems-architect
+        supporting:
+          - western-game-designer
+          - pc-console-specialist
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "Simulation game market analysis"
+          
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "1 week"
+          deliverable: "Genre positioning and differentiation"
+          
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Simulation concept framework"
+      
+      deliverables:
+        - "Simulation Game Market Analysis"
+        - "Genre Positioning and Target Audience"
+        - "Competitive Analysis and Differentiation"
+        - "Platform Strategy (PC/Console focus)"
+        - "Realism vs Accessibility Balance"
+      
+      quality_gates:
+        - "Market opportunity validated for simulation genre"
+        - "Target audience preferences understood"
+        - "Competitive differentiation established"
+        - "Realism level appropriately defined"
+
+    # 第二阶段：核心模拟系统设计
+    - phase: "core_simulation_systems"
+      name: "Core Simulation Systems Design"
+      duration: "2-3 weeks"
+      description: "Design the fundamental simulation systems and mechanics"
+      
+      participants:
+        primary:
+          - simulation-specialist
+          - game-systems-architect
+          - mechanics-specialist
+          - technical-designer
+        supporting:
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "2-3 weeks"
+          deliverable: "Core simulation systems specification"
+          
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "2 weeks"
+          deliverable: "Detailed mechanics implementation"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Integrated systems design"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "Simulation technical architecture"
+      
+      deliverables:
+        - "Core Simulation Systems Specification"
+        - "Resource and Economy Systems"
+        - "Agent Behavior and AI Systems"
+        - "Environmental and Physics Systems"
+        - "System Interaction Framework"
+      
+      quality_gates:
+        - "Simulation systems are believable and consistent"
+        - "Systems create emergent gameplay opportunities"
+        - "Resource systems are balanced and meaningful"
+        - "Technical architecture supports complex simulations"
+
+    # 第三阶段：用户代理与AI设计
+    - phase: "agent_ai_design"
+      name: "Agent & AI Systems Design"
+      duration: "1-2 weeks"
+      description: "Design AI agents and autonomous systems within the simulation"
+      
+      participants:
+        primary:
+          - simulation-specialist
+          - technical-designer
+          - game-systems-architect
+        supporting:
+          - mechanics-specialist
+          - playtesting-simulator
+      
+      tasks:
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "1-2 weeks"
+          deliverable: "AI agent behavior specification"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "AI technical implementation"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Agent interaction systems"
+      
+      deliverables:
+        - "AI Agent Behavior Specification"
+        - "Autonomous System Design"
+        - "Agent Interaction and Communication"
+        - "Emergent Behavior Framework"
+        - "Performance Optimization for AI"
+      
+      quality_gates:
+        - "AI agents behave believably and consistently"
+        - "Autonomous systems create interesting dynamics"
+        - "Agent interactions produce emergent gameplay"
+        - "AI performance is optimized and scalable"
+
+    # 第四阶段：用户界面与数据可视化
+    - phase: "ui_data_visualization"
+      name: "UI & Data Visualization Design"
+      duration: "1-2 weeks"
+      description: "Design interfaces for managing complex simulation data"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - simulation-specialist
+          - accessibility-specialist
+        supporting:
+          - game-art-director
+          - technical-designer
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Simulation UI specification"
+          
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "1 week"
+          deliverable: "Data visualization framework"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Simulation accessibility plan"
+      
+      deliverables:
+        - "Simulation Game UI/UX Specification"
+        - "Data Visualization and Analytics Tools"
+        - "Information Management Systems"
+        - "Customizable Interface Options"
+        - "Accessibility for Complex Data"
+      
+      quality_gates:
+        - "UI effectively presents complex information"
+        - "Data visualization aids decision-making"
+        - "Interface is customizable for different play styles"
+        - "Accessibility features support diverse users"
+
+    # 第五阶段：创造性工具与内容
+    - phase: "creative_tools_content"
+      name: "Creative Tools & Content Systems"
+      duration: "1-2 weeks"
+      description: "Design tools for player creativity and user-generated content"
+      
+      participants:
+        primary:
+          - simulation-specialist
+          - game-world-designer
+          - technical-designer
+        supporting:
+          - ui-ux-designer
+          - liveops-designer
+      
+      tasks:
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Creative tools specification"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "1 week"
+          deliverable: "Content creation framework"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1 week"
+          deliverable: "User-generated content system"
+      
+      deliverables:
+        - "Creative Tools and Building Systems"
+        - "User-Generated Content Framework"
+        - "Sharing and Community Features"
+        - "Modding Support and Tools"
+        - "Asset Creation and Management"
+      
+      quality_gates:
+        - "Creative tools are intuitive and powerful"
+        - "User-generated content system is robust"
+        - "Sharing features encourage community"
+        - "Modding support extends game longevity"
+
+    # 第六阶段：教程与学习系统
+    - phase: "tutorial_learning_systems"
+      name: "Tutorial & Learning Systems"
+      duration: "1-2 weeks"
+      description: "Design comprehensive learning systems for complex simulation games"
+      
+      participants:
+        primary:
+          - simulation-specialist
+          - player-experience-designer
+          - game-narrative-designer
+        supporting:
+          - ui-ux-designer
+          - accessibility-specialist
+      
+      tasks:
+        - task: "design-simulation-systems"
+          owner: "simulation-specialist"
+          duration: "1 week"
+          deliverable: "Tutorial system specification"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Learning progression framework"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1 week"
+          deliverable: "Educational content design"
+      
+      deliverables:
+        - "Comprehensive Tutorial System"
+        - "Progressive Learning Framework"
+        - "Help and Reference Systems"
+        - "Scenario-Based Learning"
+        - "Community Knowledge Sharing"
+      
+      quality_gates:
+        - "Tutorial system effectively teaches complex concepts"
+        - "Learning progression is well-paced"
+        - "Help systems provide contextual assistance"
+        - "Educational content is engaging and clear"
+
+    # 第七阶段：模拟游戏质量保证
+    - phase: "simulation_quality_assurance"
+      name: "Simulation Game Quality Assurance"
+      duration: "1-2 weeks"
+      description: "Comprehensive quality review focusing on simulation game requirements"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - simulation-specialist
+          - playtesting-simulator
+          - game-design-critic
+        supporting:
+          - technical-designer
+          - accessibility-specialist
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Simulation GDD review report"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1-2 weeks"
+          deliverable: "Simulation playtesting results"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Simulation design critique"
+      
+      deliverables:
+        - "Simulation Game GDD Review Report"
+        - "System Balance and Stability Assessment"
+        - "Performance and Scalability Analysis"
+        - "Educational Value Evaluation"
+        - "Community and Modding Readiness"
+      
+      quality_gates:
+        - "All simulation requirements met"
+        - "Systems are balanced and stable"
+        - "Performance targets are achievable"
+        - "Educational goals are supported"
+
+  # 模拟游戏特殊流程
+  simulation_specific_processes:
+    system_validation:
+      - "Mathematical modeling of simulation systems"
+      - "Real-world data validation where applicable"
+      - "Edge case testing and stability analysis"
+      - "Performance profiling under load"
+    
+    complexity_management:
+      - "Layered complexity introduction"
+      - "Optional advanced features"
+      - "Customizable simulation depth"
+      - "Multiple difficulty and realism levels"
+    
+    educational_integration:
+      - "Real-world learning opportunities"
+      - "Educational partnerships and content"
+      - "Skill development tracking"
+      - "Knowledge transfer assessment"
+    
+    community_support:
+      - "Modding tools and documentation"
+      - "Community challenges and competitions"
+      - "User-generated content showcasing"
+      - "Developer-community collaboration"
+
+  # 模拟游戏成功指标
+  simulation_success_metrics:
+    engagement_metrics:
+      - "Average session length (target: 60+ minutes)"
+      - "Long-term retention (30+ days)"
+      - "Feature depth usage"
+      - "Creative project completion rates"
+    
+    learning_metrics:
+      - "Tutorial completion and comprehension"
+      - "Skill progression over time"
+      - "Help system effectiveness"
+      - "Educational objective achievement"
+    
+    creativity_metrics:
+      - "User-generated content creation"
+      - "Sharing and community engagement"
+      - "Mod creation and adoption"
+      - "Creative challenge participation"
+    
+    system_metrics:
+      - "Simulation stability and accuracy"
+      - "Performance under complex scenarios"
+      - "System interaction diversity"
+      - "Emergent behavior frequency"
+
+  # 模拟游戏风险管理
+  simulation_risk_management:
+    complexity_risks:
+      - risk: "Overwhelming complexity for new players"
+        mitigation: "Excellent tutorials and progressive complexity"
+        
+      - risk: "System interactions causing instability"
+        mitigation: "Comprehensive system testing and validation"
+        
+      - risk: "Performance issues with complex simulations"
+        mitigation: "Scalable architecture and optimization"
+    
+    market_risks:
+      - risk: "Niche appeal limiting market size"
+        mitigation: "Accessibility features and broader appeal"
+        
+      - risk: "Long development cycles"
+        mitigation: "Iterative development and early testing"
+        
+      - risk: "Competition from established franchises"
+        mitigation: "Innovation and unique value proposition"
+    
+    technical_risks:
+      - risk: "AI and simulation performance bottlenecks"
+        mitigation: "Efficient algorithms and performance testing"
+        
+      - risk: "Save game corruption in complex systems"
+        mitigation: "Robust save system with validation"
+        
+      - risk: "Modding system security vulnerabilities"
+        mitigation: "Secure modding framework and sandboxing"
+
+# 使用指南
+usage_notes: |
+  这个模拟游戏工作流程专门用于：
+  1. 创建深度复杂但可理解的模拟系统GDD
+  2. 平衡现实主义与游戏性的娱乐价值
+  3. 建立强大的创造性工具和社区功能
+  4. 确保长期参与度和教育价值
+  5. 支持模组和用户生成内容生态系统
+
+# BMAD集成
+bmad_integration:
+  simulation_handoff_requirements:
+    - "复杂系统架构和性能优化"
+    - "AI代理行为和自主系统实现"
+    - "数据可视化和分析工具"
+    - "用户生成内容和模组支持系统"
+    - "教育功能和学习跟踪系统"
+  
+  genre_optimization:
+    - "大规模数据处理和实时模拟"
+    - "可扩展的AI和代理系统"
+    - "高效的保存和加载系统"
+    - "模组安全和沙盒环境"

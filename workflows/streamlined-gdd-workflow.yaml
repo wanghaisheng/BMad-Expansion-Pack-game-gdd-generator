@@ -1,0 +1,208 @@
+name: Streamlined GDD Creation Workflow
+description: Efficient workflow using existing BMAD agents to create comprehensive GDDs
+icon: 🚀
+category: core
+version: "2.0"
+
+workflow:
+  overview:
+    purpose: "Create comprehensive GDD using existing specialized agents with clear command sequences"
+    target_output: "Complete, BMAD-compatible Game Design Document"
+    estimated_duration: "4-6 hours total execution time"
+    
+  execution_sequence:
+    # Step 1: Foundation (60 minutes)
+    - step: "foundation"
+      name: "Game Concept & Market Foundation"
+      duration: "60 minutes"
+      
+      agents:
+        - agent: "game-systems-architect"
+          command: "create-brief"
+          description: "Create initial game concept brief"
+          expected_output: "Game concept brief with core vision"
+          
+        - agent: "market-analyst" 
+          command: "market-research"
+          description: "Analyze market opportunity and competition"
+          expected_output: "Market analysis and positioning strategy"
+          
+        - agent: "player-experience-designer"
+          command: "create-player-profile"
+          description: "Define target player personas"
+          expected_output: "Player profiles and experience requirements"
+    
+    # Step 2: Core Design (90 minutes)
+    - step: "core_design"
+      name: "Core Gameplay Design"
+      duration: "90 minutes"
+      
+      agents:
+        - agent: "game-systems-architect"
+          command: "create-game-loop"
+          description: "Design core gameplay loops"
+          expected_output: "Core loop specifications and system architecture"
+          
+        - agent: "mechanics-specialist"
+          command: "design-mechanics"
+          description: "Detail game mechanics and balance"
+          expected_output: "Comprehensive mechanics specifications"
+          
+        - agent: "player-experience-designer"
+          command: "design-onboarding"
+          description: "Design player journey and onboarding"
+          expected_output: "Player experience flow and onboarding design"
+    
+    # Step 3: Content Design (120 minutes - parallel execution)
+    - step: "content_design"
+      name: "Content & Presentation Design"
+      duration: "120 minutes"
+      parallel_execution: true
+      
+      agents:
+        - agent: "game-narrative-designer"
+          command: "design-story-structure"
+          description: "Create narrative structure and story design"
+          expected_output: "Narrative design document"
+          
+        - agent: "game-world-designer"
+          command: "create-world-design"
+          description: "Design game world and setting"
+          expected_output: "World design, environmental specs, and environment asset list"
+          
+        - agent: "ui-ux-designer"
+          command: "ux-flow-design"
+          description: "Design user interface and experience flows"
+          expected_output: "UI/UX specs, screen inventory, storyboard, and UI asset list"
+          
+        - agent: "game-art-director"
+          command: "create-art-direction"
+          description: "Establish visual style and art direction"
+          expected_output: "Art direction guide, asset pipeline rules, naming, and base asset list"
+          
+        - agent: "audio-designer"
+          command: "design-audio-systems"
+          description: "Design audio and music systems"
+          expected_output: "Audio specs and audio asset list with platform profiles"
+    
+    # Step 4: Business & Technical (60 minutes)
+    - step: "business_technical"
+      name: "Business Model & Technical Specifications"
+      duration: "60 minutes"
+      
+      agents:
+        - agent: "monetization-designer"
+          command: "monetization-strategy"
+          description: "Design business model and monetization"
+          expected_output: "Monetization strategy and revenue model"
+          
+        - agent: "technical-designer"
+          command: "create-technical-spec"
+          description: "Define technical requirements and architecture"
+          expected_output: "Technical specs including asset metadata automation and media profiles"
+          
+        - agent: "mobile-game-specialist"
+          command: "platform-optimization"
+          description: "Optimize for target platforms"
+          expected_output: "Platform-specific requirements and optimizations"
+
+    # Step 4.5: Appendices & Asset Readiness (30 minutes)
+    - step: "appendices_assets"
+      name: "Appendices & Asset Index"
+      duration: "30 minutes"
+      
+      agents:
+        - agent: "technical-designer"
+          command: "compile-appendices"
+          description: "Compile asset index, metadata schemas, media profiles, and validation gates"
+          expected_output: "Appendices with asset list templates, schemas, and asset roadmap guidance"
+    
+    # Step 5: Quality Assurance (45 minutes)
+    - step: "quality_assurance"
+      name: "Review, Validation & Final Assembly"
+      duration: "45 minutes"
+      
+      agents:
+        - agent: "gdd-reviewer"
+          command: "review-gdd"
+          description: "Comprehensive quality review of all components"
+          expected_output: "Quality review report with recommendations"
+          
+        - agent: "gdd-validator"
+          command: "validate-gdd"
+          description: "Final validation and BMAD compatibility check"
+          expected_output: "Validation report including asset list coverage and compliance"
+          
+        - agent: "game-systems-architect"
+          command: "create-gdd"
+          description: "Assemble final comprehensive GDD document"
+          expected_output: "Complete, formatted GDD document"
+
+  agent_coordination:
+    data_flow:
+      - from: "game-systems-architect (create-brief)"
+        to: "market-analyst (market-research)"
+        data: "Game concept brief"
+        
+      - from: "market-analyst (market-research)"
+        to: "player-experience-designer (create-player-profile)"
+        data: "Market analysis and target audience insights"
+        
+      - from: "player-experience-designer (create-player-profile)"
+        to: "game-systems-architect (create-game-loop)"
+        data: "Player profiles and experience requirements"
+        
+      - from: "game-systems-architect (create-game-loop)"
+        to: "mechanics-specialist (design-mechanics)"
+        data: "Core gameplay loops and system architecture"
+        
+      - from: "mechanics-specialist (design-mechanics)"
+        to: "content_design_agents"
+        data: "Detailed mechanics specifications"
+        
+      - from: "content_design_agents"
+        to: "business_technical_agents"
+        data: "Complete content and presentation specifications"
+        
+      - from: "business_technical_agents"
+        to: "quality_assurance_agents"
+        data: "Complete game design with business and technical specs"
+    
+    handoff_requirements:
+      - "Each agent must complete their command successfully before next agent starts"
+      - "Parallel agents in content_design step can execute simultaneously"
+      - "All outputs must be in standardized format for next agent consumption"
+      - "Quality gates must pass before proceeding to next step"
+
+  success_criteria:
+    step_completion:
+      - "Foundation: Game concept validated and market opportunity confirmed"
+      - "Core Design: Gameplay loops and mechanics fully specified"
+      - "Content Design: All content and presentation elements designed"
+      - "Business Technical: Monetization and technical requirements defined"
+      - "Quality Assurance: GDD reviewed, validated, and BMAD-compatible"
+    
+    final_deliverable:
+      - "Complete GDD document with all required sections"
+      - "BMAD compatibility confirmed by validator"
+      - "Technical feasibility verified"
+      - "Market viability established"
+      - "Implementation-ready specifications"
+
+  usage_instructions: |
+    This streamlined workflow uses your existing BMAD agents efficiently:
+    
+    1. Execute agents in sequence as specified
+    2. Ensure each agent completes their command before proceeding
+    3. Pass outputs between agents as specified in data_flow
+    4. Allow parallel execution in content_design step for efficiency
+    5. Validate quality gates before proceeding to next step
+    
+    Key advantages:
+    - Uses existing, proven agents
+    - Clear command sequences
+    - Defined data handoffs
+    - Parallel execution where possible
+    - Built-in quality assurance
+    
+    Expected result: Complete, professional GDD ready for game development.

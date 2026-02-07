@@ -1,0 +1,351 @@
+name: Rapid Prototype GDD Workflow
+description: Fast-track workflow for creating a focused GDD for prototyping and early validation
+icon: ⚡
+category: core
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Quickly create a focused GDD for rapid prototyping and concept validation"
+    target_output: "Prototype-ready GDD with core systems defined"
+    estimated_duration: "1-2 weeks"
+    team_size: "4-6 core specialists"
+    
+  # 快速原型特点
+  prototype_characteristics:
+    focus_areas:
+      - "Core gameplay mechanics"
+      - "Essential player experience"
+      - "Technical feasibility validation"
+      - "Market concept validation"
+    
+    reduced_scope:
+      - "Minimal art and audio specifications"
+      - "Basic UI/UX requirements only"
+      - "Simplified narrative elements"
+      - "Essential monetization concepts"
+    
+    validation_goals:
+      - "Prove core gameplay is fun"
+      - "Validate technical approach"
+      - "Test market assumptions"
+      - "Identify major risks early"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：快速概念定义
+    - phase: "rapid_concept"
+      name: "Rapid Concept Definition"
+      duration: "2-3 days"
+      description: "Quickly establish core game concept and validate basic market fit"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - player-experience-designer
+          - market-analyst
+        supporting:
+          - technical-designer
+      
+      tasks:
+        - task: "brainstorm-game-concept"
+          owner: "game-systems-architect"
+          duration: "1 day"
+          deliverable: "Core concept definition"
+          
+        - task: "expand-game-concept"
+          owner: "player-experience-designer"
+          duration: "1 day"
+          deliverable: "Player experience outline"
+          
+        - task: "market-viability-assessment"
+          owner: "market-analyst"
+          duration: "1 day"
+          deliverable: "Quick market validation"
+      
+      deliverables:
+        - "Core Game Concept"
+        - "Player Experience Outline"
+        - "Market Validation Summary"
+      
+      quality_gates:
+        - "Core concept is clear and compelling"
+        - "Basic market opportunity confirmed"
+        - "Player experience vision established"
+
+    # 第二阶段：核心机制设计
+    - phase: "core_mechanics"
+      name: "Core Mechanics Design"
+      duration: "3-5 days"
+      description: "Design and specify the essential gameplay mechanics for prototyping"
+      
+      participants:
+        primary:
+          - mechanics-specialist
+          - game-systems-architect
+          - technical-designer
+        supporting:
+          - player-experience-designer
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "2-3 days"
+          deliverable: "Core mechanics specification"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1-2 days"
+          deliverable: "Refined mechanics for prototyping"
+          
+        - task: "analyze-game-design-structure"
+          owner: "technical-designer"
+          duration: "1-2 days"
+          deliverable: "Technical feasibility assessment"
+      
+      deliverables:
+        - "Core Mechanics Specification"
+        - "Prototype Feature List"
+        - "Technical Feasibility Report"
+      
+      quality_gates:
+        - "Core mechanics are prototypeable"
+        - "Technical approach is validated"
+        - "Scope is appropriate for timeline"
+
+    # 第三阶段：最小可行设计
+    - phase: "mvp_design"
+      name: "Minimum Viable Design"
+      duration: "2-4 days"
+      description: "Create minimal specifications for essential supporting systems"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - game-world-designer
+          - technical-designer
+        supporting:
+          - game-art-director
+          - audio-designer
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "2 days"
+          deliverable: "Basic UI/UX specification"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "2 days"
+          deliverable: "Essential world elements"
+          
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "2 days"
+          deliverable: "Prototype technical spec"
+      
+      deliverables:
+        - "Basic UI/UX Specification"
+        - "Essential World Design"
+        - "Prototype Technical Specification"
+      
+      quality_gates:
+        - "UI supports core interactions"
+        - "World design enables core gameplay"
+        - "Technical spec is implementable"
+
+    # 第四阶段：原型验证计划
+    - phase: "validation_planning"
+      name: "Prototype Validation Planning"
+      duration: "1-2 days"
+      description: "Plan how to validate the prototype and gather feedback"
+      
+      participants:
+        primary:
+          - playtesting-simulator
+          - game-design-critic
+          - market-analyst
+        supporting:
+          - player-experience-designer
+      
+      tasks:
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 day"
+          deliverable: "Prototype testing plan"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 day"
+          deliverable: "Design validation framework"
+      
+      deliverables:
+        - "Prototype Testing Plan"
+        - "Validation Criteria"
+        - "Feedback Collection Framework"
+      
+      quality_gates:
+        - "Testing approach is comprehensive"
+        - "Success criteria are defined"
+        - "Feedback mechanisms are established"
+
+  # 快速决策框架
+  rapid_decision_framework:
+    decision_principles:
+      - "Favor speed over perfection"
+      - "Focus on core value proposition"
+      - "Defer non-essential decisions"
+      - "Validate assumptions quickly"
+    
+    scope_management:
+      - "Ruthlessly prioritize core features"
+      - "Defer complex systems to later phases"
+      - "Use placeholder content where possible"
+      - "Focus on gameplay over polish"
+    
+    risk_tolerance:
+      - "Accept higher uncertainty for speed"
+      - "Plan for multiple iteration cycles"
+      - "Build in pivot capability"
+      - "Emphasize learning over completion"
+
+  # 协作模式
+  collaboration_patterns:
+    daily_standups:
+      - "15-minute daily alignment meetings"
+      - "Rapid issue identification and resolution"
+      - "Continuous priority adjustment"
+      - "Immediate blocker escalation"
+    
+    concurrent_work:
+      - "Parallel development of independent systems"
+      - "Shared documentation in real-time"
+      - "Continuous integration of work streams"
+      - "Flexible role boundaries"
+    
+    rapid_feedback:
+      - "Immediate peer review of deliverables"
+      - "Quick stakeholder validation cycles"
+      - "Real-time design iteration"
+      - "Fast decision-making processes"
+
+  # 质量标准（简化版）
+  quality_standards:
+    essential_quality:
+      - "Core mechanics are clearly defined"
+      - "Technical approach is sound"
+      - "Player experience is coherent"
+      - "Prototype scope is realistic"
+    
+    documentation_efficiency:
+      - "Concise but complete specifications"
+      - "Visual aids over lengthy text"
+      - "Actionable implementation guidance"
+      - "Clear success criteria"
+    
+    validation_readiness:
+      - "Prototype can be built and tested"
+      - "Key assumptions can be validated"
+      - "Feedback can be collected effectively"
+      - "Iteration path is clear"
+
+  # 原型类型适配
+  prototype_types:
+    gameplay_prototype:
+      focus: "Core mechanics and player interaction"
+      deliverables:
+        - "Mechanics specification"
+        - "Interaction design"
+        - "Basic technical requirements"
+      
+    technical_prototype:
+      focus: "Technical feasibility and performance"
+      deliverables:
+        - "Technical architecture"
+        - "Performance requirements"
+        - "Platform constraints"
+      
+    market_prototype:
+      focus: "Market validation and user appeal"
+      deliverables:
+        - "Market positioning"
+        - "User experience design"
+        - "Monetization concepts"
+      
+    narrative_prototype:
+      focus: "Story and character validation"
+      deliverables:
+        - "Core narrative elements"
+        - "Character concepts"
+        - "Dialogue samples"
+
+  # 成功指标
+  success_metrics:
+    speed_metrics:
+      - "Time to first playable prototype"
+      - "Decision-making velocity"
+      - "Iteration cycle time"
+      - "Feedback incorporation speed"
+    
+    validation_metrics:
+      - "Core assumptions tested"
+      - "Technical risks identified"
+      - "Market feedback quality"
+      - "Design coherence score"
+    
+    learning_metrics:
+      - "Key insights generated"
+      - "Pivot decisions made"
+      - "Risk mitigation effectiveness"
+      - "Team learning velocity"
+
+  # 下一步规划
+  next_steps_planning:
+    prototype_outcomes:
+      success_path:
+        - "Expand to full GDD development"
+        - "Begin production planning"
+        - "Scale team and resources"
+        - "Initiate development workflow"
+      
+      pivot_path:
+        - "Iterate on core concept"
+        - "Adjust target market"
+        - "Modify technical approach"
+        - "Refine player experience"
+      
+      failure_path:
+        - "Document lessons learned"
+        - "Identify salvageable elements"
+        - "Plan alternative approaches"
+        - "Consider concept retirement"
+    
+    transition_planning:
+      - "Define criteria for moving to full development"
+      - "Plan resource scaling strategy"
+      - "Establish quality upgrade path"
+      - "Prepare stakeholder communication"
+
+# 使用指南
+usage_notes: |
+  这个快速原型工作流程用于：
+  1. 快速验证游戏概念的可行性
+  2. 在最短时间内创建可测试的原型
+  3. 识别和缓解主要设计和技术风险
+  4. 为全面GDD开发做准备
+  5. 支持敏捷和迭代的设计方法
+
+# BMAD集成
+bmad_integration:
+  prototype_handoff:
+    - "核心机制的技术实现指南"
+    - "最小可行产品的功能清单"
+    - "原型测试和验证计划"
+    - "技术风险评估和缓解策略"
+  
+  iteration_support:
+    - "快速迭代的技术架构"
+    - "模块化的系统设计"
+    - "灵活的内容管理方案"
+    - "实时反馈收集机制"

@@ -1,0 +1,434 @@
+name: PC/Console Game GDD Workflow
+description: Specialized workflow for creating GDDs optimized for PC and console gaming platforms
+icon: 🖥️
+category: platform-specific
+version: "1.0"
+
+workflow:
+  # 工作流程概述
+  overview:
+    purpose: "Create a comprehensive GDD specifically optimized for PC and console gaming platforms"
+    target_output: "PC/Console-optimized GDD ready for Steam, PlayStation, Xbox, and Nintendo Switch development"
+    estimated_duration: "4-8 weeks depending on complexity"
+    team_size: "8-12 specialists with PC/console expertise"
+    
+  # PC/主机端特殊考虑
+  pc_console_considerations:
+    platform_advantages:
+      - "High-performance hardware capabilities"
+      - "Precise input methods (keyboard, mouse, gamepad)"
+      - "Large screen real estate and high resolutions"
+      - "Dedicated gaming sessions (30+ minutes)"
+      - "Advanced graphics and audio capabilities"
+    
+    user_expectations:
+      - "High production values and polish"
+      - "Deep, complex gameplay systems"
+      - "Extensive customization options"
+      - "Mod support and community features"
+      - "Premium gaming experience"
+    
+    technical_capabilities:
+      - "Advanced rendering and visual effects"
+      - "Complex physics and simulation systems"
+      - "Large world sizes and detailed environments"
+      - "Sophisticated AI and procedural systems"
+      - "High-fidelity audio and surround sound"
+
+  # 阶段定义
+  phases:
+    # 第一阶段：PC/主机市场研究
+    - phase: "pc_console_market_research"
+      name: "PC/Console Market Research & Positioning"
+      duration: "1-2 weeks"
+      description: "Research PC and console gaming markets and establish positioning strategy"
+      
+      participants:
+        primary:
+          - market-analyst
+          - pc-console-specialist
+          - western-game-designer
+        supporting:
+          - monetization-designer
+          - eastern-game-designer
+      
+      tasks:
+        - task: "create-market-analysis"
+          owner: "market-analyst"
+          duration: "1 week"
+          deliverable: "PC/Console market analysis report"
+          
+        - task: "design-pc-console-features"
+          owner: "pc-console-specialist"
+          duration: "1 week"
+          deliverable: "Platform-specific feature strategy"
+          
+        - task: "design-western-game-elements"
+          owner: "western-game-designer"
+          duration: "1 week"
+          deliverable: "Western market adaptation plan"
+      
+      deliverables:
+        - "PC/Console Market Analysis"
+        - "Platform Feature Strategy"
+        - "Competitive Landscape Analysis"
+        - "Distribution Strategy (Steam, Epic, Console Stores)"
+        - "Regional Market Considerations"
+      
+      quality_gates:
+        - "Market opportunity validated for target platforms"
+        - "Platform-specific advantages identified"
+        - "Distribution strategy established"
+        - "Competitive differentiation defined"
+
+    # 第二阶段：高保真核心设计
+    - phase: "high_fidelity_core_design"
+      name: "High-Fidelity Core Design"
+      duration: "2-3 weeks"
+      description: "Design complex, deep gameplay systems leveraging PC/console capabilities"
+      
+      participants:
+        primary:
+          - game-systems-architect
+          - mechanics-specialist
+          - player-experience-designer
+          - game-world-designer
+        supporting:
+          - technical-designer
+          - multiplayer-specialist
+      
+      tasks:
+        - task: "design-core-mechanics"
+          owner: "mechanics-specialist"
+          duration: "1-2 weeks"
+          deliverable: "Complex mechanics specification"
+          
+        - task: "build-game-world"
+          owner: "game-world-designer"
+          duration: "1-2 weeks"
+          deliverable: "Detailed world design"
+          
+        - task: "outline-game-progression"
+          owner: "player-experience-designer"
+          duration: "1 week"
+          deliverable: "Deep progression systems"
+          
+        - task: "workshop-game-mechanics"
+          owner: "game-systems-architect"
+          duration: "1 week"
+          deliverable: "Integrated systems design"
+      
+      deliverables:
+        - "Complex Mechanics Specification"
+        - "Detailed World Design Document"
+        - "Deep Progression Systems"
+        - "Advanced AI and NPC Behaviors"
+        - "Physics and Simulation Systems"
+      
+      quality_gates:
+        - "Mechanics leverage platform capabilities"
+        - "Systems are appropriately complex for audience"
+        - "World design supports extended play sessions"
+        - "Progression provides long-term engagement"
+
+    # 第三阶段：高级视听设计
+    - phase: "advanced_audiovisual_design"
+      name: "Advanced Audiovisual Design"
+      duration: "2-3 weeks"
+      description: "Create high-fidelity art, audio, and narrative design specifications"
+      
+      participants:
+        primary:
+          - game-art-director
+          - audio-designer
+          - game-narrative-designer
+          - game-dialog-designer
+        supporting:
+          - ui-ux-designer
+          - technical-designer
+      
+      tasks:
+        - task: "create-art-style-guide"
+          owner: "game-art-director"
+          duration: "1-2 weeks"
+          deliverable: "High-fidelity art direction"
+          
+        - task: "design-audio-systems"
+          owner: "audio-designer"
+          duration: "1-2 weeks"
+          deliverable: "Advanced audio specification"
+          
+        - task: "design-game-narrative"
+          owner: "game-narrative-designer"
+          duration: "1-2 weeks"
+          deliverable: "Complex narrative design"
+          
+        - task: "design-npc-conversations"
+          owner: "game-dialog-designer"
+          duration: "1 week"
+          deliverable: "Advanced dialog systems"
+      
+      deliverables:
+        - "High-Fidelity Art Direction Guide"
+        - "Advanced Audio Design Specification"
+        - "Complex Narrative Design Document"
+        - "Sophisticated Dialog Systems"
+        - "Cinematic and Cutscene Specifications"
+      
+      quality_gates:
+        - "Art direction meets AAA standards"
+        - "Audio design leverages surround sound capabilities"
+        - "Narrative complexity matches audience expectations"
+        - "Dialog systems support character depth"
+
+    # 第四阶段：高性能技术架构
+    - phase: "high_performance_technical"
+      name: "High-Performance Technical Architecture"
+      duration: "1-2 weeks"
+      description: "Define advanced technical architecture leveraging PC/console hardware"
+      
+      participants:
+        primary:
+          - technical-designer
+          - pc-console-specialist
+        supporting:
+          - game-systems-architect
+          - multiplayer-specialist
+      
+      tasks:
+        - task: "create-technical-specification"
+          owner: "technical-designer"
+          duration: "1-2 weeks"
+          deliverable: "Advanced technical architecture"
+          
+        - task: "design-pc-console-features"
+          owner: "pc-console-specialist"
+          duration: "1 week"
+          deliverable: "Platform optimization strategy"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Advanced multiplayer architecture"
+      
+      deliverables:
+        - "High-Performance Technical Architecture"
+        - "Advanced Rendering Pipeline Specification"
+        - "Multiplayer and Networking Architecture"
+        - "Modding and User-Generated Content Support"
+        - "Platform-Specific Optimization Strategies"
+      
+      quality_gates:
+        - "Architecture leverages high-end hardware"
+        - "Performance targets are ambitious but achievable"
+        - "Scalability supports various hardware configurations"
+        - "Platform-specific features are integrated"
+
+    # 第五阶段：用户体验与可访问性
+    - phase: "ux_accessibility"
+      name: "User Experience & Accessibility"
+      duration: "1-2 weeks"
+      description: "Design sophisticated UX and comprehensive accessibility features"
+      
+      participants:
+        primary:
+          - ui-ux-designer
+          - accessibility-specialist
+          - pc-console-specialist
+        supporting:
+          - player-experience-designer
+          - localization-specialist
+      
+      tasks:
+        - task: "design-ui-ux-systems"
+          owner: "ui-ux-designer"
+          duration: "1-2 weeks"
+          deliverable: "Advanced UI/UX specification"
+          
+        - task: "create-accessibility-plan"
+          owner: "accessibility-specialist"
+          duration: "1 week"
+          deliverable: "Comprehensive accessibility plan"
+          
+        - task: "create-localization-plan"
+          owner: "localization-specialist"
+          duration: "1 week"
+          deliverable: "Multi-language localization strategy"
+      
+      deliverables:
+        - "Advanced UI/UX Specification"
+        - "Comprehensive Accessibility Plan"
+        - "Multi-Input Support (Keyboard, Mouse, Gamepad)"
+        - "Customization and Settings Framework"
+        - "Localization Implementation Strategy"
+      
+      quality_gates:
+        - "UI supports multiple input methods seamlessly"
+        - "Accessibility meets or exceeds platform standards"
+        - "Customization options are extensive"
+        - "Localization supports global markets"
+
+    # 第六阶段：商业化与社区
+    - phase: "monetization_community"
+      name: "Monetization & Community Features"
+      duration: "1-2 weeks"
+      description: "Design monetization and community features appropriate for PC/console"
+      
+      participants:
+        primary:
+          - monetization-designer
+          - liveops-designer
+          - multiplayer-specialist
+        supporting:
+          - market-analyst
+          - game-design-critic
+      
+      tasks:
+        - task: "design-monetization-system"
+          owner: "monetization-designer"
+          duration: "1 week"
+          deliverable: "PC/Console monetization strategy"
+          
+        - task: "create-liveops-strategy"
+          owner: "liveops-designer"
+          duration: "1 week"
+          deliverable: "Long-term content strategy"
+          
+        - task: "design-multiplayer-systems"
+          owner: "multiplayer-specialist"
+          duration: "1 week"
+          deliverable: "Community features specification"
+      
+      deliverables:
+        - "PC/Console Monetization Strategy"
+        - "Long-Term Content and DLC Plan"
+        - "Community Features Specification"
+        - "Mod Support and User-Generated Content"
+        - "Esports and Competitive Features"
+      
+      quality_gates:
+        - "Monetization respects premium gaming expectations"
+        - "Content strategy supports long-term engagement"
+        - "Community features encourage player interaction"
+        - "Mod support enhances game longevity"
+
+    # 第七阶段：质量保证与发布准备
+    - phase: "quality_launch_prep"
+      name: "Quality Assurance & Launch Preparation"
+      duration: "1-2 weeks"
+      description: "Comprehensive quality review and platform certification preparation"
+      
+      participants:
+        primary:
+          - gdd-reviewer
+          - gdd-validator
+          - game-design-critic
+          - playtesting-simulator
+        supporting:
+          - pc-console-specialist
+          - accessibility-specialist
+      
+      tasks:
+        - task: "comprehensive-design-review"
+          owner: "gdd-reviewer"
+          duration: "1 week"
+          deliverable: "Complete GDD review"
+          
+        - task: "create-game-design-critique"
+          owner: "game-design-critic"
+          duration: "1 week"
+          deliverable: "Professional design critique"
+          
+        - task: "simulate-playtesting"
+          owner: "playtesting-simulator"
+          duration: "1 week"
+          deliverable: "Comprehensive playtesting simulation"
+      
+      deliverables:
+        - "Complete GDD Review Report"
+        - "Platform Certification Readiness Assessment"
+        - "Comprehensive Playtesting Results"
+        - "Launch Strategy and Marketing Hooks"
+        - "Post-Launch Support Plan"
+      
+      quality_gates:
+        - "All platform certification requirements met"
+        - "Quality standards appropriate for premium market"
+        - "Launch strategy is comprehensive"
+        - "Post-launch support plan is sustainable"
+
+  # PC/主机特殊流程
+  pc_console_specific_processes:
+    platform_certification:
+      - "Steam certification and requirements"
+      - "PlayStation certification process"
+      - "Xbox certification requirements"
+      - "Nintendo Switch certification guidelines"
+    
+    distribution_strategy:
+      - "Multi-platform release planning"
+      - "Platform-exclusive features and content"
+      - "Regional release scheduling"
+      - "Digital vs physical distribution"
+    
+    community_building:
+      - "Beta testing and early access programs"
+      - "Influencer and content creator outreach"
+      - "Community forums and Discord setup"
+      - "Mod support and workshop integration"
+    
+    post_launch_support:
+      - "DLC and expansion planning"
+      - "Regular content updates and patches"
+      - "Community feedback integration"
+      - "Long-term franchise planning"
+
+  # PC/主机成功指标
+  pc_console_success_metrics:
+    sales_metrics:
+      - "Units sold across platforms"
+      - "Revenue per platform"
+      - "Regional sales performance"
+      - "DLC and expansion sales"
+    
+    engagement_metrics:
+      - "Average session length"
+      - "Completion rates"
+      - "Achievement unlock rates"
+      - "Community engagement levels"
+    
+    quality_metrics:
+      - "Review scores (Metacritic, Steam)"
+      - "User review sentiment"
+      - "Technical performance ratings"
+      - "Accessibility compliance scores"
+    
+    community_metrics:
+      - "Active community size"
+      - "Mod creation and adoption"
+      - "User-generated content volume"
+      - "Esports participation (if applicable)"
+
+# 使用指南
+usage_notes: |
+  这个PC/主机游戏工作流程专门用于：
+  1. 创建针对高性能平台优化的GDD
+  2. 充分利用PC和主机硬件能力
+  3. 满足核心玩家的高期望值
+  4. 建立可持续的长期内容策略
+  5. 确保多平台发布的成功
+
+# BMAD集成
+bmad_integration:
+  pc_console_handoff_requirements:
+    - "高性能技术架构和渲染管线"
+    - "多平台兼容性和优化策略"
+    - "高级音频和视觉效果实现"
+    - "模组支持和用户生成内容系统"
+    - "平台认证和发布准备清单"
+  
+  platform_optimization:
+    - "Steam、Epic、主机商店特定要求"
+    - "多输入设备支持实现"
+    - "高分辨率和多显示器支持"
+    - "社区功能和在线服务集成"

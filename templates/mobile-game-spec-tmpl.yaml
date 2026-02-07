@@ -1,0 +1,91 @@
+---
+template:
+  id: mobile-game-spec-tmpl
+  name: Mobile Game Specification Template
+  version: 1.0
+  description: Comprehensive template for mobile game design specifications
+  output:
+    format: markdown
+    filename: "{{game_title}}-mobile-spec.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: mobile_overview
+    title: Mobile Game Overview
+    instruction: |
+      Define the mobile-specific game concept:
+      - Core mobile gameplay loop (30-60 seconds)
+      - Target mobile platforms (iOS, Android, etc.)
+      - Monetization model for mobile
+      - Session length and frequency expectations
+      - Offline/online requirements
+    elicit: true
+
+  - id: touch_controls
+    title: Touch Control Design
+    instruction: |
+      Design intuitive touch-based controls:
+      - Primary touch gestures and interactions
+      - Control scheme for different screen sizes
+      - Accessibility considerations for touch
+      - Haptic feedback integration
+      - One-handed vs two-handed play support
+    elicit: true
+
+  - id: mobile_ui
+    title: Mobile UI/UX Design
+    instruction: |
+      Create mobile-optimized interface design:
+      - Screen size adaptation strategy
+      - Portrait vs landscape orientation support
+      - Touch target sizing and spacing
+      - Mobile-specific navigation patterns
+      - Notification and alert systems
+    elicit: true
+
+  - id: performance_optimization
+    title: Mobile Performance Optimization
+    instruction: |
+      Plan mobile performance requirements:
+      - Target device specifications (low, mid, high-end)
+      - Battery life optimization strategies
+      - Memory usage limitations
+      - Loading time targets
+      - Network usage optimization
+    elicit: true
+
+  - id: mobile_monetization
+    title: Mobile Monetization Strategy
+    instruction: |
+      Design mobile-specific monetization:
+      - In-app purchase strategy
+      - Advertisement integration
+      - Subscription model (if applicable)
+      - Pricing strategy for different markets
+      - Conversion funnel optimization
+    elicit: true
+
+  - id: social_features
+    title: Mobile Social Features
+    instruction: |
+      Plan mobile social integration:
+      - Social sharing mechanisms
+      - Friend systems and social graphs
+      - Leaderboards and competitions
+      - Social media integration
+      - Viral mechanics and referral systems
+    elicit: true
+
+  - id: platform_compliance
+    title: Platform Compliance
+    instruction: |
+      Ensure mobile platform compliance:
+      - App store guidelines compliance
+      - Platform-specific feature requirements
+      - Age rating and content guidelines
+      - Privacy and data protection requirements
+      - Regional compliance considerations
+    elicit: true

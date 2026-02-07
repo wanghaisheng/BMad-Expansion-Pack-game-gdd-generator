@@ -1,0 +1,319 @@
+name: Accessibility Plan Template
+description: Comprehensive template for creating inclusive and accessible game experiences
+icon: ♿
+category: accessibility
+version: "1.0"
+
+template:
+  # 可访问性概述
+  accessibility_overview:
+    target_accessibility_level:
+      compliance_standards: "[WCAG 2.1 AA, ADA, Platform guidelines]"
+      target_rating: "[Basic/Enhanced/Comprehensive accessibility]"
+      priority_disabilities: "[Visual, Hearing, Motor, Cognitive]"
+      business_rationale: "[Why accessibility is important for this game]"
+    
+    accessibility_goals:
+      primary_goals:
+        - goal: "[Specific accessibility goal]"
+          target_audience: "[Who this helps]"
+          success_metrics: "[How to measure success]"
+          implementation_priority: "[High/Medium/Low]"
+      
+      secondary_goals:
+        - goal: "[Additional accessibility goal]"
+          target_audience: "[Who this helps]"
+          success_metrics: "[How to measure success]"
+          implementation_priority: "[High/Medium/Low]"
+
+  # 视觉可访问性
+  visual_accessibility:
+    color_accessibility:
+      colorblind_support:
+        - type: "[Protanopia, Deuteranopia, Tritanopia, Monochromacy]"
+          prevalence: "[Percentage of population affected]"
+          current_issues: "[Current game elements that may be problematic]"
+          solutions: "[Color alternatives, patterns, symbols]"
+          testing_method: "[How to test for this condition]"
+      
+      contrast_requirements:
+        - ui_element: "[Text, Buttons, Icons, etc.]"
+          current_contrast: "[Current contrast ratio]"
+          required_contrast: "[WCAG AA/AAA requirement]"
+          background_variations: "[Different background scenarios]"
+          improvement_needed: "[Yes/No and what changes]"
+      
+      color_coding_alternatives:
+        - game_element: "[Health bars, Team indicators, etc.]"
+          current_color_coding: "[How color is currently used]"
+          alternative_indicators: "[Shapes, patterns, text, audio]"
+          implementation_approach: "[How to add alternatives]"
+    
+    text_accessibility:
+      font_requirements:
+        minimum_font_size: "[Minimum readable size]"
+        scalable_text: "[Text scaling options 100%-200%]"
+        font_choices: "[Dyslexia-friendly fonts, high contrast]"
+        text_spacing: "[Line height, character spacing]"
+      
+      text_alternatives:
+        - visual_element: "[Icons, Images, Charts, etc.]"
+          alt_text_needed: "[Yes/No]"
+          alt_text_content: "[What the alt text should convey]"
+          context_importance: "[How critical for gameplay]"
+      
+      reading_support:
+        text_to_speech: "[TTS support for UI and dialogue]"
+        reading_speed_control: "[Adjustable text display speed]"
+        text_highlighting: "[Current word/sentence highlighting]"
+        simplified_language: "[Option for simpler language]"
+    
+    visual_impairment_support:
+      low_vision_support:
+        ui_scaling: "[UI element scaling options]"
+        high_contrast_mode: "[High contrast UI themes]"
+        cursor_enhancement: "[Larger cursors, cursor trails]"
+        focus_indicators: "[Clear focus indication]"
+      
+      blindness_support:
+        screen_reader_compatibility: "[NVDA, JAWS, VoiceOver support]"
+        audio_descriptions: "[Describing visual elements]"
+        spatial_audio_cues: "[3D audio for navigation]"
+        haptic_feedback: "[Controller vibration patterns]"
+        keyboard_navigation: "[Full keyboard accessibility]"
+
+  # 听觉可访问性
+  auditory_accessibility:
+    hearing_impairment_support:
+      subtitle_system:
+        dialogue_subtitles: "[All spoken dialogue subtitled]"
+        sound_effect_captions: "[Important sound effects captioned]"
+        music_descriptions: "[Mood/tempo descriptions]"
+        speaker_identification: "[Who is speaking indication]"
+        subtitle_customization: "[Size, color, background options]"
+      
+      visual_sound_indicators:
+        - sound_type: "[Footsteps, Gunshots, Alarms, etc.]"
+          visual_indicator: "[Screen flash, icon, directional indicator]"
+          importance_level: "[Critical/Important/Ambient]"
+          implementation_method: "[How to show visually]"
+      
+      haptic_sound_replacement:
+        - sound_cue: "[Audio cue description]"
+          haptic_pattern: "[Vibration pattern description]"
+          timing: "[When the haptic feedback occurs]"
+          intensity: "[Vibration strength]"
+    
+    deafness_support:
+      sign_language_support: "[ASL/BSL video interpretation if applicable]"
+      visual_communication: "[Text chat, emotes, visual signals]"
+      community_features: "[Deaf-friendly community tools]"
+      cultural_considerations: "[Deaf culture awareness]"
+
+  # 运动可访问性
+  motor_accessibility:
+    input_customization:
+      button_remapping:
+        - platform: "[PC, Console, Mobile]"
+          remapping_scope: "[Full/Partial button remapping]"
+          conflict_resolution: "[How to handle button conflicts]"
+          profile_saving: "[Custom control profiles]"
+      
+      alternative_inputs:
+        - input_method: "[One-handed, Switch control, Eye tracking]"
+          supported_platforms: "[Which platforms support this]"
+          setup_requirements: "[Hardware/software needed]"
+          gameplay_adaptations: "[How gameplay changes]"
+      
+      timing_adjustments:
+        reaction_time_settings: "[Adjustable time limits]"
+        auto_pause_features: "[Automatic pausing options]"
+        turn_based_options: "[Converting real-time to turn-based]"
+        difficulty_scaling: "[Motor difficulty separate from cognitive]"
+    
+    interface_adaptations:
+      touch_accessibility:
+        - touch_element: "[Buttons, Gestures, Drag operations]"
+          size_requirements: "[Minimum touch target size]"
+          spacing_requirements: "[Minimum spacing between targets]"
+          alternative_methods: "[Voice, switch, eye tracking alternatives]"
+      
+      precision_requirements:
+        - game_mechanic: "[Aiming, Drawing, Timing]"
+          precision_level: "[High/Medium/Low precision needed]"
+          assistance_options: "[Auto-aim, snap-to, guides]"
+          alternative_approaches: "[Different ways to accomplish task]"
+
+  # 认知可访问性
+  cognitive_accessibility:
+    complexity_management:
+      information_processing:
+        ui_simplification: "[Reduced UI complexity options]"
+        information_chunking: "[Breaking complex info into parts]"
+        progress_indicators: "[Clear progress and status indicators]"
+        consistent_navigation: "[Predictable UI patterns]"
+      
+      memory_support:
+        save_anywhere: "[Frequent save opportunities]"
+        objective_reminders: "[Quest/goal reminder systems]"
+        tutorial_replay: "[Ability to replay tutorials]"
+        context_help: "[In-game help and hints]"
+      
+      attention_support:
+        distraction_reduction: "[Reduced visual/audio distractions]"
+        focus_modes: "[Simplified interface modes]"
+        pause_availability: "[Generous pause options]"
+        notification_control: "[Customizable notifications]"
+    
+    learning_disabilities:
+      dyslexia_support:
+        font_choices: "[Dyslexia-friendly fonts]"
+        text_formatting: "[Spacing, alignment, contrast]"
+        audio_alternatives: "[Text-to-speech for all text]"
+        symbol_support: "[Icons and symbols alongside text]"
+      
+      adhd_support:
+        attention_management: "[Focus aids, distraction reduction]"
+        pacing_control: "[Player-controlled pacing]"
+        reward_systems: "[Clear, immediate feedback]"
+        organization_tools: "[Inventory management aids]"
+      
+      autism_support:
+        sensory_considerations: "[Reduced sensory overload options]"
+        routine_support: "[Predictable patterns and structures]"
+        social_interaction: "[Optional/adjustable social features]"
+        customization_options: "[Extensive personalization]"
+
+  # 平台特定可访问性
+  platform_accessibility:
+    pc_accessibility:
+      operating_system_integration:
+        windows_accessibility: "[Narrator, Magnifier, High Contrast]"
+        macos_accessibility: "[VoiceOver, Zoom, Switch Control]"
+        linux_accessibility: "[Orca, accessibility frameworks]"
+      
+      hardware_support:
+        specialized_hardware: "[Eye trackers, switch devices, etc.]"
+        standard_accessibility: "[Sticky keys, filter keys, etc.]"
+        third_party_tools: "[Compatibility with accessibility software]"
+    
+    console_accessibility:
+      - console: "[PlayStation, Xbox, Nintendo Switch]"
+        built_in_features: "[Console accessibility features]"
+        controller_adaptations: "[Adaptive controllers, button remapping]"
+        audio_features: "[Audio descriptions, screen readers]"
+        visual_features: "[High contrast, magnification]"
+    
+    mobile_accessibility:
+      ios_accessibility:
+        voiceover_support: "[Screen reader compatibility]"
+        switch_control: "[External switch support]"
+        assistive_touch: "[Touch accommodations]"
+        voice_control: "[Voice command support]"
+      
+      android_accessibility:
+        talkback_support: "[Screen reader compatibility]"
+        select_to_speak: "[Text-to-speech features]"
+        live_caption: "[Real-time captioning]"
+        sound_amplifier: "[Audio enhancement]"
+
+  # 测试与验证
+  accessibility_testing:
+    automated_testing:
+      testing_tools:
+        - tool: "[axe, WAVE, Lighthouse, etc.]"
+          testing_scope: "[What it tests for]"
+          integration_method: "[How to integrate into workflow]"
+          reporting_format: "[How results are presented]"
+      
+      continuous_testing: "[Automated testing in CI/CD pipeline]"
+      regression_testing: "[Ensuring accessibility doesn't break]"
+    
+    manual_testing:
+      internal_testing:
+        - accessibility_area: "[Visual, Auditory, Motor, Cognitive]"
+          testing_method: "[How to test manually]"
+          testing_tools: "[Screen readers, simulators, etc.]"
+          success_criteria: "[What constitutes passing]"
+      
+      user_testing:
+        participant_recruitment: "[How to find users with disabilities]"
+        testing_methodology: "[User testing approach]"
+        feedback_collection: "[How to gather and process feedback]"
+        iteration_process: "[How to implement improvements]"
+    
+    expert_review:
+      accessibility_consultants: "[Professional accessibility reviewers]"
+      disability_community: "[Community feedback and input]"
+      certification_process: "[Third-party accessibility certification]"
+
+  # 实施计划
+  implementation_plan:
+    development_phases:
+      - phase: "[Pre-production, Production, Post-launch]"
+        accessibility_focus: "[What to focus on in this phase]"
+        deliverables: "[Accessibility deliverables for this phase]"
+        testing_requirements: "[Testing needed in this phase]"
+        success_criteria: "[How to measure success]"
+    
+    resource_allocation:
+      team_responsibilities:
+        - role: "[Designer, Developer, QA, etc.]"
+          accessibility_responsibilities: "[Specific accessibility tasks]"
+          training_needed: "[Accessibility training requirements]"
+          tools_needed: "[Tools and resources required]"
+      
+      budget_considerations:
+        development_costs: "[Additional development time/cost]"
+        testing_costs: "[Accessibility testing budget]"
+        tool_costs: "[Accessibility tools and software]"
+        consultation_costs: "[Expert consultation budget]"
+    
+    timeline_milestones:
+      - milestone: "[Accessibility milestone]"
+        target_date: "[When to achieve this milestone]"
+        deliverables: "[What should be completed]"
+        dependencies: "[What this milestone depends on]"
+        risk_factors: "[Potential delays or issues]"
+
+  # 文档与培训
+  documentation_training:
+    accessibility_documentation:
+      user_documentation: "[Accessibility features documentation for users]"
+      developer_documentation: "[Implementation guides for developers]"
+      testing_documentation: "[Testing procedures and checklists]"
+      compliance_documentation: "[Legal compliance documentation]"
+    
+    team_training:
+      accessibility_awareness: "[General accessibility awareness training]"
+      role_specific_training: "[Training specific to job roles]"
+      tool_training: "[Training on accessibility tools]"
+      ongoing_education: "[Continuous accessibility learning]"
+    
+    community_education:
+      user_guides: "[How to use accessibility features]"
+      community_resources: "[Accessibility community building]"
+      feedback_channels: "[How users can provide accessibility feedback]"
+
+# 使用指南
+usage_notes: |
+  这个模板用于创建全面的游戏可访问性计划：
+  1. 评估目标用户群体的可访问性需求
+  2. 制定具体的可访问性实施策略
+  3. 建立测试和验证流程
+  4. 确保团队具备必要的知识和工具
+  5. 创建可持续的可访问性维护计划
+
+# BMAD集成说明
+bmad_integration:
+  compatibility_notes: |
+    - 为BMAD可访问性代理提供详细的实施指南
+    - 确保可访问性要求集成到技术架构中
+    - 提供平台特定的可访问性实施指导
+    - 支持自动化可访问性测试集成
+  
+  handoff_requirements:
+    - 详细的可访问性技术规格
+    - 平台特定的实施指南
+    - 测试标准和验收标准
+    - 用户文档和培训材料
