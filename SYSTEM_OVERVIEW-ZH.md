@@ -1,8 +1,8 @@
-# Game Design Document Generator Team - System Overview
+# OpenGame BMad GDD Generator - System Overview
 
 ## 🎮 系统概述
 
-这是一个完整的游戏设计文档生成系统，专门为创建高质量、标准化的游戏设计文档(GDD)而设计，并与BMAD游戏开发工作流程无缝集成。
+这是一个完整的游戏设计文档生成系统，专门为创建高质量、标准化的游戏设计文档(GDD)而设计，并与 OpenGame BMad 游戏开发工作流程无缝集成。
 
 ## 📊 系统规模
 

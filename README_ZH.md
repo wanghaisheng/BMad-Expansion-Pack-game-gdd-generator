@@ -1,18 +1,18 @@
-# 游戏设计文档生成器团队
+# OpenGame BMad GDD Generator
 
-我们是一个基于BMAD方法论的游戏GDD文档生成器，专门生产符合 [Open Game Design Document Markdown Template](https://opengdd.borninsea.com/) (especially for AI agents) 交付物标准的游戏设计文档。
+我们是一个基于 BMad 方法论的游戏GDD文档生成器，专门生产符合 [OpenGame GDD Templates](https://opengdd.borninsea.com/) (especially for AI agents) 交付物标准的游戏设计文档。
 
 ## 🎮 团队概述
 
-这个综合系统提供完整的游戏设计文档框架，拥有**29个专业代理**，涵盖从概念到实现就绪规格的游戏设计各个方面，与BMAD开发工作流程无缝集成。
+这个综合系统提供完整的游戏设计文档框架，拥有**29个专业代理**，涵盖从概念到实现就绪规格的游戏设计各个方面，与 OpenGame BMad 开发工作流程无缝集成。
 
-## 🏗️ Agent First Game Dev Stack
+## 🏗️ OpenGame Agent First Stack
 
-本生成器是完整 **Agent First Game Development Stack** 中的 **规划层 (Planning Layer)**：
+本生成器是完整 **OpenGame Agent First Stack** 中的 **规划层 (Planning Layer)**：
 
-1.  **OpenGDD Template**: AI 游戏设计的标准化协议 ([opengdd.borninsea.com](https://opengdd.borninsea.com/))。
-2.  **GDD Generator** (本仓库): 将创意转化为规格说明书的专业 Agent 团队。
-3.  **BMAD Game Dev**: 根据这些规格构建游戏的工程 Agent 团队（支持客户端 Phaser, Godot, Unity, Cocos, Unreal 等；支持 Cursor, Claude Code, OpenAI Codex 等 AI 环境）。
+1.  **OpenGame GDD Templates**: AI 游戏设计的标准化协议 ([opengdd.borninsea.com](https://opengdd.borninsea.com/))。
+2.  **OpenGame BMad GDD Generator** (本仓库): 将创意转化为规格说明书的专业 Agent 团队。
+3.  **OpenGame BMad Game Dev**: 根据这些规格构建游戏的工程 Agent 团队（支持客户端 Phaser, Godot, Unity, Cocos, Unreal 等；支持 Cursor, Claude Code, OpenAI Codex 等 AI 环境）。
 
 查看 [Agent First Game Dev](https://opengdd.borninsea.com/opengdd-bmad-game-dev) 了解完整愿景。
 
