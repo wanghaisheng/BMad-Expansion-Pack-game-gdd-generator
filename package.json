@@ -1,7 +1,7 @@
 {
   "name": "@bmad-method/game-design-document-generator",
   "version": "1.0.0",
-  "description": "OpenGame BMad GDD Generator - AI-powered game design documentation system with comprehensive GDD creation, platform optimization, and cultural adaptation",
+  "description": "OpenAgenticGame  BMad GDD Generator - AI-powered game design documentation system with comprehensive GDD creation, platform optimization, and cultural adaptation",
   "main": "index.js",
   "keywords": [
     "bmad-method",

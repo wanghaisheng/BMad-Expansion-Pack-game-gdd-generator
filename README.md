@@ -1,18 +1,18 @@
-# OpenGame BMad GDD Generator
+# OpenAgenticGame  BMad GDD Generator
 
-An AI-orchestrated generator that produces standardized, structured OpenGame GDD Templates aligned with OpenGame BMad Game Dev workflows.
+An AI-orchestrated generator that produces standardized, structured OpenAgenticGame  GDD Templates aligned with OpenAgenticGame  BMad Game Dev workflows.
 
 ## 🎮 Overview
 
-This repository is the OpenGame BMad GDD Generator: it coordinates multiple AI capabilities (specialized agents, tasks, templates, checklists, and workflows) to produce implementation-ready GDD chapters in a consistent structure. The goal is to turn a game idea into a development-handoff document set, with clear specs and traceable assets.
+This repository is the OpenAgenticGame  BMad GDD Generator: it coordinates multiple AI capabilities (specialized agents, tasks, templates, checklists, and workflows) to produce implementation-ready GDD chapters in a consistent structure. The goal is to turn a game idea into a development-handoff document set, with clear specs and traceable assets.
 
 ## 🏗️ Agent First Game Dev Stack
 
-This generator is the **Planning Layer** of our complete **OpenGame Agent First Stack**:
+This generator is the **Planning Layer** of our complete **OpenAgenticGame  Agent First Stack**:
 
-1.  **OpenGame GDD Templates**: The standardized protocol for AI game design ([opengdd.borninsea.com](https://opengdd.borninsea.com/)).
-2.  **OpenGame BMad GDD Generator** (This Repo): The specialized agent team that turns ideas into specs.
-3.  **OpenGame BMad Game Dev**: The engineering agents that build the game from these specs (Supports clients: Phaser, Godot, Unity, Cocos, Unreal; Supports AI envs: Cursor, Claude Code, OpenAI Codex, etc.).
+1.  **OpenAgenticGame  GDD Templates**: The standardized protocol for AI game design ([opengdd.borninsea.com](https://opengdd.borninsea.com/)).
+2.  **OpenAgenticGame  BMad GDD Generator** (This Repo): The specialized agent team that turns ideas into specs.
+3.  **OpenAgenticGame  BMad Game Dev**: The engineering agents that build the game from these specs (Supports clients: Phaser, Godot, Unity, Cocos, Unreal; Supports AI envs: Cursor, Claude Code, OpenAI Codex, etc.).
 
 See [Agent First Game Dev](https://opengdd.borninsea.com/opengdd-bmad-game-dev) for the full vision.
 

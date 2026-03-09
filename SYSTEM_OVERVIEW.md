@@ -1,8 +1,8 @@
-# OpenGame BMad GDD Generator - System Overview
+# OpenAgenticGame  BMad GDD Generator - System Overview
 
 ## 🎮 System Overview
 
-This is a complete Game Design Document (GDD) generation system, designed to create high-quality, standardized Game Design Documents that seamlessly integrate with the OpenGame BMad game development workflow.
+This is a complete Game Design Document (GDD) generation system, designed to create high-quality, standardized Game Design Documents that seamlessly integrate with the OpenAgenticGame  BMad game development workflow.
 
 ## 📊 System Scale
 
