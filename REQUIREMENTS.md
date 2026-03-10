@@ -96,7 +96,7 @@ While not required, these tools enhance the experience:
 - Check BMad Method version compatibility
 
 **Agent activation failures:**
-- Confirm all agent files are in `agents/` directory
+- Confirm all agent files are in appropriate subdirectories under `agents/` (organized by domain)
 - Verify markdown formatting in agent files
 - Check for file permission issues
 

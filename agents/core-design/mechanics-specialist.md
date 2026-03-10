@@ -29,9 +29,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - design-game-mechanics.md
-    - analyze-balance.md
-    - model-progression.md
+    - design/design-core-mechanics.md
+    - analysis/create-game-design-critique.md
+    - design/design-core-mechanics.md
     - design-economy.md
   templates:
     - mechanics-specification-tmpl.yaml
@@ -39,8 +39,8 @@ dependencies:
     - progression-system-tmpl.yaml
     - economy-model-tmpl.yaml
   checklists:
-    - mechanics-design-checklist.md
-    - balance-validation-checklist.md
+    - design-quality/gameplay-balance-checklist.md
+    - design-quality/gameplay-balance-checklist.md
   data:
     - balance-frameworks.md
     - progression-patterns.md

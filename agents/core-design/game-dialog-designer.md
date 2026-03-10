@@ -31,17 +31,17 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - design-npc-conversations.md
-    - create-dialog-trees.md
-    - build-character-voices.md
+    - design/design-npc-conversations.md
+    - design/design-npc-conversations.md
+    - design/design-npc-conversations.md
     - design-narrative-moments.md
   templates:
     - npc-dialog-tmpl.yaml
     - conversation-tree-tmpl.yaml
     - character-voice-guide-tmpl.yaml
   checklists:
-    - game-dialog-checklist.md
-    - narrative-consistency-checklist.md
+    - design-quality/narrative-consistency-checklist.md
+    - design-quality/narrative-consistency-checklist.md
   data:
     - dialog-patterns.md
     - npc-archetypes.md

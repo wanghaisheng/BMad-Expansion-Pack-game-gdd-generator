@@ -29,17 +29,17 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - review-gdd-document.md
-    - validate-completeness.md
-    - check-technical-feasibility.md
-    - verify-bmad-compatibility.md
+    - validation/game-design-review.md
+    - validation/validate-and-finalize-gdd.md
+    - validation/validate-and-finalize-gdd.md
+    - validation/validate-and-finalize-gdd.md
   templates:
     - gdd-review-report-tmpl.yaml
     - completeness-checklist-tmpl.yaml
   checklists:
-    - gdd-quality-checklist.md
-    - bmad-compatibility-checklist.md
-    - technical-feasibility-checklist.md
+    - comprehensive/comprehensive-quality-checklist.md
+    - technical-quality/bmad-compatibility-checklist.md
+    - technical-quality/technical-feasibility-checklist.md
   data:
     - gdd-standards.md
     - bmad-requirements.md

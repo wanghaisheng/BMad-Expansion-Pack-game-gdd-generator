@@ -18,7 +18,7 @@ persona:
     - Level design teaches through spatial language
 commands:
   - help: Show available commands
-  - create-world-design: Run task create-doc.md with template game-world-bible-tmpl.yaml
+  - create-world-design: Run task design/design-core-mechanics.md with template game-world-bible-tmpl.yaml
   - design-level-framework: Create level design guidelines and patterns
   - environmental-storytelling: Design narrative through environment
   - create-art-direction: Establish visual style and art direction
@@ -29,9 +29,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - create-doc.md
-    - design-game-world.md
-    - create-level-framework.md
+    - design/design-core-mechanics.md
+    - design/design/design-game-narrative.md
+    - generation/generate-level-list.md
     - design-art-direction.md
   templates:
     - game-world-bible-tmpl.yaml
@@ -39,8 +39,8 @@ dependencies:
     - art-direction-tmpl.yaml
     - environmental-systems-tmpl.yaml
   checklists:
-    - game-world-design-checklist.md
-    - level-design-checklist.md
+    - design-quality/game-world-design-continuity-checklist.md
+    - design-quality/level-design-quality-checklist.md
   data:
     - level-design-patterns.md
     - environmental-storytelling-techniques.md

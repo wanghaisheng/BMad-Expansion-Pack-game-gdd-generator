@@ -29,9 +29,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - conduct-market-research.md
-    - analyze-competition.md
-    - profile-target-audience.md
+    - analysis/create-market-analysis.md
+    - analysis/create-market-analysis.md
+    - analysis/create-market-analysis.md
     - design-monetization.md
   templates:
     - market-research-tmpl.yaml
@@ -39,8 +39,8 @@ dependencies:
     - audience-profile-tmpl.yaml
     - monetization-strategy-tmpl.yaml
   checklists:
-    - market-analysis-checklist.md
-    - competitive-research-checklist.md
+    - business-viability/market-readiness-checklist.md
+    - business-viability/market-readiness-checklist.md
   data:
     - market-trends.md
     - player-demographics.md

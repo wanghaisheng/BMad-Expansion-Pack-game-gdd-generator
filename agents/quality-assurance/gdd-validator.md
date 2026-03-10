@@ -29,18 +29,18 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - validate-gdd-completeness.md
-    - verify-bmad-compatibility.md
-    - check-standards-compliance.md
+    - validation/validate-and-finalize-gdd.md
+    - validation/validate-and-finalize-gdd.md
+    - validation/comprehensive-design-review.md
     - assess-implementation-readiness.md
   templates:
     - validation-report-tmpl.yaml
     - compatibility-checklist-tmpl.yaml
     - standards-audit-tmpl.yaml
   checklists:
-    - gdd-validation-checklist.md
-    - bmad-compatibility-checklist.md
-    - industry-standards-checklist.md
+    - comprehensive/modular-gdd-evaluation-checklist.md
+    - technical-quality/bmad-compatibility-checklist.md
+    - comprehensive/comprehensive-quality-checklist.md
   data:
     - bmad-requirements-specification.md
     - industry-gdd-standards.md

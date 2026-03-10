@@ -30,9 +30,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - create-technical-specs.md
-    - define-performance-targets.md
-    - analyze-platform-requirements.md
+    - planning/create-technical-specification.md
+    - planning/create-technical-specification.md
+    - planning/create-technical-specification.md
     - design-architecture.md
   templates:
     - technical-specification-tmpl.yaml
@@ -40,8 +40,8 @@ dependencies:
     - platform-analysis-tmpl.yaml
     - architecture-guide-tmpl.yaml
   checklists:
-    - technical-feasibility-checklist.md
-    - performance-optimization-checklist.md
+    - technical-quality/technical-feasibility-checklist.md
+    - technical-quality/technical-feasibility-checklist.md
   data:
     - platform-capabilities.md
     - performance-benchmarks.md

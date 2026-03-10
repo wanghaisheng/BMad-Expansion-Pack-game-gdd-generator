@@ -1,5 +1,5 @@
 {
-  "name": "@bmad-method/game-design-document-generator",
+  "name": "@openagenticgame/bmad-gdd-generator",
   "version": "1.0.0",
   "description": "OpenAgenticGame  BMad GDD Generator - AI-powered game design documentation system with comprehensive GDD creation, platform optimization, and cultural adaptation",
   "main": "index.js",
@@ -27,7 +27,7 @@
     "player-experience",
     "technical-design"
   ],
-  "author": "Wes",
+  "author": "WangHaiSheng",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -36,11 +36,11 @@
   "bmadExpansion": {
     "type": "expansion-pack",
     "category": "game-design",
-    "agents": 29,
-    "workflows": 23,
-    "templates": 21,
-    "checklists": 33,
-    "tasks": 43,
+    "agents": 30,
+    "workflows": 26,
+    "templates": 22,
+    "checklists": 34,
+    "tasks": 55,
     "dataReferences": 5,
     "platforms": [
       "mobile",

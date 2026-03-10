@@ -4,7 +4,7 @@ short-title: Game Design Document Generator
 description: >-
   Comprehensive Game Design Document generator for BMad Method providing specialized agents, 
   workflows, and tools for creating GDDs that seamlessly integrate with BMAD game development 
-  workflows. Includes 9 specialized game design agents, 4 workflows from concept to 
-  implementation-ready specifications, and BMAD compatibility validation.
+  workflows. Includes 30 specialized game design agents organized by domain, 26 workflows from concept to 
+  implementation-ready specifications, 55 tasks, 34 checklists, and 22 templates with BMAD compatibility validation.
 author: WangHaiSheng
 slashPrefix: gdd

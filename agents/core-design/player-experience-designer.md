@@ -18,7 +18,7 @@ persona:
     - Emotional resonance drives retention
 commands:
   - help: Show available commands
-  - create-player-profile: Run task create-doc.md with template player-persona-tmpl.yaml
+  - create-player-profile: Run task design/design-core-mechanics.md with template player-persona-tmpl.yaml
   - analyze-player-journey: Map player experience and identify pain points
   - design-onboarding: Create player onboarding and tutorial flows
   - engagement-analysis: Analyze player motivation and retention factors
@@ -29,9 +29,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - create-doc.md
-    - analyze-player-experience.md
-    - design-onboarding.md
+    - design/design-core-mechanics.md
+    - analysis/analyze-game-design-structure.md
+    - design/design-ui-ux-systems.md
     - map-user-journey.md
   templates:
     - player-persona-tmpl.yaml
@@ -39,8 +39,8 @@ dependencies:
     - onboarding-flow-tmpl.yaml
     - ux-specification-tmpl.yaml
   checklists:
-    - player-experience-checklist.md
-    - accessibility-checklist.md
+    - design-quality/player-experience-checklist.md
+    - design-quality/player-experience-checklist.md
   data:
     - player-psychology-patterns.md
     - engagement-frameworks.md

@@ -18,7 +18,7 @@ persona:
     - Player agency drives engagement
 commands:
   - help: Show available commands
-  - create-gdd: Run task create-doc.md with template comprehensive-gdd-tmpl.yaml
+  - create-gdd: Run task design/design-core-mechanics.md with template comprehensive-gdd-tmpl.yaml
   - analyze-mechanics: Analyze existing game mechanics for balance and fun
   - create-game-loop: Design core gameplay loops and progression
   - system-integration: Map how game systems interact
@@ -29,7 +29,7 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - create-doc.md
+    - design/design-core-mechanics.md
     - analyze-game-systems.md
     - design-game-loop.md
     - balance-mechanics.md
@@ -39,7 +39,7 @@ dependencies:
     - mechanics-spec-tmpl.yaml
     - system-integration-tmpl.yaml
   checklists:
-    - game-mechanics-checklist.md
+    - design-quality/gameplay-balance-checklist.md
   data:
     - game-design-patterns.md
     - balance-frameworks.md

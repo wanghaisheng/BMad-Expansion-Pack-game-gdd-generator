@@ -29,17 +29,17 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - simulate-gameplay.md
-    - identify-balance-issues.md
-    - map-player-engagement.md
+    - validation/simulate-playtesting.md
+    - validation/provide-playtesting-feedback.md
+    - validation/provide-playtesting-feedback.md
     - test-accessibility.md
   templates:
     - playtest-report-tmpl.yaml
     - balance-analysis-tmpl.yaml
     - engagement-map-tmpl.yaml
   checklists:
-    - playtesting-checklist.md
-    - balance-validation-checklist.md
+    - design-quality/game-development-readiness-checklist.md
+    - design-quality/gameplay-balance-checklist.md
   data:
     - player-behavior-patterns.md
     - engagement-metrics.md

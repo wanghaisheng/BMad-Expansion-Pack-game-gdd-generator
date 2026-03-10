@@ -32,9 +32,9 @@ commands:
   - exit: Exit agent mode
 dependencies:
   tasks:
-    - design-game-narrative.md
-    - create-story-branches.md
-    - map-choice-consequences.md
+    - design/design-game-narrative.md
+    - design/design-game-narrative.md
+    - design/design-game-narrative.md
     - design-character-arcs.md
   templates:
     - game-narrative-tmpl.yaml
@@ -42,8 +42,8 @@ dependencies:
     - character-arc-tmpl.yaml
     - quest-narrative-tmpl.yaml
   checklists:
-    - narrative-consistency-checklist.md
-    - player-agency-checklist.md
+    - design-quality/narrative-consistency-checklist.md
+    - design-quality/narrative-consistency-checklist.md
   data:
     - narrative-patterns.md
     - story-structures.md
