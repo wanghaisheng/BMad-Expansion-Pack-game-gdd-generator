@@ -19,9 +19,9 @@ Existing solutions like Confluence provide organization but lack game-specific i
 ## Proposed Solution
 
 The BMad Game Design Document Generator provides a complete AI-augmented game design studio through:
-- **30 Specialized Game Design Agents**: Each agent masters a specific aspect of game design (systems architecture, player experience, monetization, cultural adaptation, accessibility)
+- **30 Specialized Game Design Agents**: Each agent masters a specific aspect of game design (systems architecture, player experience, monetization, cultural adaptation, accessibility) organized by domain expertise
 - **Platform-Specific Intelligence**: Agents understand platform requirements and can adapt designs for mobile, PC/console, web, and VR/AR contexts
-- **End-to-End Workflows**: From initial game concept through BMAD-ready technical specifications, 27 workflows guide teams through proven game design methodologies
+- **End-to-End Workflows**: From initial game concept through BMAD-ready technical specifications, 26 workflows guide teams through proven game design methodologies
 - **Quality Assurance System**: 34 specialized checklists ensure consistency, platform compliance, cultural appropriateness, and accessibility standards
 - **BMAD Integration**: Seamless handoff to BMAD technical implementation teams with standardized documentation formats
 - **Cultural Adaptation Framework**: Built-in support for Eastern and Western market preferences with localization planning
@@ -194,11 +194,11 @@ Based on analysis of competing tools and methodologies:
 - **Market Gap**: No solution combines structured game design methodology with specialized AI agents and BMAD integration
 
 ### B. System Architecture Overview
-- **30 Specialized Agents**: Complete coverage of game design disciplines
-- **55 Professional Tasks**: Detailed execution guides for all design activities
-- **22 Comprehensive Templates**: From technical architecture to cultural adaptation
-- **34 Quality Checklists**: Ensuring standards across platforms, cultures, and accessibility
-- **27 Specialized Workflows**: Covering all game types, platforms, and market approaches
+- **30 Specialized Agents**: Complete coverage of game design disciplines organized by domain expertise
+- **55 Professional Tasks**: Detailed execution guides for all design activities categorized by function
+- **22 Comprehensive Templates**: From technical architecture to cultural adaptation sorted by type
+- **34 Quality Checklists**: Ensuring standards across platforms, cultures, and accessibility categorized by type
+- **26 Specialized Workflows**: Covering all game types, platforms, and market approaches grouped by purpose
 - **9 Knowledge Base Files**: Supporting design decisions with industry best practices
 
 ### C. References

@@ -3,12 +3,12 @@
 ## 1. 安装与放置
 1. 确认已安装并可用的 BMad Method（v1.0+）。
 2. 将本扩展包放入 `bmad-method/expansion-packs/bmad-gdd-generator/`。
-3. 确保扩展包根目录包含 `config.yaml`、`agents/`、`tasks/`、`templates/`、`workflows/`。
+3. 确保扩展包根目录包含 `config.yaml`、`agents/`、`tasks/`、`templates/`、`workflows/`、`checklists/`、`data/`。
 
 ## 2. 选择工作流
-1. 基础完整产出：使用 `workflows/comprehensive-gdd-creation.yaml`。
-2. 高效出稿：使用 `workflows/streamlined-gdd-workflow.yaml`。
-3. 模块化组装：使用 `workflows/modular-gdd-generation.yaml`。
+1. 基础完整产出：使用 `workflows/comprehensive/comprehensive-gdd-creation.yaml`。
+2. 高效出稿：使用 `workflows/comprehensive/streamlined-gdd-workflow.yaml`。
+3. 模块化组装：使用 `workflows/comprehensive/modular-gdd-generation.yaml`。
 
 ## 3. 准备输入素材
 1. 明确项目名称、类型、目标平台、目标用户。
@@ -22,12 +22,12 @@
 
 ## 5. 使用模板产出章节
 1. 在 `templates/` 目录中选择对应模板填充内容。
-2. 关键模板：`gdd-master-template.yaml`、`comprehensive-gdd-tmpl.yaml`、`game-design-outline-tmpl.yaml`。
+2. 关键模板：`templates/core/gdd-master-template.yaml`、`templates/core/comprehensive-gdd-tmpl.yaml`、`templates/core/game-design-outline-tmpl.yaml`。
 3. 章节输出建议对应 GDD 13 章结构。
 
 ## 6. 质量检查与验证
 1. 使用 `checklists/` 中的质量清单进行复核。
-2. 推荐组合：`comprehensive-quality-checklist.md`、`game-design-structure-checklist.md`、`bmad-compatibility-checklist.md`。
+2. 推荐组合：`checklists/comprehensive/comprehensive-quality-checklist.md`、`checklists/design-quality/game-design-structure-checklist.md`、`checklists/technical-quality/bmad-compatibility-checklist.md`。
 3. 通过 `gdd-reviewer` 与 `gdd-validator` 完成一致性与可行性验证。
 
 ## 7. 交付物整理
